@@ -1,0 +1,135 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/accountmanage/rolepower.css">
+</head>
+<body class="accountmanage-powerset">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                       <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>权限设置-</h3>
+                                </div>
+                            </div>
+                            <div class="search-code">
+                                <form method="post" action="">
+                                    <table class="ui-table" id="tblList">
+                                        <thead>
+                                            <tr>
+                                                <th>模块</th>
+                                                <th>子模块</th>
+                                                <th>功能(后期开放)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input id="hMerchant" type="checkbox" /><label for="hMerchant">商户管理</label></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input id="hMerchantManage" type="checkbox" /><label for="hMerchantManage">商户管理</label></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input id="hCoupons" type="checkbox" /><label for="hCoupons">优惠劵管理</label></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input id="hParking" type="checkbox" /><label for="hParking">停车券管理</label></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input id="hExamine" type="checkbox" disabled="disabled" /><label for="hExamine">审核管理</label></td>
+                                                <td><input id="hExamineAct" type="checkbox" /><label for="hExamineAct">活动审核</label></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><input id="hCouponsEx" type="checkbox" /><label for="hCouponsEx">优惠劵审核</label></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><input id="hParkingExamine" type="checkbox" /><label for="hParkingExamine">停车劵审核</label></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input id="hMemberManage" type="checkbox" /><label for="hMemberManage">会员管理</label></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input id="hMsgManage" disabled="disabled" type="checkbox" /><label for="hMsgManage">消息管理</label></td>
+                                                <td><input id="hSystemMsg" type="checkbox" /><label for="hSystemMsg">系统消息</label></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><input id="hAccountManage" type="checkbox" /><label for="hAccountManage">公告消息</label></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input id="hUseStatic" disabled="disabled" type="checkbox" /><label for="hUseStatic">使用统计</label></td>
+                                                <td><input id="hActJoin" type="checkbox" /><label for="hActJoin">活动参与统计</label></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><input id="hCouponsUse" type="checkbox" /><label for="hCouponsUse">优惠券使用统计</label></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><input id="hParkingUse" type="checkbox" /><label for="hParkingUse">停车券使用统计</label></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input id="hConfigureManage" type="checkbox" /><label for="hConfigureManage">配置管理</label></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input id="hBankAccMan" disabled="disabled" type="checkbox" /><label for="hBankAccMan">账号管理</label></td>
+                                                <td><input id="hPasswordCh" type="checkbox" /><label for="hPasswordCh">密码修改</label></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><input id="hBusiness" type="checkbox" /><label for="hBusiness">商管账号</label></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><input id="hRolePower" type="checkbox" /><label for="hRolePower">角色权限</label></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><input id="hMerchantBank" type="checkbox" /><label for="hMerchantBank">商户账号</label></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="ui-box-content"><input type="button" class="ui-button ui-button-lorange" value="保存" /></div>
+                                </form>
+                            </div>
+                        </div>               
+                    </div><!-- ui-grid-20 -->
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/accountmanage/rolepower.js"></script>
+<% include ../../common/footer.ejs %>

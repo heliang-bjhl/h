@@ -1,0 +1,27 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-tit2"><h2>我的会员卡</h2></div>
+		<div class="m-box m-list6">
+			<p>会员卡号：345123282939848</p>
+			<p>开卡时间：2014-04-16</p>
+			<div class="code">
+				<img src="http://i.gtimg.cn/qqlive/images/20120510/i1336615882_1.jpg">
+			</div>
+			<p>请出示给收银员扫码，享受会员优惠</p>
+		</div>
+	</div>
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

@@ -1,0 +1,106 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/wifi/pwifi.css">
+</head>
+<body class="wifi-pwifi">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20"><div class="loading" style="display: none;">努力加载中.......</div>
+                    <div class="main">
+                        <div class="ui-block ui-block-title">
+                            <div class="ui-title ui-title-line fn-clear">
+                                <h3>PC端WiFi营销广告管理</h3><a href="#" class="ui-button ui-button-morange fn-right">新建</a>
+                            </div>
+                            <div class="search-code">
+                                <form method="post" action="">
+                                    <div class="search-code">
+                                        页面频道：
+                                        <select id="j_selChannel" name="">
+                                            <option value="" >全部频道</option>
+                                            <option value="" >首界面页</option>
+                                            <option value="" >快速登录页</option>
+                                            <option value="" >登录成功页</option>
+                                        </select>
+                                        当前状态：
+                                        <select id="j_selState" name="">
+                                            <option value="" >全部</option>
+                                            <option value="" >置顶中</option>
+                                            <option value="" >到期下线</option>
+                                            <option value="" >人工下线</option>
+                                            <option value="" >默认图</option>
+                                            <option value="" >待上线</option>
+                                        </select>
+                                        广告名称：
+                                        <input class="ui-input" type="text" name="" />
+                                        <input type="submit" class="ui-button ui-button-morange" id="j_contrast" value="查询" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="m-tab1 ui-form-item m-total">统计：共35条3页</div>
+                            <div class="m-main">
+                                <table class="ui-table" id="tblList">
+                                    <thead>
+                                        <tr>
+                                            <th>序号</th>
+                                            <th>页面频道</th>
+                                            <th>广告编号</th>
+                                            <th>广告图片</th>
+                                            <th>广告名称</th>
+                                            <th>上线时间</th>
+                                            <th>下线时间</th>
+                                            <th>点击次数</th>
+                                            <th>状态</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-id="123456" >
+                                            <td>1</td>
+                                            <td>首界面页</td>
+                                            <td>S201407040123</td>
+                                            <td><img class="wifiadvpic" src="<%=staticUrl%>/static/images/tmp/quan.jpg" alt="" /></td>
+                                            <td>林宝瑞7月来人信汇参加活动1</td>
+                                            <td>2014-7-4 11:01</td>
+                                            <td>2014-7-4 11:01</td>
+                                            <td>3000</td>
+                                            <td>置顶中</td>
+                                            <td>
+                                                <input type="button" class="ui-button ui-button-sorange j_setUp" value="置顶" />
+                                                <input type="button" class="ui-button ui-button-sorange j_setUnder" value="下线" />
+                                                <a href="#" class="ui-button ui-button-sorange" >编辑</a>
+                                            </td>
+                                        </tr>
+                                        <tr data-id="123456" >
+                                            <td>2</td>
+                                            <td>快速登陆页</td>
+                                            <td>S201407040124</td>
+                                            <td><img class="wifiadvpic" src="<%=staticUrl%>/static/images/tmp/quan.jpg" alt="" /></td>
+                                            <td>林宝瑞7月来人信汇参加活动2</td>
+                                            <td>2014-7-4 11:01</td>
+                                            <td>2014-7-4 11:01</td>
+                                            <td>3000</td>
+                                            <td>到期下线</td>
+                                            <td>
+                                                <input type="button" class="ui-button ui-button-sorange j_setUp" value="置顶" />
+                                                <input type="button" class="ui-button ui-button-sorange j_setUnder" value="下线" />
+                                                <a href="#" class="ui-button ui-button-sorange" >编辑</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="<%=staticUrl%>/static/js/padmin/wifi/pwifi.js"></script>
+<% include ../../common/footer.ejs %>

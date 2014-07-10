@@ -1,0 +1,1 @@
+seajs.use(["$"],function(a){a("#save").on("click",function(){var b=a("input[type=radio][name=activityType]:checked").val();location.href=b}),$$m.finish("ok")});

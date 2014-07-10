@@ -1,0 +1,39 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<input class="m-sip" type="text" placeholder="优衣库" />
+		<div class="m-list1">
+			<section>
+				<div class="cont">
+					<div class="pic">
+						<a href="#"><img src="http://i1.dpfile.com/pc/9f15542f3405b23ba0680b0cf1c47e55/31243539_m.jpg"></a>
+					</div>
+					<div class="info">
+						<h2>上海小南国</h2>
+						<p class="good">川菜、湘菜</p>
+						<p class="adr">地址：B1-501</p>
+					</div>
+				</div>
+				<div class="agio">
+					<div class="tex">
+						更多惊喜 更多优惠
+					</div>
+					<b class="more"></b>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

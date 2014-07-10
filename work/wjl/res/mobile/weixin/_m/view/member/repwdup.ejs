@@ -1,0 +1,21 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+<% include ../_g/pagehead.ejs %>
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-tit3"><h2>找回成功</h2></div>
+		<div class="m-list2">
+			<h3>请务必牢记你的新密码</h3>
+		</div>
+        <div class="m-bt3">
+			<a href="#">立即登录</a>
+		</div>
+	</div>
+</div>
+<!--html end-->
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<% include ../_g/foot.ejs %>

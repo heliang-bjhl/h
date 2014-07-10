@@ -1,0 +1,40 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-tit2"><h2>登录</h2></div>
+		<div class="m-form">
+			<form action="#" id="j_form">
+				<ul>
+					<li>
+						<input class="m-ip" type="input" placeholder="请输入手机号码" data-v="require-phone" />
+						<div class="m-err hide"></div>
+					</li>
+					<li>
+						<input class="m-ip" type="input" placeholder="请输入密码" data-v="require-range|6_8" />
+						<div class="m-err hide"></div>
+					</li>
+					<li>
+						<input class="m-bt1" type="button" value="登录" id="j_sb" />
+					</li>
+					<li>
+						还没账号？<a class="reg" href="#">立即注册</a>
+						<a class="fgp" href="#">找回密码</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

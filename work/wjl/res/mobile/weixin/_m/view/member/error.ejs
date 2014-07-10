@@ -1,0 +1,26 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-eroport">
+			<!-- ::before -->
+			<h2>糟糕！网页无法访问。</h2>
+			<p>错误类型：连接错误</p> 
+		</div>
+		<div class="m-bt3">
+			<a href="javascript:void(0);" onclick='window.location.reload();'>刷新页面</a>
+		</div>
+	</div>
+	
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

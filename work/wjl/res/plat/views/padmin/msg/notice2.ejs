@@ -1,0 +1,80 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/msg/notice2.css">
+</head>
+<body class="msg-notice2">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>公告消息</h3>
+                                </div>
+                            </div>
+                            <div class="m-tab1">
+                                <a href="#">消息发布</a>
+                                <a href="#" class="on">发件箱</a>
+                            </div>
+                            <form class="ui-form" method="post" action="/" id="">
+                            <fieldset>
+                                <form method="get" action="">                                
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">信息类型:</label>
+                                        <select id="jStyleSel" name="">
+                                            <option value="0">全部</option>
+                                            <option value="1">类型1</option>
+                                        </select>
+                                        <input type="button" id="" class="ui-button ui-button-morange" value="查询">
+                                    </div>
+                                </form>
+                            </fieldset>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th>编号</th>
+                                        <th>日期</th>
+                                        <th>类型</th>
+                                        <th>收件人</th>
+                                        <th>标题</th>
+                                        <th class="hand hand6">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2014-03-25  15:39:50</td>
+                                        <td>会员注册成功</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="hand hand6 "><a href="#" target="_blank">查看详情</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <div class="ui-paging">
+                                    <a href="/t/tickapply/auditlist.j?tickType=0&pageSize=15&pageNo=1" class="ui-paging-item ui-paging-current">1</a>
+                                    <span class="ui-paging-info">
+                                        <span class="ui-paging-bold">1/1</span>页</span>
+                                    <span class="ui-paging-which">
+                                        <input name="some_name" value="" type="text">
+                                    </span>
+                                    <a class="ui-paging-info ui-paging-goto" href="#">跳转</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/msg/notice2.js"></script>
+<% include ../../common/footer.ejs %>

@@ -1,0 +1,139 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/parking/create.css"></head>
+<body class="parking-create">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>停车券创建</h3>
+                                </div>
+                            </div>
+                            <form class="ui-form" name="" method="post" action="#" id="frmParkingCreate">
+                                <fieldset>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>
+                                            主题名称：
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtStore" name="title">
+                                        
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>
+                                            日期区间：
+                                        </label>
+                                        <input name="startTime" placeholder="" id="txtBeginDate" class="ui-input ui-input-large ui-calendar-icon" type="text">至
+                                        <input name="endTime" placeholder="" id="txtEndDate" class="ui-input ui-input-large ui-calendar-icon" type="text">
+                                    </div>
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">有效时间：</label>
+                                        <p class="ui-form-text">
+                                            <select id="startTime-h">
+                                                <option value="00">00</option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08" selected="selected">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <select id="startTime-m">
+                                                <option value="00" selected="selected">00</option>
+                                                <option value="15">15</option>
+                                                <option value="30">30</option>
+                                                <option value="45">45</option>
+                                            </select>
+                                            -
+                                            <select id="endTime-h">
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18" selected="selected">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                            </select>
+                                            <select id="endTime-m">
+                                                <option value="00" selected="selected">00</option>
+                                                <option value="15">15</option>
+                                                <option value="30">30</option>
+                                                <option value="45">45</option>
+                                            </select>
+
+                                        </p>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            选择类型：
+                                        </label>
+                                        <ul class="ui-form-text">
+                                            <li>
+                                                <input id="j_consumeTime1_level" value="1" name="tickType" type="radio" checked="checked" data-name="v_1">
+                                                <label for="j_consumeTime1_level">全场统一消费时长</label>
+                                                <span id="j_consumeTime1_level_k">
+                                                    <input class="ui-input  ui-input-small" type="text"  />小时
+                                                </span>
+                                                
+                                            </li>
+
+                                            <li>
+                                                <p> 
+                                                    <input id="j_consumeTime2_level" value="2" name="tickType" type="radio" />
+                                                    <label for="j_consumeTime2_level">根据消费金额指定停车时长</label>
+                                                </p>
+
+                                                
+                                                <div id="j_consumeTime2_level_k">
+                                                    <p>
+                                                        消费满
+                                                        <input class="ui-input ui-input-small" type="text" />
+                                                        元，免费停车
+                                                        <input class="ui-input ui-input-small"  type="text" />
+                                                        小时
+                                                    </p>
+                                                
+                                                    <p>
+                                                    消费满
+                                                        <input class="ui-input ui-input-small" type="text" />
+                                                        元，免费停车
+                                                        <input class="ui-input ui-input-small"  type="text" />
+                                                    小时
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <input type="submit" id="btnSave" class="ui-button ui-button-morange" value="提交">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/parking/create.js"></script>
+<% include ../../common/footer.ejs %>

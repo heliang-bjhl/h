@@ -1,0 +1,88 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/coupons/cash.css"></head>
+<body class="coupons-cash">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+        <div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>现金券核销对账</h3>
+                                </div>
+                            </div>
+                            <div class="search-code">
+                                <form method="get" action="">
+                                    <div class="search-code">
+                                        商户名称：
+                                        <input placeholder="券名称" class="ui-input ui-input-large" type="text" value="" name="">
+                                        券编号：
+                                        <input placeholder="券名称" class="ui-input ui-input-large" type="text" value="" name=""><br />
+                                        核销日期:
+                                        <input value="" id="jStartTime" name="" class="ui-input ui-input-large" type="text">
+                                        --
+                                        <input value="" id="jEndTime" name="" class="ui-input ui-input-large" type="text">
+                                        状态:
+                                        <select id="qstate" name="status">
+                                            <option value="0" selected>全部</option>
+                                            <option value="1" >已对账</option>
+                                            <option value="2" >未对账</option>
+                                        </select>
+                                        <input type="submit" class="ui-button ui-button-sblue" value="查询" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ui-box-content">统计：XXXX条<input class="ui-button ui-button-swhite fn-right" type="button" value="导出" /></div>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>编号</th>
+                                        <th>名称</th>
+                                        <th>面额</th>
+                                        <th>核销商户名称</th>
+                                        <th>核销时间</th>
+                                        <th>状态</th>
+                                        <th class="hand">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>7878766767676578</td>
+                                        <td>开业典礼50元现金券</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2014-4-7 14:15:49</td>
+                                        <td>未对账</td>
+                                        <td class="hand hand6 "><input type="button" class="ui-button ui-button-sorange j-reconciliation" value="对账"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>7878766767676578</td>
+                                        <td>开业典礼50元现金券</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2014-4-7 14:15:49</td>
+                                        <td>已对账</td>
+                                        <td class="hand hand6 ">无</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <% include ../../common/pager.ejs %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/coupons/cash.js"></script>
+<% include ../../common/footer.ejs %>

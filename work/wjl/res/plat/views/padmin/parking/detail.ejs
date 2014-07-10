@@ -1,0 +1,60 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/parking/detail.css">
+</head>
+<body class="parking-detail">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>停车券详情</h3>
+                                </div>
+                            </div>
+                            <form class="ui-form" name="" onsubmit="return false;">
+                                <fieldset>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            主题名称:
+                                        </label>
+                                        <p class="ui-form-text">开业大吉会员免费停车</p>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">                                        
+                                            日期区间:
+                                        </label>
+                                        <p class="ui-form-text"><span>2014-4-26</span> 至 <span>2014-5-26</span> </p>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">有效时间:</label>
+                                        <p class="ui-form-text">2014-4-30</p>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            选择类型:
+                                        </label>
+                                        <p class="ui-form-text">全场统一免费停车时长12小时</p>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <input class="ui-button ui-button-mwhite" type="button" value="编辑" />
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                            </fieldset>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/parking/detail.js"></script>
+<% include ../../common/footer.ejs %>

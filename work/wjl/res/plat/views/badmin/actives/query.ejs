@@ -1,0 +1,86 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/badmin/actives/query.css"></head>
+<body class="actives-query">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+        <div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>活动查询</h3><a href="#" class="ui-button ui-button-lorange fn-right">创建</a>
+                                </div>
+                            </div>
+                            <div class="search-code">
+                                <form method="get" action="">
+                                    <div class="search-code">
+                                            活动主题：
+                                        <input placeholder="活动主题" class="ui-input ui-input-large" type="text" value="" name="">
+                                        举办方：
+                                        <select id="j_onmember" name="">
+                                            <option value="">商场</option>
+                                        </select>
+                                            在线类型：
+                                        <select id="j_onlinestyle" name="">
+                                            <option value="">全部</option>
+                                            <option value="" >待上线</option>
+                                            <option value="" >已上线</option>
+                                            <option value="" >已下线</option>
+                                        </select>
+                                        <input type="submit" class="ui-button ui-button-lorange" value="查询" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="m-tab1 ui-form-item">
+                                <a href="#" class="on">默认</a>
+                                <a href="#">报名开始</a>
+                                <a href="#">报名结束</a>
+                                <a href="#">活动开始</a>
+                                <a href="#">活动结束</a>
+                                <a href="#">关注人数</a>
+                            </div>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th >序号</th>
+                                        <th>活动主题</th>
+                                        <th>举办方</th>
+                                        <th>报名时间</th>
+                                        <th>活动时间</th>
+                                        <th>报名人数</th>
+                                        <th>关注人数</th>
+                                        <th>在线状态</th>
+                                        <th>创建时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="#" target="_blank">马二嫂新店开业全场5折起</a></td>
+                                        <td>商场</td>
+                                        <td>2014-2-19  到<br />2014-2-19</td>
+                                        <td>2014-5-19  到<br />2014-2-19</td>
+                                        <td><a href="#" target="_blank">20/100</a></td>
+                                        <td><a href="#" target="_blank">500</a></td>
+                                        <td>已上线</td>
+                                        <td>2014-5-19</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <% include ../../common/pager.ejs %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/badmin/actives/query.js"></script>
+<% include ../../common/footer.ejs %>

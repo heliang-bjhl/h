@@ -1,0 +1,90 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/actives/manage.css"></head>
+<body class="actives-manage">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+        <div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>活动管理</h3>
+                                </div>
+                            </div>
+                            <div class="search-code">
+                                <form method="get" action="">
+                                    <div class="search-code">
+                                            活动主题：
+                                        <input placeholder="活动主题" class="ui-input ui-input-large" type="text" value="" name="">
+                                        举办方：
+                                        <input placeholder="举办方" class="ui-input ui-input-large" type="text" value="" name="">
+                                            在线类型：
+                                        <select id="j_onlinestyle" name="">
+                                            <option value="">全部</option>
+                                            <option value="" >待上线</option>
+                                            <option value="" >已上线</option>
+                                            <option value="" >已下线</option>
+                                        </select>
+                                            活动状态:
+                                        <select id="j_actstyle" name="">
+                                            <option value="" >全部</option>
+                                            <option value="" >未开始</option>
+                                            <option value="" >进行中</option>
+                                            <option value="" >已结束</option>
+                                        </select>
+                                        <input type="submit" class="ui-button ui-button-lorange" value="查询" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="m-tab1 ui-form-item">
+                                <a href="#" class="on">默认</a>
+                                <a href="#">报名开始</a>
+                                <a href="#">报名结束</a>
+                                <a href="#">活动开始</a>
+                                <a href="#">活动结束</a>
+                            </div>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th >序号</th>
+                                        <th>活动主题</th>
+                                        <th>举办方</th>
+                                        <th>报名时间</th>
+                                        <th>活动时间</th>
+                                        <th>在线状态</th>
+                                        <th>活动状态</th>
+                                        <th>创建时间</th>
+                                        <th class="hand">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="#" target="_blank">全畅通100元现金券</a></td>
+                                        <td>商场</td>
+                                        <td>2014-3-26</td>
+                                        <td>2014-5-19</td>
+                                        <td>线上</td>
+                                        <td>已开始</td>
+                                        <td>2014-5-19</td>
+                                        <td class="hand hand6 "><a class="ui-button ui-button-sorange" href="#">编辑</a>&nbsp;<input type="button" class="ui-button ui-button-sorange j_onoroff" data-id="11541404011104253762732" value="上线"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <% include ../../common/pager.ejs %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/actives/manage.js"></script>
+<% include ../../common/footer.ejs %>

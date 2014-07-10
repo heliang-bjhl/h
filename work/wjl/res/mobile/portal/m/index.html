@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, user-scalable=no">
+    <title></title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        border: 0
+    }
+    body {
+        font-family: arial, '\5fae\8f6f\96c5\9ed1', 'Microsoft YaHei', '\5b8b\4f53', arial, verdana, helvetica, sans-serif;
+        line-height: 1.5;
+        font-size: 14px;
+        color: #666;
+    }
+    .logo {
+        text-align: center;
+        margin: 10px 0
+    }
+    .logo img {
+        width: 160px
+    }
+    #foot {
+        text-align: center;
+        color: #999;
+        font-size: 12px;
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+        margin:30px 10px 10px 10px
+    }
+    .mform {
+        padding: 10px 20px 10px 10px;
+        margin: 0 10px;
+        /* -moz-box-shadow: 1px 1px 1px #999;
+        -webkit-box-shadow: 1px 1px 1px #999;*/
+        box-shadow: 1px 1px 11px #999;
+        font-size: 14px;
+    }
+    .mform {
+        font-size: 16px;
+    }
+    .text {
+        background-color:#f9f9f9;
+        border: 1px solid #dfdfdf;
+        font-size: 16px;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 0 0 10px;
+        vertical-align: middle
+    }
+    .bt {
+        border-radius: 2px;
+        line-height: 45px;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        height: 45px;
+        padding: 0 5px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+    .bt1 {
+        border: 1px solid #e65711;
+        background-color: #f17b3e
+    }
+    .bt1:hover {
+        background-color: #f06d29
+    }
+    .bt2 {
+        border: 1px solid #0d917a;
+        background-color: #18a38b
+    }
+    .bt2:hover {
+        background-color: #0d997f
+    }
+    .bt_dis {
+        border:1px solid #d0d0d0;
+        background-color: #e6e6e6;
+        cursor: default;
+        color: #666
+    }
+    .bt_dis:hover {
+        background-color: #e6e6e6
+    }
+    .h2 {
+        font-size: 16px;
+        background: #333;
+        color: #fff;
+        height: 30px;
+        line-height: 30px
+    }
+    .h2 h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+    li {
+        list-style: none;
+        margin-top: 10px
+    }
+    .error{
+        border: solid 1px #ffa7a7;
+        margin-top: 5px;
+        background: #ffdcdc;
+        color: #FF5241;
+        width: 100%;
+        padding: 10px 0 10px 10px;
+        font-size: 12px;
+    }
+    .suc {
+        border: solid 1px #19FF5A;
+        margin-top: 5px;
+        background: #C0FFD3;
+        color: #004F33;
+        width: 100%;
+        padding: 10px 0 10px 10px;
+        font-size: 12px;
+    }
+    .checkbar{font-size: 12px}
+
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="h2">
+            <h2>快速登录汉阳人信汇免费Wi-Fi服务</h2>
+        </div>
+        <div id="box">
+            <div id="header">
+                <div class="logo">
+                    <img src="i/rxh/logo.png" />
+                </div>
+            </div>
+            <div class="main">
+                <div class="mform">
+                    <form id="login-form" method="post">
+                        <ul>
+                            <li>
+                                <input type="text" class="text" placeholder="请输入手机号" autocomplete="off" id="j_mobile" />
+                                <div  id="j_m_error" style="display:none"></div>
+                            </li>
+                            <li><a href="#" class="bt bt1" id="j_mobile_bt">点击获取验证码</a>
+                            </li>
+                            <li>
+                                <input type="text" class="text" placeholder="请输入验证码" autocomplete="off">
+                            </li>
+
+                            <li class="checkbar">
+                                <label>
+                                    <input type="checkbox" class="checkbox" id="agree" checked="checked">我已阅读并同意</label>
+                                《<a href="agreement.html">人信汇服务协议</a>》
+                            </li>
+                            <li><a href="#" class="bt bt2" id="sb">立即免费登录</a>
+                            </li>
+                        </ul>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div id="foot">技术支持：武汉万江龙网络有限公司 ©2014</div>
+    </div>
+    <script type="text/javascript">
+    var $S = {
+        mobileReg: /^0?(13[0-9]|15[012356789]|18[012356789]|14[57])[0-9]{8}$/,
+        getValue: function(elem) {
+            var value = $S.trim($S.gid(elem).value);
+            if (value != '' && value !== $S.gid(elem).getAttribute('placeholder')) {
+                return value;
+            }
+            return '';
+        },
+        show : function(d){
+            $S.gid(d).style.display = 'block';
+        },
+        hid : function(d){
+            $S.gid(d).style.display = 'none';
+        },
+        gid: function(id) {
+            return document.getElementById(id);
+        },
+        trim: function(str) {
+            return str.replace(/^\s+|\s+$/g, '');
+        },
+        addClass: function(elem, classname) {
+            if (elem.className == '') {
+                elem.className = classname;
+            } else {
+                elem.className += ' ' + classname;
+            }
+        },
+
+        removeClass: function(elem, classname) {
+            var _classname = elem.className;
+            elem.className = _classname.replace(new RegExp('(?:^|\\s)(' + classname + ')(?=\\s|$)'), '');
+        },
+        printMsg: function(d,v,classname) {
+            var classname = classname || 'error';
+            $S.show(d);
+            $S.gid(d).innerHTML = '<div class="'+classname+'">'+v+'</div>';
+        },
+        hideMsg : function(d){
+            $S.hid(d);
+            $S.gid(d).innerHTML = '';
+        },
+        validateMobile: function(value) {
+
+            if (value == '') {
+                $S.printMsg('j_m_error','请输入手机号');
+                return false;
+            } else if (value.length != 11) {
+                $S.printMsg('j_m_error','手机号需要11位');
+                return false;
+            } else if (!$S.mobileReg.test(value)) {
+                $S.printMsg('j_m_error','手机号格式不正确');
+                return false;
+            }
+            return true;
+        }
+    }
+    var _p = {
+        _init: function() {
+            this.bind();
+        },
+        bind: function() {
+            this.bindAgree();
+            this.bindCode();
+
+        },
+        bindAgree: function() {
+            $S.gid('agree').onclick = function() {
+                if (this.checked) {
+                    $S.removeClass($S.gid('sb'), 'bt_dis');
+                    $S.addClass($S.gid('sb'), 'bt2');
+                } else {
+                    $S.addClass($S.gid('sb'), 'bt_dis');
+                    $S.removeClass($S.gid('sb'), 'bt2');
+                }
+            }
+        },
+        bindCode: function() {
+            $S.gid('j_mobile_bt').onclick = function() {
+                if(/bt_dis/g.test(this.className)){
+                    return
+                }
+                if ( $S.validateMobile($S.trim($S.gid('j_mobile').value))) {
+                    _p.getCode();
+                } else {
+                    
+                }
+            }
+        },
+        getCode: function() {
+            //发请求取code
+
+            var _o = {
+                before: function() {
+                    $S.addClass($S.gid('j_mobile_bt'), 'bt_dis');
+                    $S.removeClass($S.gid('j_mobile_bt'), 'bt1');
+                },
+                init : function(){
+                    $S.removeClass($S.gid('j_mobile_bt'), 'bt_dis');
+                    $S.addClass($S.gid('j_mobile_bt'), 'bt1');
+                    $S.gid('j_mobile_bt').innerHTML = '点击获取验证码';
+                    $S.hideMsg('j_m_error')
+                },
+                ing: function() {
+                    $S.gid('j_mobile_bt').innerHTML = '验证码获取中';
+                    this.suc();
+                },
+                stime: function() {
+                    var t = 3;
+                    var tm ;
+                    function timer() {
+                        if(t == 1){
+                            clearTimeout(tm);
+                            _o.init();
+                            return
+                        }
+                        $S.gid('j_mobile_bt').innerHTML = '<em>' + (--t) + '</em>秒后重新获取';
+                        tm = setTimeout(timer, 1000);
+                    }
+                    timer();
+                },
+                suc: function() {
+                    this.stime();
+                    $S.printMsg('j_m_error','验证码已经成功发送到你的手机上','suc');
+                },
+                fail: function() {
+
+                }
+            }
+
+
+            _o.before();
+            _o.ing();
+
+
+            //setTimeout(timer, 1000);
+        },
+
+
+    }
+    _p._init();
+    </script>
+</body>
+
+</html>

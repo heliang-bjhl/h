@@ -1,0 +1,105 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/data/overview.css">
+</head>
+<body class="data-overview">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20">
+                    <div class="main">
+                        <div class="ui-block ui-block-title"><div class="loading" style="display: none;">努力加载中.......</div>
+                            <div class="m-main">
+                                <table class="ui-table" id="tblList">
+                                    <thead>
+                                        <tr>
+                                            <th ></th>
+                                            <th>客流量(人)</th>
+                                            <th>会员到访数(人)</th>
+                                            <th>平均停留时长(分钟)</th>
+                                            <th>累积流量(人）</th>
+                                            <th>累积注册会员数(人)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>昨天</td>
+                                            <td>332321</td>
+                                            <td>23223</td>
+                                            <td>232</td>
+                                            <td>212321</td>
+                                            <td>13434</td>
+                                        </tr>
+                                        <tr>
+                                            <td>今天</td>
+                                            <td>322312</td>
+                                            <td>12312</td>
+                                            <td>211</td>
+                                            <td>123232</td>
+                                            <td>12343</td>
+                                        </tr>
+                                        <tr>
+                                            <td>对比</td>
+                                            <td>+0.89%</td>
+                                            <td>+0.87%</td>
+                                            <td>+0.12%</td>
+                                            <td>+0.22%</td>
+                                            <td>+2.0%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="search-code">
+                                <form method="get" action="">
+                                    <div class="search-code">
+                                        开始月份：
+                                        <select id="j_Mounth1" name="">
+                                            <option value="201401" >一月</option>
+                                            <option value="201402" >二月</option>
+                                            <option value="201403" >三月</option>
+                                            <option value="201404" >四月</option>
+                                            <option value="201405" >五月</option>
+                                            <option value="201406" >六月</option>
+                                            <option value="201407" >七月</option>
+                                            <option value="201408" >八月</option>
+                                            <option value="201409" >九月</option>
+                                            <option value="201410" >十月</option>
+                                            <option value="201411" >十一月</option>
+                                            <option value="201412" >十二月</option>
+                                        </select>
+                                        结束月份：
+                                        <select id="j_Mounth2" name="">
+                                            <option value="201401" >一月</option>
+                                            <option value="201402" >二月</option>
+                                            <option value="201403" >三月</option>
+                                            <option value="201404" >四月</option>
+                                            <option value="201405" >五月</option>
+                                            <option value="201406" >六月</option>
+                                            <option value="201407" >七月</option>
+                                            <option value="201408" >八月</option>
+                                            <option value="201409" >九月</option>
+                                            <option value="201410" >十月</option>
+                                            <option value="201411" >十一月</option>
+                                            <option value="201412" >十二月</option>
+                                        </select>
+                                        <input type="button" class="ui-button ui-button-lorange" id="j_contrast" value="对比" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="m-main">
+                                <div id="contain" style="width:800px;height:400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="<%=staticUrl%>/static/js/padmin/data/overview.js"></script>
+<% include ../../common/footer.ejs %>

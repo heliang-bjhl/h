@@ -1,0 +1,25 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/error/error.css">
+</head>
+<body class="info-detail">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div class="m-error">                
+                <div class="m-error-img clearfix">
+                    <p class="fn-right">50<span>0</span></p>
+                </div>
+                <div class="text-cell">
+                    <h3>抱歉！<span>服务器可能病了  f5 刷新试试</span></h3>
+                    <h4>ERROR...PAGE NOT FOUND</h4> 
+                    <p> 服务器内部错误，</p>
+                </div>
+                <p>点击以下链接继续浏览网页&nbsp;&nbsp;&nbsp;<span id="count-down">3</span>秒后自动跳转至首页</p>
+                <p><a href="#">&gt;&gt;&nbsp;返回网站首页</a> </p>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/error/error.js"></script>
+<% include ../../common/footer.ejs %>

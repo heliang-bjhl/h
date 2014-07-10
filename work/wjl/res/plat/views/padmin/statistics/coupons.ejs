@@ -1,0 +1,86 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/coupons/search.css">
+<!--<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/store_manager.css">-->
+</head>
+<body class="coupons-search">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+        <div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>优惠券统计</h3>
+                                </div>
+                            </div>
+                            <div class="search-code">
+                                券类型：
+                                <select id="qtype">
+                                    <option value="券类型">券类型</option>
+                                </select>
+                                使用范围:
+                                <select id="qrange">
+                                    <option value="使用范围">使用范围</option>
+                                </select>
+                                
+                                状态:
+                                <select id="qstate">
+                                    <option value="">状态</option>
+                                </select>
+                                <input placeholder="标题/编号" class="ui-input ui-input-large" type="text">
+                                <input type="submit" class="ui-button ui-button-lorange" value="查询" />
+                            </div>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th >序号</th>
+                                        <th>券名称</th>
+                                        <th>券类型</th>
+                                        <th>使用范围</th>
+                                        <th>适用人群</th>
+                                        <th>面额大小</th>
+                                        <th>核销数量</th>
+                                        <th>领取数量</th>
+                                        <th>总数量</th>
+                                        <th>状态</th>
+                                        <th class="hand">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <%for(var i in couponsSearch) {%>
+                                    <tr>
+                                        <td>序号</td>
+                                        <td>券名称</td>
+                                        <td>券类型</td>
+                                        <td>使用范围</td>
+                                        <td>使用人群</td>
+                                        <td>面额大小</td>
+                                        <td>核销数量</td>
+                                        <td>领取数量</td>
+                                        <td>总数量</td>
+                                        <td>状态</td>
+                                        <td class="hand">
+                                            <a href="#" class="ui-button ui-button-sorange">查看详情</a>
+                                            
+                                        </td>
+                                    </tr>
+                                <%}%>
+                                </tbody>
+                            </table>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <% include ../../common/pager.ejs %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/statistics/coupons.js"></script>
+<% include ../../common/footer.ejs %>

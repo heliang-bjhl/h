@@ -1,0 +1,23 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-tit2"><h2>注册失败</h2></div>
+		<div class="m-tit3">服务器异常</div>
+		<div class="m-bt3">
+			<a href="#">重新注册</a>
+		</div>
+	</div>
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

@@ -1,0 +1,1 @@
+seajs.use("calendar_css"),seajs.use(["$","textLimit","select","util","calendar"],function(a,b,c){new c({trigger:"#qtype"}).render(),new c({trigger:"#qrange"}).render(),new c({trigger:"#qstate"}).render(),$$m.finish("ok")});

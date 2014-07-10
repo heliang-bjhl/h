@@ -1,0 +1,47 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+
+	<div class="main">
+		<div class="m-tit2"><h2>完善个人资料</h2></div>
+		<p>完善个人资料，可获得50积分</p>
+		<div class="m-form">
+			<form action="#" id="j_form">
+				<ul>
+					<li>
+						<input class="m-ip" type="text" placeholder="姓名" data-v="require" />
+						<div class="m-err"></div>
+					</li>
+					<li>
+						<select class="m-sl" data-v="require">
+							<option value="">性别</option>
+							<option value="男">男</option>
+							<option value="女">女</option>
+						</select>
+						<div class="m-err"></div>
+					</li>
+					<li>
+						<input class="m-ip" type="date" placeholder="生日" data-v="require-date" value="2014-03-09" />
+						<div class="m-err"></div>
+					</li>
+					<li>
+						<input class="m-bt1" type="submit" value="提交" id="j_sb" />
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

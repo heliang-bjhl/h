@@ -1,0 +1,78 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/sms/report.css">
+</head>
+<body class="sms-report">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20">
+                    <div class="main">
+                        <div class="ui-block ui-block-title">
+                            <div class="ui-title ui-title-line fn-clear">
+                                <h3>发送报告</h3>
+                            </div>
+                        </div>
+                        <div class="search-code">
+                            <form method="get" action="">
+                                <div class="search-code">
+                                    日期：
+                                    <input placeholder="" id="z_startDate" class="ui-input ui-calendar-icon" type="text" value="" name="" />
+                                    到
+                                    <input placeholder="" id="z_endDate" class="ui-input ui-calendar-icon" type="text" value="" name="" />
+                                    <input type="submit" class="ui-button ui-button-lorange" value="查询" />
+                                </div>
+                            </form>
+                        </div>
+                        <p class="m-total">总计123条</p>
+                        <table class="ui-table" id="tblList">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>提交时间</th>
+                                    <th>对象</th>
+                                    <th>人数</th>
+                                    <th>类型</th>
+                                    <th>发送时间</th>
+                                    <th>内容</th>
+                                    <th>字数</th>
+                                    <th>形式</th>
+                                    <th>已发送</th>
+                                    <th>状态</th>
+                                    <th class="hand">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2014/5/23 15:22</td>
+                                    <td>会员</td>
+                                    <td>200</td>
+                                    <td>折扣特价</td>
+                                    <td>2014-5-27 14:34:29</td>
+                                    <td>百货正在举行清···</td>
+                                    <td>78个字2条</td>
+                                    <td>立即发送</td>
+                                    <td>200人次</td>
+                                    <td>未发送</td>
+                                    <td><input type="button" class="ui-button ui-button-sorange z_stop_send" data-id="11541404011104253762732" value="立即终止"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //分页 -->
+                        <div class="pager">
+                            <% include ../../common/pager.ejs %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/sms/report.js"></script>
+<% include ../../common/footer.ejs %>

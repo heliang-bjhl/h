@@ -1,0 +1,80 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/service_voucher.css">
+</head>
+<body>
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+	<div id="wrap">
+		<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>代金券记录</h3>
+                                </div>
+                            </div>
+                            <form class="ui-form" name="" method="post" action="#" id="frmStoreCreate">
+                            <div class="search-box">
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">
+                                        <span class="ui-form-required">*</span>商家名称
+                                    </label>
+                                    <input placeholder="输入商家名称" class="ui-input" type="text">
+                                    <div class="ui-form-explain">商家名称为必填字段。</div>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">
+                                        <span class="ui-form-required"></span>选择代金券
+                                    </label>
+                                    <select id="sltStatus">
+                                        <option value="上线日期_标题XXXX_[价格]">上线日期_标题XXXX_[价格]</option>
+                                        <option value="团购标题YYY（取自团购标题1）" selected="selected">团购标题YYY（取自团购标题1）</option>
+                                    </select>
+                                    <a href="javascript:;" class="ui-button ui-button-lorange right">查询</a>
+                                    <div class="ui-form-explain"></div>
+                                </div>
+                            </div>
+                            </form>
+                            <a class="title">20141029成都_橙天嘉禾影城电影票[26元]</a>
+                            <table class="ui-table">
+                                <thead>
+                                    <tr>
+                                        <th>项目上线上期</th>
+                                        <th>验证截止日期</th>
+                                        <th>状态</th>
+                                        <th>销量</th>
+                                        <th>已消费</th>   
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="order-img">
+                                            2012-01-29
+                                        </td>
+                                        <td>
+                                            2013-10-18
+                                        </td>
+                                        <td>
+                                            <span class="ui-button ui-button-sdisable">已下架</span>
+                                        </td>
+                                        <td>
+                                            22222
+                                        </td>
+                                        <td>1935</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+							<div id="container" class="cartogram-box">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/service_voucher.js"></script>
+<% include ../../common/footer.ejs %>

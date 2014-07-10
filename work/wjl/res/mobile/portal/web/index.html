@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, user-scalable=no">
+    <title></title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        border: 0
+    }
+    #header {
+    }
+    body {
+        font-family: arial, '\5fae\8f6f\96c5\9ed1', 'Microsoft YaHei', '\5b8b\4f53', arial, verdana, helvetica, sans-serif;
+        line-height: 1.5;
+        font-size: 14px;
+        color: #666;
+    }
+    .logo {
+        width: 160px;
+        float:left;
+    }
+    .logo img {
+        width: 160px
+    }
+    .wifi {
+        float: right;
+        padding-top: 10px
+    }
+    .wifi span {
+        position: relative;
+        top:5px;
+    }
+    .wifi img {
+        width: 70px;
+        vertical-align: top;
+    }
+    #container {
+        width: 1024px;
+        margin: 0 auto
+    }
+    .clear {
+        clear: both;
+    }
+    .b {
+        width: 500px;
+        float: right;
+        position: relative;
+    }
+    .b .wx {
+        width: 150px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        height: 180px;
+    }
+    .b .wx span {
+        color: #fff;
+        font-size: 12px
+    }
+    .b .wx img {
+        width: 150px
+    }
+    .b img {
+        width: 500px;
+    }
+    .main {
+        width: 524px;
+        float: left;
+    }
+    #foot {
+        text-align: center;
+        color: #999;
+        font-size: 12px;
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+        margin-top: 20px
+    }
+    .mform {
+        padding: 30px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border: 1px solid #999;
+        margin-right: 10px;
+        -moz-box-shadow: 1px 1px 10px #999;
+        -webkit-box-shadow: 1px 1px 10px #999;
+        box-shadow: 1px 1px 10px #999;
+        font-size: 14px;
+    }
+    .mform {
+        font-size: 16px;
+    }
+    .mform p {
+        padding: 20px 0 10px 0
+    }
+    .checkbar {
+        margin-top: 10px;
+        font-size: 12px
+    }
+    .text {
+        background-color:#f9f9f9;
+        border: 1px solid #dfdfdf;
+        font-size: 16px;
+        float: left;
+        width: 218px;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 10px;
+        margin: 0 5px 0 0;
+        vertical-align: middle
+    }
+    .bt {
+        border-radius: 2px;
+        line-height: 45px;
+        text-align: center;
+        font-size: 16px;
+        width: 155px;
+        height: 45px;
+        padding: 0;
+        display: block;
+        float: left;
+        color: #fff;
+        text-decoration: none;
+    }
+    .bt1 {
+        border: 1px solid #e65711;
+        background-color: #f17b3e
+    }
+    .bt1:hover {
+        background-color: #f06d29
+    }
+    .bt2 {
+        border: 1px solid #0d917a;
+        background-color: #18a38b
+    }
+    .bt2:hover {
+        background-color: #0d997f
+    }
+    .btnDisabled {
+        border:1px solid #d0d0d0;
+        background-color: #e6e6e6;
+        cursor: default
+    }
+    .btnDisabled:hover {
+        background - color: #e6e6e6
+    }
+    #box{padding-top: 20px}
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="header">
+            <div class="logo">
+                <img src="i/rxh/logo.png" />
+            </div>
+            <div class="wifi">
+                <span>免费</span>
+                <img src="i/wifi.png" />
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="box">
+            <div class="main">
+                <div class="mform">
+                    <h2>快速登录汉阳人信汇免费Wi-Fi服务</h2>
+                    <form id="login-form" method="post">
+                        <p>第
+                            <strong>1</strong>步：填写您的手机号码，点击“获取验证码”，上网验证码将以短信形式发送至您的手机。</p>
+                        <div class="bar">
+                            <input type="text" class="text" placeholder="请输入手机号" autocomplete="off">
+                            <a href="#" class="bt bt1">点击获取验证码</a>
+
+                            <div class="clear"></div>
+                        </div>
+                        <p>第
+                            <strong>2</strong>步：将短信中的验证码填写到下方输入框，点击立刻登录即可免费上网。</p>
+                        <div class="bar">
+                            <input type="text" class="text" placeholder="请输入验证码" autocomplete="off">
+                            <a href="#" class="bt bt2">立即免费登录</a>
+
+                            <div class="clear"></div>
+                        </div>
+                        <div class="checkbar">
+                            <label>
+                                <input type="checkbox" class="checkbox">我已阅读并同意</label>《<a href="agreement.html">人信汇服务协议</a>》</div>
+                    </form>
+                </div>
+            </div>
+            <div class="b">
+                <img src="i/rxh/b.jpg" />
+                <div class="wx">
+                    <img src="i/rxh/wx.jpg" />
+                    <span>微信公众号：RXH_HYRXH</span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="foot">技术支持：武汉万江龙网络有限公司 ©2014</div>
+    </div>
+</body>
+
+</html>

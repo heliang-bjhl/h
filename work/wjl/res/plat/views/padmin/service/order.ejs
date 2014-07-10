@@ -1,0 +1,90 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/service_order.css">
+</head>
+<body>
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+	<div id="wrap">
+		<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>订单记录</h3>
+                                </div>
+                            </div>
+                            <form class="ui-form" name="" method="post" action="#" id="frmStoreCreate">
+                            <div class="search-box">
+                                <div class="ui-form-item">
+                                    商家名称：
+                                    <input placeholder="输入门店名" class="ui-input ui-input-large" type="text">
+                                    <input placeholder="订单号/用户手机号" class="ui-input ui-input-large" type="text">
+                                    <div class="ui-form-explain"></div>
+                                </div>
+                                <div class="ui-form-item">
+                                    入会时间：
+                                    <input placeholder="" id="txtBeginDate" class="ui-input ui-input-large" type="text">
+                                    至
+                                    <input placeholder="" id="txtEndDate"class="ui-input ui-input-large" type="text">
+                                    <select id="status">
+                                        <option value="全部">全部</option>
+                                        <option value="未付款" selected="selected">未付款</option>
+                                        <option value="已付款">已付款</option>
+                                        <option value="交易完毕">交易完毕</option>
+                                        <option value="交易关闭">交易关闭</option>
+                                    </select>
+                                    <a href="javascript:;" class="ui-button ui-button-lorange right">导出</a>
+                                    <a href="javascript:;" class="ui-button ui-button-lorange right">查询</a>
+                                    <div class="ui-form-explain"></div>
+                                </div>
+                            </div>
+                            </form>
+                            <%for(var i in orderList) {%>
+                                <table class="ui-table">
+                                    <thead>
+                                        <tr>
+                                            <th>订单号：DD4132413</th>
+                                            <th colspan="3">成交时间：2010-03-03 00:08</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="<%=i % 2 == 0 ? 'noborder': ''%>">
+                                            <td class="order-img"><img  src="<%=orderList[i].img%>" alt=""></td>
+                                            <td>
+                                                <p><a href=""><%=orderList[i].name%></a></p>
+                                                <p>门店：<%=orderList[i].shop%></p>
+                                            </td>
+                                            <td><%=orderList[i].price%></td>
+                                            <td><%=orderList[i].status%></td>
+                                        </tr>
+
+                                        <% if(i % 2 == 0) { %>
+                                            <tr>
+                                                <td class="order-img"><img  src="<%=orderList[i].img%>" alt=""></td>
+                                                <td>
+                                                    <p><a href=""><%=orderList[i].name%></a></p>
+                                                    <p>门店：<%=orderList[i].shop%></p>
+                                                </td>
+                                                <td><%=orderList[i].price%></td>
+                                                <td><%=orderList[i].status%></td>
+                                            </tr>
+                                        <% } %>
+                                    </tbody>
+                                </table>
+                            <%}%>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <% include ../../common/pager.ejs %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/order.js"></script>
+<% include ../../common/footer.ejs %>

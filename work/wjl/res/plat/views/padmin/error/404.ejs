@@ -1,0 +1,26 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/error/error.css">
+</head>
+<body class="info-detail">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div class="m-error">                
+                <div class="m-error-img clearfix">
+                    <p class="fn-right">40<span>4</span></p>
+                </div>
+                <div class="text-cell">
+                    <h3>抱歉，<span>您访问的页面不存在!</span></h3>
+                    <h4>ERROR...PAGE NOT FOUND</h4> 
+                    <p>您要查看的网址可能已被删、名称已被更改，或者暂时不可用</p>
+                </div>
+                <p>点击以下链接继续浏览网页&nbsp;&nbsp;<span id="count-down">3</span>秒后自动跳转至首页</p>
+                <p><a href="#">&gt;&gt;&nbsp;返回网站首页</a></p>
+                <p><a href="#">&gt;&gt;&nbsp;返回上一页面</a></p>                
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/error/error.js"></script>
+<% include ../../common/footer.ejs %>

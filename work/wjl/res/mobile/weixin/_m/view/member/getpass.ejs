@@ -1,0 +1,45 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-tit2"><h2>找回密码</h2></div>
+		<div class="m-form">
+			<form action="#" id="j_form">
+				<ul>
+					<li>
+						<input class="m-ip" type="password" placeholder="请输入手机号" data-v="require" />
+						<div class="m-err"></div>
+					</li>
+					<li class="veri">
+						<input class="m-ip ideip" type="text" placeholder="请输入验证码"  data-v="require" />
+						<div class="m-err"></div>
+						<input class="m-bt1 idebt" type="button" placeholder="获取验证码" value="获取验证码" id="j_getcode" />
+					</li>
+					<li>
+						<input class="m-ip" type="password" placeholder="请输入新密码" data-v="require" />
+						<div class="m-err"></div>
+					</li>
+					<li>
+						<input class="m-ip" type="password" placeholder="确认新密码" data-v="require" />
+						<div class="m-err"></div>
+					</li>
+					<li>
+						<input class="m-bt1" type="submit" value="提交" id="j_sb" />
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

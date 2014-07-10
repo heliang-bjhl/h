@@ -1,0 +1,52 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/login.css"></head>
+<body>
+<% include ../../common/h5-header.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="login">
+            <div class="login-img">
+                <img src="<%=staticUrl%>/static/images/tmp/loginban.jpg" alt=""></div>
+            <div class="login-form">
+                <div class="m-tab2" id="j_tab">
+                    <span class="on" data-type="2">商户登录</span>
+                    <span data-type="1">商管登录</span>
+                </div>
+                <form action="/post_dddata" data-widget="validator" class="ui-form" id="frmLogin" novalidate="novalidate"
+                            data-widget-cid="widget-2" data-widget-auto-rendered="true" action="/post_data">
+                    <div class="ui-form-item">
+                        <p>
+                            <label for="username">用户名</label>
+                        </p>
+                        <input type="text" placeholder="请输入用户名"  class="ui-input" name="username" id="username" data-widget-cid="widget-3" data-explain="" />
+                        <div class="ui-form-explain">请输入用户名</div>
+                    </div>
+                    <div class="ui-form-item">
+                        <p>
+                            <label for="password">登录密码</label>
+                        </p>
+                        <input type="password" placeholder="输入密码" data-display="密码" minlength="5" required="" value=""
+                                    data-explain="请输入5-20位的密码。" class="ui-input" name="password" id="password"
+                                    data-widget-cid="widget-4" />
+                        <div class="ui-form-explain">密码的长度必须大于或等于5。</div>
+                    </div>
+                    <div class="auto-login">
+                        <span id="j_info" class="r">忘记密码，请联系商管人员。</span>
+                        <label for="autoLogin">
+                            <input type="checkbox" id="autoLogin" name="auto-login" class="ui-hidden" data-widget-cid="widget-7" data-explain="" />
+                            自动登录
+                        </label>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="ui-form-item">
+                        <input type="hidden" value="2" name="type" id="j_type" />
+                        <input type="submit" value="登录" class="ui-button ui-button-lorange" id="btnSave" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/login.js"></script>
+<% include ../../common/footer.ejs %>

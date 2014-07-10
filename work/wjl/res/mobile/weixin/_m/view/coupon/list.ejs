@@ -1,0 +1,101 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+<!--html start-->
+<div class="page">
+	<div class="m-tab">
+	    <dl>
+	        <dd>
+	        	<a class="cur" href="javascript:void(0);">楼层导航<b></b></a>
+	        	<ul>
+	                <li><a href="#">B1</a></li>
+	                <li><a href="#">F1</a></li>
+	                <li><a href="#">F2</a></li>
+	            </ul>
+	        </dd>
+	        <dd>
+	        	<a href="javascript:void(0);">类别</a>
+	        	<ul>
+	                <li><a href="#">餐饮</a></li>
+	                <li><a href="#">儿童</a></li>
+	                <li><a href="#">生活零售</a></li>
+	                <li><a href="#">文化娱乐</a></li>
+	                <li><a href="#">商户专用</a></li>
+	            </ul>
+	        </dd>
+	        <dd>
+	        	<a href="javascript:void(0);">优惠度</a>
+	        	<ul>
+	                <li><a href="#">最大面值</a></li>
+	                <li><a href="#">最大优惠</a></li>
+	            </ul>
+	        </dd>
+	    </dl>
+	</div>
+	<div class="main">
+		<div class="m-list4">
+			<section>
+				<div class="info">
+					<a href="#"><img src="http://i1.dpfile.com/pc/9f15542f3405b23ba0680b0cf1c47e55/31243539_m.jpg"></a>
+					<div class="tex">
+						<p><a href="#">店铺代金券</a></p>
+						<p><a href="#">有效期：2014-03-09至2014-09-14</a></p>
+					</div>
+				</div>
+				<div class="pri">
+					<a href="#">面值<em>￥30.00</em></a>
+				</div>
+				<div class="rule">
+					<p><a href="#">消费满100元，可使用一张，每次仅限一次使用  消费满100元，可使用一张，每次仅限一次使用消费满100元，可使用一张，每次仅限一次使用</a></p>
+				</div>
+			</section>
+			<section>
+				<div class="info">
+					<a href="#"><img src="http://i1.dpfile.com/pc/9f15542f3405b23ba0680b0cf1c47e55/31243539_m.jpg"></a>
+					<div class="tex">
+						<p><a href="#">店铺代金券</a></p>
+						<p><a href="#">有效期：2014-03-09至2014-09-14</a></p>
+					</div>
+				</div>
+				<div class="pri">
+					<a href="#">面值<em>￥30.00</em></a>
+				</div>
+				<div class="rule">
+					<p><a href="#">消费满100元，可使用一张，每次仅限一次使用</a></p>
+				</div>
+			</section>
+			<section>
+				<div class="info">
+					<a href="#"><img src="http://i1.dpfile.com/pc/9f15542f3405b23ba0680b0cf1c47e55/31243539_m.jpg"></a>
+					<div class="tex">
+						<p><a href="#">店铺代金券</a></p>
+						<p><a href="#">有效期：2014-03-09至2014-09-14</a></p>
+					</div>
+				</div>
+				<div class="pri">
+					<a href="#">面值<em>￥30.00</em></a>
+				</div>
+				<div class="rule">
+					<p><a href="#">消费满100元，可使用一张，每次仅限一次使用</a></p>
+				</div>
+			</section>
+			
+		</div>
+		<div class="m-load">
+			<a href="#">
+				<img src="<%= data['rootUrl'] %>/img/loading.gif">
+				更多
+			</a>
+		</div>
+	</div>
+	
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

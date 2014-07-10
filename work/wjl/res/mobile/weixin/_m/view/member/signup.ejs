@@ -1,0 +1,67 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-tit3"><h2>恭喜您已成为VIP会员</h2></div>
+		<!-- <div class="m-list3">
+			<h3>尊敬的客人，您将获得以下福利</h3>
+			<p>1.获得更多优惠的会员折扣</p>
+			<p>2.免费领取商场停车券</p>
+			<p>3.优先获得活动参与资格</p>
+		</div> -->
+		<div class=" m-list2">
+
+			<h3>成为会员的好处</h3>
+			<p class="disc">获得更多优惠的会员折扣</p>
+			<p class="down">轻松下载商家优惠券</p>
+			<p class="prio">优先获得活动的参与资格</p>
+		</div>
+		<div class="guide">
+			<ul>
+	            <li>
+	            	<a href="#">
+	                	<img src="<%= data['rootUrl'] %>/img/b1.png">
+	                	<span>找美食</span>
+	            	</a>
+	            </li>
+	            <li>
+	            	<a href="#">
+	                	<img src="<%= data['rootUrl'] %>/img/b2.png">
+	                	<span>找品牌店</span>
+	            	</a>
+	            </li>
+	            <li>
+	            	<a href="#">
+	                	<img src="<%= data['rootUrl'] %>/img/b3.png">
+	                	<span>抢优惠券</span>
+	            	</a>
+	            </li>
+	            <li>
+	            	<a href="#">
+	                	<img src="<%= data['rootUrl'] %>/img/b4.png">
+	                	<span>参加活动</span>
+	            	</a>
+	            </li>
+	        </ul>
+        </div>
+        <div class="m-bt3">
+			<a href="#">完善会员资料，获得50积分</a>
+		</div>
+
+		<!-- <div class="m-bt3">
+			<a href="#">参加大转盘游戏，获得更多积分</a>
+		</div> -->
+	</div>
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

@@ -1,0 +1,189 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/coupons_create.css">
+</head>
+<body class="store-create">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>优惠券详情</h3>
+                                </div>
+                            </div>
+                            <form class="ui-form" name="" onsubmit="return false;">
+                                <fieldset>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            商场名称:
+                                        </label>
+                                        <p class="ui-form-text">武汉·人信汇商场</p>
+                                    </div>
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">选择券类型:</label>
+                                        <p class="ui-form-text">现金券</p>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                        券的示意图
+                                        </label>
+                                        <img src="<%=staticUrl%>/static/images/tmp/quan.jpg">
+                                    </div>
+                                    
+                                </fieldset>
+                                <fieldset>
+                                
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">
+                                        
+                                        优惠券名称:
+                                    </label>
+                                    <p class="ui-form-text">优惠券名称</p>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">
+                                        
+                                        券有效期
+                                    </label>
+                                    <p class="ui-form-text"><span>2012-12-12</span> 至 <span>2012-12-12</span> </p>
+                                    
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">适用人群:</label>
+                                    <p class="ui-form-text">会员</p>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">面额大小:</label>
+                                    <p class="ui-form-text">10元</p>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">使用范围:</label>
+                                    <p class="ui-form-text">商业通用</p>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">券的图片</label>
+                                    <p class="ui-form-text">
+                                        <img id="uploader-1" src="/static/images/upload.png" alt="">
+                                    </p>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">可领取数量:</label>
+                                    <p class="ui-form-text">不限数量</p>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">详细描述:</label>
+                                    <p class="ui-form-text">详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述</p>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">
+                                        
+                                        领取开始时间:
+                                    </label>
+                                    <p class="ui-form-text"><span>2012-12-12 12:12</span>  </p>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">
+                                        
+                                        领取结束时间:
+                                    </label>
+                                    <p class="ui-form-text"><span>2012-12-12 12:12</span>  </p>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label class="ui-label">
+                                        
+                                        领取规则:
+                                    </label>
+                                    <div id="get_coupon_rule" class="ui-tab">
+                                        <ul class="ui-tab-items">
+                                            <li class="ui-tab-item">
+                                                <a href="javascript:;">微信渠道</a>
+                                            </li>
+                                            <li class="ui-tab-item">
+                                                <a href="javascript:;">移动APP</a>
+                                            </li>
+                                        </ul>
+                                        <div class="ui-switchable-content">
+                                            <div class="hidden">
+                                                <ul>
+                                                    <li>
+                                                        <label for="">用户可领用总数量：</label>
+                                                        <p class="ui-form-text">不限数量</p>
+                                                    </li>
+                                                    <li>
+                                                        <label for="">每日券可领用总数量：</label>
+                                                        <p class="ui-form-text">不限数量</p>
+                                                    </li>
+                                                    <li>
+                                                        <label for="">用户领用限制：</label>
+                                                        <p class="ui-form-text">不限数量</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="hidden">
+                                                <ul>
+                                                    <ul>
+                                                    <li>
+                                                        <label for="">用户可领用总数量：</label>
+                                                        <p class="ui-form-text">不限数量</p>
+                                                    </li>
+                                                    <li>
+                                                        <label for="">每日券可领用总数量：</label>
+                                                        <p class="ui-form-text">不限数量</p>
+                                                    </li>
+                                                    <li>
+                                                        <label for="">用户领用限制：</label>
+                                                        <p class="ui-form-text">不限数量</p>
+                                                    </li>
+                                                </ul>
+                                                </ul>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">
+                                        
+                                        上架时间:
+                                    </label>
+                                    <p class="ui-form-text"><span>2012-12-12 12:12</span>  </p>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">
+                                        
+                                        下架时间:
+                                    </label>
+                                    <p class="ui-form-text"><span>2012-12-12 12:12</span>  </p>
+                                </div>  
+                            </fieldset>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script type="text/javascript">
+    seajs.use(["$", "tab"], function($, Tabs) {
+
+    tabs = new Tabs({
+        element: '#get_coupon_rule',
+        triggers: '#get_coupon_rule .ui-tab-items li',
+        panels: '#get_coupon_rule .ui-switchable-content div',
+        activeTriggerClass: "ui-tab-item-current",
+        activeIndex: 0,
+        effect: 'fade',
+        triggerType: "click"
+    });
+});
+</script>
+<% include ../../common/footer.ejs %>

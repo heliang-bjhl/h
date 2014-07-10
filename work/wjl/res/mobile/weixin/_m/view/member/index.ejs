@@ -1,0 +1,95 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-card">
+	    	<div class="photo">
+	    		<ul>
+	                <li class="f2">
+	                	<a href="#">
+		                	<img src="<%= data['rootUrl'] %>/img/s1.png">
+		                	<span>我的会员卡</span>
+	                	</a>
+	                </li>
+	                <li class="f1">
+	                	<a href="#">
+		                	<img src="<%= data['rootUrl'] %>/img/s2.png">
+		                	<span>完善资料</span>
+	                	</a>
+	                </li>
+	            </ul>
+	    	</div>
+	        <div class="num">
+	        	<ul>
+	                <li class="f1">
+	                	<a href="#">
+		                	<span>积分</span>
+		                	<span>2000</span>
+	                	</a>
+	                </li>
+	                <li class="f2">
+	                	<div class="m-bt3">
+							<a href="#">今日签到</a>
+						</div>
+	                </li>
+	            </ul>
+	        </div>
+	        <div>
+	        	<ul>
+	                <li>
+	                	<a href="#">
+		                	<img src="<%= data['rootUrl'] %>/img/s3.png">
+		                	<span>消息中心</span>
+	                	</a>
+	                </li>
+	                <li>
+	                	<a href="#">
+		                	<img src="<%= data['rootUrl'] %>/img/s4.png">
+		                	<span>会员特权</span>
+	                	</a>
+	                </li>
+	                <li>
+	                	<a href="#">
+		                	<img src="<%= data['rootUrl'] %>/img/s5h.png">
+		                	<span>我的收藏</span>
+	                	</a>
+	                </li>
+	            </ul>
+	        </div>
+	        <div>
+	        	<ul>
+	        		<li>
+	                	<a href="#">
+		                	<img src="<%= data['rootUrl'] %>/img/s6.png">
+		                	<span>修改密码</span>
+	                	</a>
+	                </li>
+	                <li>
+	                	<a href="#">
+		                	<img src="<%= data['rootUrl'] %>/img/s7.png">
+		                	<span>积分明细</span>
+	                	</a>
+	                </li>
+	                <li>
+	                	<a href="#">
+		                	<img src="<%= data['rootUrl'] %>/img/s8.png">
+		                	<span>客服中心</span>
+	                	</a>
+	                </li>
+	            </ul>
+	        </div>
+		</div>
+	</div>
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

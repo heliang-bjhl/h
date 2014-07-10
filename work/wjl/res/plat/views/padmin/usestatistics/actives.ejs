@@ -1,0 +1,89 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/usestatistics/actives.css">
+</head>
+<body class="usestatistics-actives">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                       <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>活动统计<sub>只统计线上的活动</sub></h3>
+                                </div>
+                            </div>
+                            <div class="search-code">
+                                <form method="get" action="auditlist.j">
+                                    活动主题：
+                                    <input class="ui-input ui-input-large" type="text" value="" name="title">
+                                    活动类型：
+                                    <select id="jTypeSel" name="">
+                                        <option value="0">全部活动</option>
+                                        <option value="1">商场活动</option>
+                                        <option value="2" >商户活动</option>
+                                    </select>
+                                    状态：
+                                    <select id="jStateSel" name="">
+                                        <option value="0">全部状态</option>
+                                        <option value="1">已上线</option>
+                                        <option value="2">已开始</option>
+                                        <option value="2">已结束</option>
+                                    </select>&nbsp;&nbsp;
+                                    <input type="submit" class="ui-button ui-button-lorange" value="查询" />
+                                </form>
+                            </div>
+                            <span>• 统计：有256张优惠券（在上架的123张，已下架的133张），5,000,000张，领取了1,000,000张，核销了500,000张。</span>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>活动主题</th>
+                                        <th>活动类型</th>
+                                        <th>有效期</th>
+                                        <th>上架时间</th>
+                                        <th>状态</th>
+                                        <th>浏览次数</th>
+                                        <th >浏览人数</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="#" target="_blank">活动主题名称1</a></td>
+                                        <td>商场活动</td>
+                                        <td>2014-04-15 - 2014-04-21</td>
+                                        <td>2014-04-01</td>
+                                        <td>已上线</td>
+                                        <td>100,000</td>
+                                        <td>60,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <div class="ui-paging">
+                                    <a href="/t/tickapply/auditlist.j?tickType=0&pageSize=15&pageNo=1" class="ui-paging-item ui-paging-current">1</a>
+                                    <span class="ui-paging-info">
+                                        <span class="ui-paging-bold">1/1</span>页</span>
+                                    <span class="ui-paging-which">
+                                        <input name="some_name" value="" type="text">
+                                    </span>
+                                    <a class="ui-paging-info ui-paging-goto" href="#">跳转</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div><!-- ui-grid-20 -->
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/usestatistics/actives.js"></script>
+<% include ../../common/footer.ejs %>

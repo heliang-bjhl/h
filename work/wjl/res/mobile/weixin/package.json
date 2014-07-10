@@ -1,0 +1,29 @@
+{
+  "name": "my-guanggu-weixin",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-nodeunit": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-imagemin" : "*"
+  },
+  "dependencies": {
+    "express": "4.x",
+    "express-less": "*",
+    "ejs": "*",
+    "walk": "*",
+    "svn-interface" : "*"
+  }
+}
+
+
+       
+        
+        
+        
+        

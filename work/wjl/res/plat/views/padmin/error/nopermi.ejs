@@ -1,0 +1,16 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/error/nopermi.css">
+</head>
+<body class="error-nopermi">
+    <div class="m-content">
+        <div class="m-con-wraper">
+            <div>
+                <h3>抱歉，您无权访问该页面</h3>
+                <p>可能因为：您不在允许访问的范围</p>
+                <p><a href="#"><span id="count-down">5</span>秒后，自动返回首页</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="<%=staticUrl%>/static/js/padmin/error/nopermi.js"></script>
+</body>
+</html>

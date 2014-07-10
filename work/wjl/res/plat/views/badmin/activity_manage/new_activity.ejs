@@ -1,0 +1,84 @@
+<% include ../../common/header.ejs %>
+
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/badmin/new_activity.css">
+</head>
+<body class="new-activity">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="content" class="content">
+    <div class="ui-grid-row">
+        <div class="ui-grid-5 asidenav">
+            <%include ../includes/sidebar.ejs%>
+        </div>
+        <div class="ui-grid-20">
+            <div class="main">
+                <div class="ui-block ui-block-title">
+                    <div class="ui-title ui-title-line fn-clear">
+                        <h3>创建活动</h3>
+                    </div>
+                </div>
+                <form class="ui-form" name="" method="post" action="/post_data" id="activityForm">
+                    <fieldset>
+                        <div class="ui-form-item">
+                            <label for="" class="ui-label">
+                                <span class="ui-form-required">*</span>活动标题
+                            </label>
+                            <input class="ui-input" id="inputTitle" type="text" name="title"  placeholder="新品免费试吃，限量100人"> <span class="ui-form-other"><a href="#" id="titleLimit">还能输入20个字</a></span>
+                            <div class="ui-form-explain">标题为必填字段。</div>
+                        </div>
+
+                        <div class="ui-form-item">
+                            <label for="beginDate" class="ui-label"><span class="ui-form-required">*</span>活动起始时间</label>
+                            <input class="ui-input ui-input-large ui-calendar-icon" name="begin" type="text" id="beginDate">
+                            <div class="ui-form-explain">起始时间为必填字段。</div>
+                        </div>
+                        <div class="ui-form-item">
+                            <label for="" class="ui-label"><span class="ui-form-required">*</span>活动截止时间</label>
+                            <input class="ui-input ui-input-large ui-calendar-icon" name="end" type="text" id="endDate">
+                            <div class="ui-form-explain">结束时间为必填字段。</div>
+                        </div>
+
+                        <div class="ui-form-item ui-form-item-error ui-form-item-focus">
+                            <label for="uploadImg" class="ui-label"><span class="ui-form-required">*</span>活动图片</label>
+                            <ul class="m-upload fn-clear" id="uploadImg">
+                               <li class="btn-upload">
+                                   <img id="uploader-3" src="/static/images/upload.png" alt="点击上传">
+                               </li>
+                            </ul>
+                            <!-- <div id="uploader">
+                                <p>Your browser doesn't have Flash, Silverlight or HTML5 support.</p>
+                            </div> -->
+
+                            <!-- <div id="filelist">Your browser doesn't have Flash,  HTML5 support.</div>
+                            <div id="imgContainer">
+                                <a id="pickfiles" href="javascript:;">选择图片</a> 
+                                <a id="uploadfiles" href="javascript:;">上传</a>
+                            </div> -->
+
+                            <p class="ui-form-explain">文件大小不超过500k。</p>
+                        </div>
+
+                        <div class="ui-form-item ui-form-item-success">
+                            <label for="" class="ui-label"><span class="ui-form-required">*</span>活动描述</label>
+                            <textarea id="description" name="description" class="ui-textarea" placeholder="请输入文字" required data-errormessage-required="请输入活动描述"></textarea>
+                            <a href="#" id="descriptionLimit">还能输入1500个字</a>
+                            <div class="ui-form-explain">活动描述为必填字段。</div>
+                        </div>
+
+                        <% include ../../badmin/includes/shelf_time.ejs %>
+                        <div class="ui-form-item">
+                            <input type="button" id="save" class="ui-button ui-button-morange" value="保存草稿">
+                            <input type="button" id="submit" class="ui-button ui-button-morange" value="确定">
+                            <input type="button" id="empty" class="ui-button ui-button-mwhite" value="清空">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/badmin/new_activity.js"></script>
+<% include ../../common/footer.ejs %>

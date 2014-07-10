@@ -1,0 +1,209 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/sms/send.css">
+</head>
+<body class="sms-send">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20">
+                    <div class="main">
+                        <div class="ui-block ui-block-title">
+                            <div class="ui-title ui-title-line fn-clear">
+                                <h3>短信发送</h3>
+                            </div>
+                        </div>
+                        <form id="frmSearch" class="ui-form" method="post" action="/">
+                            <fieldset>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label"><span class="ui-form-required">*</span>接受对象</label>
+                                    <input id="f_sendmethods1" value="1"  name="sendmethods" type="radio" checked="checked" /> <label class="actives-lib" for="f_sendmethods1">会员</label>
+                                    <input id="f_sendmethods2" value="2"  name="sendmethods" type="radio" /> <label class="actives-lib" for="f_sendmethods2">商户</label>
+                                    <input id="f_sendmethods3" value="3"  name="sendmethods" type="radio" /> <label class="actives-lib" for="f_sendmethods3">人工输入</label>
+                                </div>
+                                <div id="mes_for_member">
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">性别：</label>
+                                        <select name="" id="z_gender">
+                                            <option value="" selected="selected">全部</option>
+                                            <option value="">男</option>
+                                            <option value="">女</option>
+                                        </select>
+                                    </div>
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">生日：</label>
+                                        <input placeholder="" id="birthday_Start_Date" name="" class="ui-input ui-input-large ui-calendar-icon" type="text" />
+                                        至
+                                        <input placeholder="" id="birthday_End_Date" name="" class="ui-input ui-input-large ui-calendar-icon" type="text" />
+                                    </div>
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">注册日期：</label>
+                                        <input placeholder="" id="regist_Start_Date" name="" class="ui-input ui-input-large ui-calendar-icon" type="text" />
+                                        至
+                                        <input placeholder="" id="regist_End_Date" name="" class="ui-input ui-input-large ui-calendar-icon" type="text" />
+                                    </div>
+                                </div>
+                                <div id="mes_for_merchant">
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label"><span class="ui-form-required">*</span>业态：</label>
+                                        <input id="z_all_checkbox" value=""  name="" type="checkbox"> <label class="actives-lib" for="">全部</label>
+                                        <input id="" class="z_style_box" value=""  name="" type="checkbox"> <label class="actives-lib" for="">餐饮</label>
+                                        <input id="" class="z_style_box" value=""  name="" type="checkbox"> <label class="actives-lib" for="">生活零售</label>
+                                        <input id="" class="z_style_box" value=""  name="" type="checkbox"> <label class="actives-lib" for="">儿童</label>
+                                        <input id="" class="z_style_box" value=""  name="" type="checkbox"> <label class="actives-lib" for="">文化娱乐</label>
+                                    </div>
+                                    <div class="ui-form-explain">商户业态为必选。</div>
+                                </div>
+                                <div id="mes_for_hand">
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label"><span class="ui-form-required">*</span>号码清单：</label>
+                                        <textarea name="" id="hand_copy_tels" cols="30" rows="10"></textarea>
+                                        <div class="ui-form-explain">号码清单为必填字段，请用逗号分隔。</div>
+                                    </div>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label"><span class="ui-form-required">*</span>短信类型：</label>
+                                    <select name="" id="z_sms_style">
+                                        <option value="" selected="selected">请选择</option>
+                                        <option value="1">活动公告</option>
+                                        <option value="2">新服务</option>
+                                        <option value="3">新品发布</option>
+                                        <option value="4">打折特价</option>
+                                        <option value="5">会员生日</option>
+                                        <option value="6">节日祝福</option>
+                                    </select>
+                                    <input type="hidden" id="z_sms_sel_hide_area" />
+                                    <div class="ui-form-explain">短信类型为必选。</div>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label"><span class="ui-form-required">*</span>短信内容：</label>
+                                    <div class="fn-clear">
+                                        <textarea name="" id="z_sms_detail" cols="30" rows="10"></textarea>
+                                        <ul class="sms_detail_s">
+                                            <li>前五字必须包含“会员”二字，例如：“尊敬的会员”。</li>
+                                            <li>短信需以“【xxx】”结尾，xxx是您填写的。</li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <p id="lblDescriptionMsg"></p>
+                                    <div class="ui-form-explain">短信内容为必填字段。</div>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label"><span class="ui-form-required">*</span>发送形式：</label>
+                                    <input id="" value="1"  name="sendformat" type="radio" checked="checked" /> <label class="actives-lib" for="">定时发送</label>
+                                    <input id="" value="2"  name="sendformat" type="radio" /> <label class="actives-lib" for="">立即发送</label>
+                                </div>
+                                <div id="z_Send_Style">
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label"><span class="ui-form-required">*</span>发送时间：</label>
+                                        <input placeholder="" id="send_Time" name="" class="ui-input ui-input-large ui-calendar-icon" type="text">
+                                        <select id="send_Time_Hour">
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08" selected="selected">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                        </select>
+                                        <select id="send_Time_Minute">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="21">24</option>
+                                            <option value="21">25</option>
+                                            <option value="22">26</option>
+                                            <option value="23">27</option>
+                                            <option value="21">28</option>
+                                            <option value="22">29</option>
+                                            <option value="30">30</option>
+                                            <option value="30">31</option>
+                                            <option value="30">32</option>
+                                            <option value="30">33</option>
+                                            <option value="30">34</option>
+                                            <option value="30">35</option>
+                                            <option value="30">36</option>
+                                            <option value="30">37</option>
+                                            <option value="30">38</option>
+                                            <option value="30">39</option>
+                                            <option value="45">40</option>
+                                            <option value="45">41</option>
+                                            <option value="45">42</option>
+                                            <option value="45">43</option>
+                                            <option value="45">44</option>
+                                            <option value="45">45</option>
+                                            <option value="45">46</option>
+                                            <option value="45">47</option>
+                                            <option value="45">48</option>
+                                            <option value="45">49</option>
+                                            <option value="45">50</option>
+                                            <option value="45">51</option>
+                                            <option value="45">52</option>
+                                            <option value="45">53</option>
+                                            <option value="45">54</option>
+                                            <option value="45">55</option>
+                                            <option value="45">56</option>
+                                            <option value="45">57</option>
+                                            <option value="45">58</option>
+                                            <option value="45">59</option>
+                                        </select>
+                                        <div class="ui-form-explain">发送时间为必填字段。</div>
+                                    </div>
+                                </div>
+                                <div class="ui-form-item">
+                                    <input type="submit" id="z_btn_search" class="ui-button ui-button-morange" value="发送">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/sms/send.js"></script>
+<% include ../../common/footer.ejs %>

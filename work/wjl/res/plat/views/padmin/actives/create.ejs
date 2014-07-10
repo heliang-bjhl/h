@@ -1,0 +1,471 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/actives/create.css">
+<link rel="stylesheet" href="<%=staticUrl%>/static/js/themes/default/css/umeditor.min.css">
+</head>
+<body class="actives-create">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20">
+                    <div class="main">
+                        <div class="ui-block ui-block-title">
+                            <div class="ui-title ui-title-line fn-clear">
+                                <h3>创建活动</h3>
+                            </div>
+                        </div>
+                        <form id="frmCreate" class="ui-form" method="post" action="/">
+                            <fieldset>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label"><span class="ui-form-required">*</span>举办方</label>
+                                    <input id="" value=""  name="organizer" type="radio" checked="checked"> <label class="actives-lib" for="">商场</label>
+                                    <input id="" value="" data-chanval="1"  name="organizer" type="radio"> <label for=""></label>
+                                    <input type="text" id="z_bussinessnum" name="" class="ui-input ui-input-large" />商户
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="z_subject" class="ui-label"><span class="ui-form-required">*</span>活动主题</label>
+                                    <input class="ui-input m-large-input" type="text" id="z_subject" name="activity_subject" placeholder="活动主题">
+                                    <div class="ui-form-explain">活动主题为必填字段，最多50个字符。</div>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label"><span class="ui-form-required">*</span>活动特色</label>
+                                    <input class="ui-input m-large-input" type="text" id="z_spec" name="activity_spec" placeholder="活动特色">
+                                    <div class="ui-form-explain">活动特色为必填字段，最多50个字符。</div>
+                                </div>
+                                <div class="ui-form-item join-chile-checbox-val">
+                                    <p for="" class="ui-label"><span class="ui-form-required">*</span>活动类型</p>
+                                    <input placeholder="" checked="checked" name="" id-"" type="checkbox" value="" /><label for="" class="actives-lib">开业大吉</label>
+                                    <input placeholder="" name="" id-"" type="checkbox" value="" /><label for="" class="actives-lib">会员尊享</label>
+                                    <input placeholder="" name="" id-"" type="checkbox" value="" /><label for="" class="actives-lib">促销活动</label>
+                                    <input placeholder="" name="" id-"" type="checkbox" value="" /><label for="" class="actives-lib">精品推荐</label>
+                                    <input placeholder="" name="" id-"" type="checkbox" value="" /><label for="" class="actives-lib">热门活动</label>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label"><span class="ui-form-required">*</span>活动时间</label>
+                                    <input placeholder="" id="start_Time" name="" class="ui-input ui-input-large ui-calendar-icon" type="text">
+                                    <select id="start_Time_Hour">
+                                        <option value="00" selected="selected">00</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                    </select>
+                                    <select id="start_Time_Minute">
+                                        <option value="00" selected="selected">00</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="21">24</option>
+                                        <option value="21">25</option>
+                                        <option value="22">26</option>
+                                        <option value="23">27</option>
+                                        <option value="21">28</option>
+                                        <option value="22">29</option>
+                                        <option value="30">30</option>
+                                        <option value="30">31</option>
+                                        <option value="30">32</option>
+                                        <option value="30">33</option>
+                                        <option value="30">34</option>
+                                        <option value="30">35</option>
+                                        <option value="30">36</option>
+                                        <option value="30">37</option>
+                                        <option value="30">38</option>
+                                        <option value="30">39</option>
+                                        <option value="45">40</option>
+                                        <option value="45">41</option>
+                                        <option value="45">42</option>
+                                        <option value="45">43</option>
+                                        <option value="45">44</option>
+                                        <option value="45">45</option>
+                                        <option value="45">46</option>
+                                        <option value="45">47</option>
+                                        <option value="45">48</option>
+                                        <option value="45">49</option>
+                                        <option value="45">50</option>
+                                        <option value="45">51</option>
+                                        <option value="45">52</option>
+                                        <option value="45">53</option>
+                                        <option value="45">54</option>
+                                        <option value="45">55</option>
+                                        <option value="45">56</option>
+                                        <option value="45">57</option>
+                                        <option value="45">58</option>
+                                        <option value="45">59</option>
+                                    </select>
+                                    至
+                                    <input placeholder="" id="end_Time" name="" class="ui-input ui-input-large ui-calendar-icon" type="text">
+                                    <select id="end_Time_Hour">
+                                        <option value="00" selected="selected">00</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                    </select>
+                                    <select id="end_Time_Minute">
+                                        <option value="00" selected="selected">00</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="21">24</option>
+                                        <option value="21">25</option>
+                                        <option value="22">26</option>
+                                        <option value="23">27</option>
+                                        <option value="21">28</option>
+                                        <option value="22">29</option>
+                                        <option value="30">30</option>
+                                        <option value="30">31</option>
+                                        <option value="30">32</option>
+                                        <option value="30">33</option>
+                                        <option value="30">34</option>
+                                        <option value="30">35</option>
+                                        <option value="30">36</option>
+                                        <option value="30">37</option>
+                                        <option value="30">38</option>
+                                        <option value="30">39</option>
+                                        <option value="45">40</option>
+                                        <option value="45">41</option>
+                                        <option value="45">42</option>
+                                        <option value="45">43</option>
+                                        <option value="45">44</option>
+                                        <option value="45">45</option>
+                                        <option value="45">46</option>
+                                        <option value="45">47</option>
+                                        <option value="45">48</option>
+                                        <option value="45">49</option>
+                                        <option value="45">50</option>
+                                        <option value="45">51</option>
+                                        <option value="45">52</option>
+                                        <option value="45">53</option>
+                                        <option value="45">54</option>
+                                        <option value="45">55</option>
+                                        <option value="45">56</option>
+                                        <option value="45">57</option>
+                                        <option value="45">58</option>
+                                        <option value="45">59</option>
+                                    </select>
+                                    <div class="ui-form-explain">活动时间为必填字段。</div>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label"><span class="ui-form-required">*</span>活动地点</label>
+                                    <input class="ui-input m-large-input" type="text" id="z_place" name="place" placeholder="活动地点">
+                                    <div class="ui-form-explain">活动地点为必填字段，最多30个字符。</div>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label"><span class="ui-form-required">*</span>线上报名</label>
+                                    <input id="z_need" value=""  data-need="need" name="online_registration" type="radio" checked="checked"> <label class="actives-lib" for="z_need">需要</label>
+                                    <input id="z_noneed" value=""  data-need="noneed" name="online_registration" type="radio"> <label for="z_noneed">不需要</label>
+                                </div>
+                                <div class="c_unsee">
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label"><span class="ui-form-required">*</span>报名时间</label>
+                                        <input placeholder="" id="z_startDate" name="" class="ui-input ui-input-large ui-calendar-icon" type="text">
+                                        <select id="z_startDateHour">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                        </select>
+                                        <select id="z_startDateMinute">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="21">24</option>
+                                            <option value="21">25</option>
+                                            <option value="22">26</option>
+                                            <option value="23">27</option>
+                                            <option value="21">28</option>
+                                            <option value="22">29</option>
+                                            <option value="30">30</option>
+                                            <option value="30">31</option>
+                                            <option value="30">32</option>
+                                            <option value="30">33</option>
+                                            <option value="30">34</option>
+                                            <option value="30">35</option>
+                                            <option value="30">36</option>
+                                            <option value="30">37</option>
+                                            <option value="30">38</option>
+                                            <option value="30">39</option>
+                                            <option value="45">40</option>
+                                            <option value="45">41</option>
+                                            <option value="45">42</option>
+                                            <option value="45">43</option>
+                                            <option value="45">44</option>
+                                            <option value="45">45</option>
+                                            <option value="45">46</option>
+                                            <option value="45">47</option>
+                                            <option value="45">48</option>
+                                            <option value="45">49</option>
+                                            <option value="45">50</option>
+                                            <option value="45">51</option>
+                                            <option value="45">52</option>
+                                            <option value="45">53</option>
+                                            <option value="45">54</option>
+                                            <option value="45">55</option>
+                                            <option value="45">56</option>
+                                            <option value="45">57</option>
+                                            <option value="45">58</option>
+                                            <option value="45">59</option>
+                                        </select>
+                                        至
+                                        <input placeholder="" id="z_endDate" name="" class="ui-input ui-input-large ui-calendar-icon" type="text">
+                                        <select id="z_endDateHour">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                        </select>
+                                        <select id="z_endDateMinute">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="21">24</option>
+                                            <option value="21">25</option>
+                                            <option value="22">26</option>
+                                            <option value="23">27</option>
+                                            <option value="21">28</option>
+                                            <option value="22">29</option>
+                                            <option value="30">30</option>
+                                            <option value="30">31</option>
+                                            <option value="30">32</option>
+                                            <option value="30">33</option>
+                                            <option value="30">34</option>
+                                            <option value="30">35</option>
+                                            <option value="30">36</option>
+                                            <option value="30">37</option>
+                                            <option value="30">38</option>
+                                            <option value="30">39</option>
+                                            <option value="45">40</option>
+                                            <option value="45">41</option>
+                                            <option value="45">42</option>
+                                            <option value="45">43</option>
+                                            <option value="45">44</option>
+                                            <option value="45">45</option>
+                                            <option value="45">46</option>
+                                            <option value="45">47</option>
+                                            <option value="45">48</option>
+                                            <option value="45">49</option>
+                                            <option value="45">50</option>
+                                            <option value="45">51</option>
+                                            <option value="45">52</option>
+                                            <option value="45">53</option>
+                                            <option value="45">54</option>
+                                            <option value="45">55</option>
+                                            <option value="45">56</option>
+                                            <option value="45">57</option>
+                                            <option value="45">58</option>
+                                            <option value="45">59</option>
+                                        </select>
+                                        <div class="ui-form-explain">报名时间为必填字段。</div>
+                                    </div>
+                                    <div class="ui-form-item supply j-for-int-num">
+                                        <label class="ui-label"><span class="ui-form-required">*</span>人数</label>
+                                        <input id="" value="-1"  name="registrar_limit" type="radio" checked="checked"> <label class="actives-lib" for="">不限</label>
+                                        <input id="" value="" data-chanval="1" data-num="num"  name="registrar_limit" type="radio"> <label for=""></label>
+                                        <input data-num="num" type="text" id="c_no_need_memnum" name="" class="ui-input ui-input-large" />人
+                                    </div>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label"><span class="ui-form-required">*</span>主题图片</label>
+                                    <p>限定：6张图片以内，图片格式为.jpg/.png。</p>
+                                    <p>建议：图片最佳尺寸为宽600像素，高600像素。</p>
+                                    <br />
+                                    <ul class="m-upload fn-clear" id="uploadImg1">
+                                       <li class="btn-upload">
+                                           <img id="uploader-1" src="/static/images/upload.png" alt="点击上传">
+                                       </li>
+                                    </ul>
+                                    <p class="ui-form-explain">主题图片为6张以内，单张大小不超过500k。</p>
+                                </div>
+                                <div class="ui-form-item" id="j_edt_box">
+                                    <label for="" class="ui-label">
+                                        <span class="ui-form-required">*</span>
+                                        活动详情
+                                    </label>
+                                     <script id="jedt" name="content" type="text/plain"></script>
+                                     <div class="ui-form-explain">活动详情为必填字段</div>
+                                </div>
+                                <div class="ui-form-item">
+                                    <input type="submit" id="" class="ui-button ui-button-morange" value="完成">
+                                    <input type="submit" id="" class="ui-button ui-button-morange" value="添加下一个">
+                                    <div class="ui-form-explain"></div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/umeditor.config.js"></script>
+<script src="<%=staticUrl%>/static/js/umeditor.min.js"></script>
+
+<script src="<%=staticUrl%>/static/js/padmin/actives/create.js"></script>
+
+<% include ../../common/footer.ejs %>

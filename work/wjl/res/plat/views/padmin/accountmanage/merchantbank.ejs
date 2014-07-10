@@ -1,0 +1,104 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/accountmanage/merchantbank.css">
+</head>
+<body class="accountmanage-merchantbank">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                       <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>商户账号</h3>
+                                </div>
+                            </div>
+                            <div class="search-code">
+                                <form method="get" action="">
+                                    商户名称：
+                                    <input class="ui-input ui-input-large" type="text" value="" name="">
+                                    后台账号：
+                                    <input class="ui-input ui-input-large" type="text" value="" name="">
+                                    <select id="jTypeSel" name="">
+                                        <option value="0">全部状态</option>
+                                        <option value="1">正常</option>
+                                        <option value="2">冻结</option>
+                                        <option value="3">未开通</option>
+                                    </select>
+                                    <input type="button" class="ui-button ui-button-lorange" value="查询" />
+                                </form>
+                            </div>
+                            <p>统计：商户总数437家。</p>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>商户名称</th>
+                                        <th>楼层位置</th>
+                                        <th>负责人姓名</th>
+                                        <th>联系手机</th>
+                                        <th>后台账号</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="#">王小丫女装</a></td>
+                                        <td>B1-346</td>
+                                        <td>王玉凤</td>
+                                        <td>13787809787</td>
+                                        <td>wangyufeng</td>
+                                        <td>正常</td>
+                                        <td><input type="button" class="ui-button ui-button-lorange" value="密码重置" />&nbsp;<input type="button" class="ui-button ui-button-lorange" value="冻结" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><a href="#">大黑厨房</a></td>
+                                        <td>F3-320</td>
+                                        <td>王大黑</td>
+                                        <td>18987667676</td>
+                                        <td>wangdahei</td>
+                                        <td>冻结</td>
+                                        <td><input type="button" class="ui-button ui-button-lorange" value="解冻" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><a href="#">白云黑土地火锅</a></td>
+                                        <td>F3-310</td>
+                                        <td>赵白黑</td>
+                                        <td>18890897887</td>
+                                        <td>------</td>
+                                        <td>未开通</td>
+                                        <td><input id="jOpenAccount" type="button" class="ui-button ui-button-lorange" value="开通账号" />
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <div class="ui-paging">
+                                    <a href="/t/tickapply/auditlist.j?tickType=0&pageSize=15&pageNo=1" class="ui-paging-item ui-paging-current">1</a>
+                                    <span class="ui-paging-info">
+                                        <span class="ui-paging-bold">1/1</span>页</span>
+                                    <span class="ui-paging-which">
+                                        <input name="some_name" value="" type="text">
+                                    </span>
+                                    <a class="ui-paging-info ui-paging-goto" href="#">跳转</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div><!-- ui-grid-20 -->
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/accountmanage/merchantbank.js"></script>
+<% include ../../common/footer.ejs %>

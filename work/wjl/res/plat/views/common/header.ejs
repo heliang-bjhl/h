@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title> <%= title %> </title>
+  <script type="text/javascript">
+  
+    var $$c = {
+        staticUrl: "<%= staticUrl%>", //静态资源地址
+        uploadUrl : 'http://v0.api.upyun.com/sqqimg',//图片上传的url前缀 
+        resHost: 'http://sqqimg.b0.upaiyun.com', //图片上传完的url前缀
+        domain: '<%= staticUrl%>/static/images', //网站主域名
+        debug: <%= debug%>
+    };
+  </script>
+    <!--[if lt IE 9]>
+      <script src="static/js/html5shiv.js"></script>
+    <![endif]-->
+
+   <link rel="stylesheet" href="<%= staticUrl%>/static/css/one.css">
+   <link rel="stylesheet" href="<%= staticUrl%>/static/css/style.css">

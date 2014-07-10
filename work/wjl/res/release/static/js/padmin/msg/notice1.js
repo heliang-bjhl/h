@@ -1,0 +1,1 @@
+seajs.use("calendar_css"),seajs.use(["$","select","util","validator"],function(a,b,c,d){function e(){c.formSend("#j_form",{ajaxSuccess:function(){c.go({data:{url:"/t/pubmsg/list.j"}})},error:function(){}})}new b({trigger:"#jStyleSel"}).render();new d({element:"#j_form",onFormValidated:function(a){1!=a&&e()},autoSubmit:!1,failSilently:!0});$$m.finish("ok")});

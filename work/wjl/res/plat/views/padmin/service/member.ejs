@@ -1,0 +1,78 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/service_member.css">
+</head>
+<body class="store-manager">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+	<div id="wrap">
+		<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>会员查询</h3>
+                                </div>
+                            </div>
+                            <form class="ui-form" name="" method="post" action="#" id="frmStoreCreate">
+                            <div class="search-box">
+                                <div class="ui-form-item">
+                                    会员姓名：
+                                    <input placeholder="" class="ui-input ui-input-large" type="text">
+                                    手机号码：
+                                    <input placeholder="" class="ui-input ui-input-large" type="text">
+                                    <div class="ui-form-explain"></div>
+                                </div>
+                                <div class="ui-form-item">
+                                    入会时间：
+                                    <input placeholder="" id="txtBeginDate" class="ui-input ui-input-large" type="text">
+                                    至
+                                    <input placeholder="" id="txtEndDate"class="ui-input ui-input-large" type="text">
+                                    <a href="javascript:;" class="ui-button ui-button-lorange">查询</a>
+                                    <div class="ui-form-explain"></div>
+                                </div>
+                            </div>
+                            </form>
+                            <table class="ui-table">
+                                <thead>
+                                    <tr>
+                                        <th>id</th>
+                                        <th>用户名</th>
+                                        <th>密码</th>
+                                        <th>入会时间</th>
+                                        <th class="hand">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <%for(var i in memberList) {%>
+                                    <tr>
+                                        <td>
+                                            <%=memberList[i].id%>
+                                        </td>
+                                        <td>
+                                            <%=memberList[i].user%>
+                                        </td>
+                                        <td>
+                                            <%=memberList[i].password%>
+                                        </td>
+                                        <td><%=memberList[i].time%></td>
+                                        <td class="hand"><input type="button" class="ui-button ui-button-sorange" value="上架"></td>
+                                    </tr>
+                                <%}%>
+                                </tbody>
+                            </table>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <% include ../../common/pager.ejs %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/service_member.js"></script>
+<% include ../../common/footer.ejs %>

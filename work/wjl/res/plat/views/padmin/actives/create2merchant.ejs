@@ -1,0 +1,113 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/actives/create2merchant.css"></head>
+<body class="actives-create2merchant">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20">
+                    <div class="main">
+                        <div class="ui-block ui-block-title">
+                            <div class="ui-title ui-title-line fn-clear">
+                                <h3>创建活动</h3>
+                            </div>
+                        </div>
+                        <div class="coupons_step coupons_step2">
+                            <div><span>第一步</span>&nbsp;选择活动类型</div>
+                            <div class="coupons_step_title_strong"><span>第二步</span>&nbsp;填写活动信息</div>
+                            <div><span>第三步</span>&nbsp;等待审核通过</div>
+                        </div>
+                        <form class="ui-form" method="post" action="/a" id="frmActivesCreate">
+                            <fieldset>                                
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">
+                                        <span class="ui-form-required">*</span>
+                                        指定商户
+                                    </label>
+                                    <input class="ui-input" type="text" id="z_joinStoreName" name="joinStoreName" placeholder="活动主题">
+                                    <div class="ui-form-explain">指定商户为必填字段。</div>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">
+                                        <span class="ui-form-required">*</span>
+                                        活动主题
+                                    </label>
+                                    <input class="ui-input" type="text" id="z_subject" name="subject" placeholder="活动主题">
+                                    <div class="ui-form-explain">活动主题为必填字段。</div>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">
+                                        活动特色
+                                    </label>
+                                    <input class="ui-input" type="text" id="z_spec" name="spec" placeholder="活动特色">
+                                </div>
+                                <div class="ui-form-item join-chile-checbox-val">
+                                    <span for="" class="ui-label">
+                                        活动标签
+                                    </span>                                    
+                                    <input placeholder="" name="" id="z-tips1" type="checkbox" /><label for="z-tips1" class="actives-lib">开业大吉</label>
+                                    <input placeholder="" name="" id="z-tips2" type="checkbox" /><label for="z-tips2" class="actives-lib">会员尊享</label>
+                                    <input placeholder="" name="" id="z-tips3" type="checkbox" /><label for="z-tips3" class="actives-lib">促销活动</label>
+                                    <input placeholder="" name="" id="z-tips4" type="checkbox" /><label for="z-tips4" class="actives-lib">精品推荐</label>
+                                    <input placeholder="" name="" id="z-tips5" type="checkbox" /><label for="z-tips5" class="actives-lib">热门活动</label>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">
+                                        <span class="ui-form-required">*</span>
+                                        活动日期
+                                    </label>
+                                    <input placeholder="" id="z_startDate" name="startDate" class="ui-input ui-input-large ui-calendar-icon" type="text">
+                                    至
+                                    <input placeholder="" id="z_endDate" name="endDate" class="ui-input ui-input-large ui-calendar-icon" type="text">
+                                    <div class="ui-form-explain">活动日期为必填字段。</div>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">
+                                        上线时间
+                                    </label>
+                                    <input class="ui-input" type="text" id="z_onlineTime" name="onlineTime" placeholder="上线时间">
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">参与名额</label>
+                                    <input id="" value=""  name="memberNum" type="radio" checked="checked"> <label class="actives-lib" for="">不限数量</label>
+                                    <input id="" value=""  name="memberNum" type="radio"> <label for=""></label>
+                                    <input type="text" name="limitQuantity" class="ui-input ui-input-large" />人
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">主题图片</label>
+                                    <ul class="m-upload fn-clear" id="uploadImg1">
+                                       <li class="btn-upload">
+                                           <img id="uploader-1" src="/static/images/upload.png" alt="点击上传">
+                                       </li>
+                                    </ul>
+
+                                    <p class="ui-form-explain">文件大小不超过500k。</p>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">
+                                        <span class="ui-form-required">*</span>
+                                        活动详情
+                                    </label>
+                                    <textarea id="txtDescription" class="ui-textarea" name="remark" id="z_remark" cols="30" rows="10"></textarea><span class="ui-form-other"><a href="#" id="lblDescriptionMsg">还能输入1500个字</a></span>
+                                    <div class="ui-form-explain">活动详情为必填字段。</div>
+                                </div>
+                                 <div class="ui-form-item">
+                                    <input type="submit" id="btnSave" class="ui-button ui-button-morange" value="提交审核">
+                                    <div class="ui-form-explain"></div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/actives/create2merchant.js"></script>
+<% include ../../common/footer.ejs %>

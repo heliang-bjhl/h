@@ -1,0 +1,38 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/error/pendingaudit.css"></head>
+<body class="error-pendingaudit">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20">
+                    <div class="main">
+                        <div class="ui-block ui-block-title">
+                            <div class="ui-title ui-title-line fn-clear">
+                                <h3>创建活动</h3>
+                            </div>
+                        </div>
+                        <div class="coupons_step coupons_step3">
+                            <div><span>第一步</span>&nbsp;选择活动类型</div>
+                            <div><span>第二步</span>&nbsp;填写活动信息</div>
+                            <div class="coupons_step_title_strong"><span>第三步</span>&nbsp;等待审核通过</div>
+                        </div>
+                        <div class="m-box">待通过...<img src="<%=staticUrl%>/static/images/error/pendingaudit.png" alt="" /></div>
+                        <div class="m-box2">已经提交，请等待审核通过</div>
+                        <div class="ui-box-content">
+                            <a class="ui-button ui-button-lblue" href="#">完成返回</a><a class="ui-button ui-button-lwhite" href="#">添加下一个</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/error/pendingaudit.js"></script>
+<% include ../../common/footer.ejs %>

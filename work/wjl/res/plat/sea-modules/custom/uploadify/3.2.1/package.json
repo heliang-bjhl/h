@@ -1,0 +1,16 @@
+{
+    "family": "dynamo",
+    "name": "uploadify",
+    "version": "3.2.1",
+    "keywords": ["upload", "jquery"],
+    "author": "Reactive Apps, Ronnie Garcia",
+    "spm": {
+        "alias": {
+            "$": "$"
+        },
+        "output": [
+            "uploadify.js",
+            "uploadify.swf"
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/sms/analyse.css">
+</head>
+<body class="sms-analyse">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20">
+                    <div class="main">
+                        <div class="ui-block ui-block-title">
+                            <div class="ui-title ui-title-line fn-clear">
+                                <h3>报告分析</h3>
+                            </div>
+                        </div>
+                        <div class="search-code">
+                            <form method="get" action="validlist.j">
+                                <div class="search-code">
+                                    
+                                    日期:
+                                    <input value="" id="jStartTime"  class="ui-input ui-input-large" type="text" />
+                                    --
+                                    <input value="" id="jEndTime" class="ui-input ui-input-large" type="text" />
+                                    
+                                    <input type="submit" class="ui-button ui-button-lorange" value="查询" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="m-main">
+                            <div id="contain3" style="width:800px;height:400px"></div>
+                            <div>
+                                <div id="contain2"></div>
+                                <div id="contain1"></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="<%=staticUrl%>/static/js/padmin/sms/analyse.js"></script>
+<% include ../../common/footer.ejs %>

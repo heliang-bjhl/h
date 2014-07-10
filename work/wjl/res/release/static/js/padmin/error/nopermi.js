@@ -1,0 +1,1 @@
+seajs.use(["$","util"],function(a,b){b.countDown({time:5e3,timeCallBack:function(b){a("#count-down").empty().html(b)},finalyCallBack:function(){window.location.href="/login.j"}})});

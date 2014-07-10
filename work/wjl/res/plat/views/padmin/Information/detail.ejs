@@ -1,0 +1,84 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/info_detail.css">
+</head>
+<body class="info-detail">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>详情页</h3>
+                                </div>
+                            </div>
+                            <form class="ui-form" name="" method="post" action="#" id="frmInfoDetail">
+                                <fieldset>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required"></span>活动编号
+                                        </label>
+                                        HD201801293
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+
+                                    <div class="ui-form-item">
+                                        <label for="beginDate" class="ui-label"><span class="ui-form-required"></span>活动门店</label>
+                                        ZARA菱角湖店
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>活动标题
+                                        </label>
+                                        <input readonly="true" class="ui-input" id="txtTitle" type="text" value="小肥羊限量抵价券">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>活动起止时间
+                                        </label>
+                                        <input readonly="true" class="ui-input ui-input-large" type="text" value="2014-03-05" id="txtBeginDate" placeholder="">
+                                        <input readonly="true" class="ui-input ui-input-large" type="text" value="2015-03-05" id="txtEndDate" placeholder="">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    
+                                    <div class="ui-form-item ui-form-item-error ui-form-item-focus">
+                                        <label for="uploadImg" class="ui-label"><span class="ui-form-required">*</span>图片</label>
+                                        <ul class="m-upload fn-clear" id="uploadImg">
+                                        <li><img class="loaded-img" src="<%=staticUrl%>/static/images/tmp/111.jpg"></li>
+                                        <li><img class="loaded-img" src="<%=staticUrl%>/static/images/tmp/111.jpg"></li>
+                                        <li><img class="loaded-img" src="<%=staticUrl%>/static/images/tmp/111.jpg"></li>
+                                        <!-- 详情没有上传
+                                           <li class="btn-upload">
+                                               <img id="uploader-1" src="/static/images/upload.png" alt="点击上传">
+                                           </li>
+                                        -->
+                                        </ul>
+                                        <p class="ui-form-explain"></p>
+                                    </div>
+                                    
+                                    <div class="ui-form-item ui-form-item-success">
+                                        <label for="" class="ui-label"><span class="ui-form-required">*</span>活动描述</label>
+                                        <textarea readonly="true" id="txtDescription" class="ui-textarea" placeholder="" required data-errormessage-required="请输入活动描述"></textarea>
+                                        <!--
+                                        <span class="ui-form-other"><a href="#" id="lblDescriptionMsg">还能输入1500个字</a></span>
+                                        -->
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/info_detail.js"></script>
+<% include ../../common/footer.ejs %>

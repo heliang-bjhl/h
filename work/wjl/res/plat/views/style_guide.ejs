@@ -1,0 +1,195 @@
+<% include badmin/includes/header.ejs %>
+<style>
+h2{font-size: 30px !important;margin: 10px 0;}
+/**dialog的默认样式*/
+.ui-dialog {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#88000000, endColorstr=#88000000);
+    padding: 6px;
+    outline: none;
+    /* http://ued.taobao.com/blog/2011/04/onfocus-this-blur/ */
+}
+
+.ui-dialog-content {
+    background: #fff;
+}
+
+:root .ui-dialog {
+    FILTER: none\9;
+}
+
+.ui-dialog-close {
+    color: #999;
+    cursor: pointer;
+    display: block;
+    font-family: tahoma;
+    font-size: 24px;
+    font-weight: bold;
+    height: 18px;
+    line-height: 14px;
+    position: absolute;
+    right: 16px;
+    text-decoration: none;
+    top: 16px;
+    z-index: 10;
+}
+
+.ui-dialog-close:hover {
+    color: #666;
+    text-shadow: 0 0 2px #aaa;
+}
+
+.ui-dialog-title {
+    height: 45px;
+    font-size: 16px;
+    font-family: '微软雅黑', '黑体', Arial;
+    line-height: 46px;
+    border-bottom: 1px solid #E1E1E1;
+    color: #4d4d4d;
+    text-indent: 20px;
+    background-color: #f9f9f9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
+    background: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9');
+    background: -o-linear-gradient(top, #fcfcfc, #f9f9f9);
+    background: -ms-linear-gradient(top, #fcfcfc, #f9f9f9);
+    background: linear-gradient(top, #fcfcfc, #f9f9f9);
+}
+
+.ui-dialog-container {
+    padding: 15px 20px 20px;
+    font-size: 12px;
+}
+
+.ui-dialog-message {
+    margin-bottom: 15px;
+}
+
+.ui-dialog-operation {
+    zoom: 1;
+}
+
+.ui-dialog-confirm, .ui-dialog-cancel {
+    display: inline;
+}
+
+.ui-dialog-operation .ui-dialog-confirm {
+    margin-right: 4px;
+}
+
+.ui-dialog-button-orange,
+.ui-dialog-button-white {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 0 12px;
+    line-height: 23px;
+    height: 23px;
+    *overflow: visible;
+ /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */
+    background-image: none;
+}
+
+a.ui-dialog-button-orange:hover,
+a.ui-dialog-button-white:hover {
+    text-decoration: none;
+}
+
+.ui-dialog-button-orange {
+    color: #fff;
+    border: 1px solid #d66500;
+    background-color: #f57403;
+}
+
+.ui-dialog-button-orange:hover {
+    background-color: #fb8318;
+}
+
+.ui-dialog-button-white {
+    border: 1px solid #afafaf;
+    background-color: #f3f3f3;
+    color: #777;
+}
+
+.ui-dialog-button-white:hover {
+    border: 1px solid #8e8e8e;
+    background-color: #fcfbfb;
+    color: #676d70;
+}
+</style>
+</head>
+<body>
+<h2>tab</h2>
+<div class="ui-tab">
+    <ul class="ui-tab-items">
+        <li class="ui-tab-item ui-tab-item-current">
+            <a href="javascript:;">全部交易</a>
+        </li>
+        <li class="ui-tab-item">
+            <a href="javascript:;">进行中的交易</a>
+        </li>
+        <li class="ui-tab-item">
+            <a href="javascript:;">等待发货的交易</a>
+        </li>
+        <li class="ui-tab-item">
+            <a href="javascript:;">未确认收获的交易</a>
+        </li>
+    </ul>
+</div>
+<h2>dialog</h2>
+<button id="example1">内容传入字符串</button>
+<h2>validator</h2>
+<form class="ui-form">
+    <div class="ui-form-item">
+        <label for="username" class="ui-label"><span class="ui-form-required">*</span>用户名：</label>
+        <input id="username" name="username" class="ui-input" />
+        <div class="ui-form-explain">用户名为电子邮箱。</div>
+    </div>
+
+    <div class="ui-form-item ui-form-item-error">
+        <label for="password" class="ui-label"><span class="ui-form-required">*</span>密码：</label>
+        <input id="password" name="password" type="password" class="ui-input" />
+        <div class="ui-form-explain">密码的长度必须大于或等于5。</div>
+    </div>
+
+    <div class="ui-form-item">
+        <label for="password-confirmation" class="ui-label"><span class="ui-form-required">*</span>重复输入密码：</label>
+        <input id="password-confirmation" name="password-confirmation" type="password" class="ui-input" />
+    </div>
+
+    <div class="ui-form-item">
+        <input type="submit" class="ui-button ui-button-morange" value="确定">
+        <input type="button" class="ui-button ui-button-mwhite" value="取消">
+    </div>
+</form>
+<h2>分页</h2>
+<div class="ui-paging">
+    <a href="#" class="ui-paging-prev">
+        <i class="iconfont" title="左三角形">&#xF039;</i> 上一页
+    </a>
+    <a href="#" class="ui-paging-item">1</a>
+    <a href="#" class="ui-paging-item ui-paging-current">2</a>
+    <a href="#" class="ui-paging-item">3</a>
+    <a href="#" class="ui-paging-item">4</a>
+    <a href="#" class="ui-paging-item">5</a>
+    <a href="#" class="ui-paging-item">6</a>
+    <a href="#" class="ui-paging-item">7</a>
+    <span class="ui-paging-ellipsis">...</span>
+    <a href="#" class="ui-paging-item">24</a>
+    <a href="#" class="ui-paging-next">
+        下一页 <i class="iconfont" title="右三角形">&#xF03A;</i>
+    </a>
+    <span class="ui-paging-info"><span class="ui-paging-bold">5/7</span>页</span>
+    <span class="ui-paging-which"><input name="some_name" value="6" type="text"></span>
+    <a class="ui-paging-info ui-paging-goto" href="#">跳转</a>
+</div>
+<script src="static/js/styleguide.js"></script>
+<% include badmin/includes/footer.ejs %>

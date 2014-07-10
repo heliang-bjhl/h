@@ -1,0 +1,61 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-tit2"><h2>您还没有注册VIP会员</h2></div>
+		<!-- <div class="m-list3">
+			<h3>成为会员的好处</h3>
+			<p>1.获得更多优惠的会员折扣</p>
+			<p>2.免费领取商场停车券</p>
+			<p>3.优先获得活动参与资格</p>
+		</div> -->
+		<div class="m-list2">
+
+			<h3>成为会员的好处</h3>
+			<p class="disc">获得更多优惠的会员折扣</p>
+			<p class="down">轻松下载商家优惠券</p>
+			<p class="prio">优先获得活动的参与资格</p>
+		</div>
+		<div class="m-form">
+			<form action="#"  id="j_form">
+				<ul>
+					<li>
+						<input class="m-ip" type="text" placeholder="请输入手机号码"  data-v="require-phone" id="j_phone" />
+						<div class="m-err"></div>
+					</li>
+					<li class="veri">
+						<input class="m-ip ideip" type="text" placeholder="请输入验证码"  data-v="require" />
+						<div class="m-err"></div>
+						<input class="m-bt1 idebt" type="button" placeholder="获取验证码" value="获取验证码" id="j_getcode" />
+					</li>
+					<li>
+						<input class="m-ip jpassword1" type="password" placeholder="请输入密码"  data-v="require-range|6_8" />
+						<div class="m-err"></div>
+					</li>
+					<li>
+						<input class="m-ip jpassword2" type="password" placeholder="请确认密码"  data-v="require-range|6_8" />
+						<div class="m-err"></div>
+					</li>
+					<li><div class="m-err extenderrmsg"></div></li>
+					<li>
+						<input class="m-bt1" type="submit" value="注册" id="j_sb" />
+						<div class="rxh">汉阳人信汇官方认证</div>
+						<div class="log"><a href="#">已有账号直接登录</a></div>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

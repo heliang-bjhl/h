@@ -1,0 +1,44 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/data/membergrow.css">
+</head>
+<body class="data-membergrow">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20">
+                    <div class="main">
+                        <div class="ui-block ui-block-title"><div class="loading" style="display: none;">努力加载中.......</div>
+                            <div class="ui-title ui-title-line fn-clear">
+                                <h3>注册会员增长统计</h3>
+                            </div>
+                        </div>
+                        <div class="m-main">
+                            <div id="contain3">
+                                <p>13888</p>
+                                <div>截止今日累计注册会员数</div>
+                            </div>
+                            <div id="contain2"></div>
+                        </div>
+                        <div class="ui-block ui-block-title">
+                            <div class="ui-title ui-title-line fn-clear">
+                                <h3>会员注册渠道统计</h3>
+                            </div>
+                        </div>
+                        <div class="m-main">
+                            <div id="contain1" style="width:800px;height:400px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="<%=staticUrl%>/static/js/padmin/data/membergrow.js"></script>
+<% include ../../common/footer.ejs %>

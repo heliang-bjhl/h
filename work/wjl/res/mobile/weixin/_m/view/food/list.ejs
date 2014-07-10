@@ -1,0 +1,138 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<div class="page">
+	<div class="m-tab">
+	    <dl>
+	        <dd>
+	        	<a class="cur" href="javascript:void(0);" id="j_drop1">楼层导航<b></b></a>
+	        	<ul id="j_drop1_box">
+	        		<li><a href="#">全部</a></li>
+	                <li><a href="#">B1</a></li>
+	                <li><a href="#">F1</a></li>
+	                <li><a href="#">F2</a></li>
+	            </ul>
+	        </dd>
+	        <dd>
+	        	<a href="javascript:void(0);" id="j_drop2">消费金额<b></b></a>
+	        	<ul id="j_drop2_box">
+	        		<li><a href="#">全部</a></li>
+	                <li><a href="#">0-50</a></li>
+	                <li><a href="#">50-100</a></li>
+	                <li><a href="#">100以上</a></li>
+	            </ul>
+	        </dd>
+	        <dd>
+	        	<a href="javascript:void(0);" id="j_drop3">有优惠<b></b></a>
+	        	<ul id="j_drop3_box">
+	                <li><a href="#">全部</a></li>
+	                <li><a href="#">有优惠</a></li>
+	            </ul>
+	        </dd>
+	    </dl>
+	</div>
+	<div class="main">
+		<div class="m-list1">
+			<section>
+				<div class="cont">
+					<div class="pic">
+						<a href="#"><img src="http://i1.dpfile.com/pc/9f15542f3405b23ba0680b0cf1c47e55/31243539_m.jpg"></a>
+					</div>
+					<div class="info">
+						<h2><a href="#">上海小南国</a></h2>
+						<p class="good"><a href="#">烤鱼好吃 米粉正宗 分量足  烤鱼好吃 米粉正宗 分量足</a></p>
+						<p class="adr"><a href="#">地址：B1-202</a></p>
+					</div>
+				</div>
+				<div class="agio">
+					<b class="sale"></b>
+					<div class="tex">
+						<a href="#">全场满300 ￥100代金券 全场满800 ￥300代金券 全场满300 ￥100代金券 全场满800 ￥300代金券全场满300 ￥100代金券 全场满800 ￥300代金券</a>
+					</div>
+					<b class="more"></b>
+				</div>
+			</section>
+			<section>
+				<div class="cont">
+					<div class="pic">
+						<a href="#"><img src="http://i1.dpfile.com/pc/9f15542f3405b23ba0680b0cf1c47e55/31243539_m.jpg"></a>
+					</div>
+					<div class="info">
+						<h2><a href="#">上海小南国</a></h2>
+						<p class="good"><a href="#">烤鱼好吃 米粉正宗 分量足  烤鱼好吃 米粉正宗 分量足</a></p>
+						<p class="adr"><a href="#">地址：B1-202</a></p>
+					</div>
+				</div>
+				<div class="agio">
+					<b class="sale"></b>
+					<div class="tex">
+						<a href="#">全场满300 ￥100代金券 全场满800 ￥300代金券</a>
+					</div>
+					<b class="more"></b>
+				</div>
+			</section>
+			<section>
+				<div class="cont">
+					<div class="pic">
+						<a href="#"><img src="http://i1.dpfile.com/pc/9f15542f3405b23ba0680b0cf1c47e55/31243539_m.jpg"></a>
+					</div>
+					<div class="info">
+						<h2><a href="#">上海小南国</a></h2>
+						<p class="good"><a href="#">烤鱼好吃 米粉正宗 分量足  烤鱼好吃 米粉正宗 分量足</a></p>
+						<p class="adr"><a href="#">地址：B1-202</a></p>
+					</div>
+				</div>
+				<div class="agio">
+					<b class="sale"></b>
+					<div class="tex">
+						<a href="#">全场满300 ￥100代金券 全场满800 全场满800 ￥300代金券</a>
+					</div>
+					<b class="more"></b>
+				</div>
+			</section>
+			<section>
+				<div class="cont">
+					<div class="pic">
+						<a href="#"><img src="http://i1.dpfile.com/pc/9f15542f3405b23ba0680b0cf1c47e55/31243539_m.jpg"></a>
+					</div>
+					<div class="info">
+						<h2><a href="#">上海小南国</a></h2>
+						<p class="good"><a href="#">烤鱼好吃 米粉正宗 分量足  烤鱼好吃 米粉正宗 分量足</a></p>
+						<p class="adr"><a href="#">地址：B1-202</a></p>
+					</div>
+				</div>
+				<div class="agio">
+					<b class="sale"></b>
+					<div class="tex">
+						<a href="#">全场满300 ￥100代金券 全场满800 ￥300代金券</a>
+					</div>
+					<b class="more"></b>
+				</div>
+			</section>
+		</div>
+		<div class="m-load">
+			<a href="#">
+				<img src="<%= data['rootUrl'] %>/img/loading.gif">
+				更多
+			</a>
+		</div>
+	</div>
+	<div class="m-bottom">
+		<div class="top">
+			回顶部
+		</div>
+		<div class="srh">
+			<a href="#">搜索店铺</a>
+		</div>
+	</div>
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

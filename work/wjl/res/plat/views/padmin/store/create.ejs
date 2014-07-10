@@ -1,0 +1,254 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/store_create.css">
+</head>
+<body class="store-create">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>创建商家</h3>
+                                </div>
+                            </div>
+                            <form class="ui-form" name="" method="post" action="/post_data" id="frmStoreCreate">
+                                <fieldset>
+                                    <h4>门店信息<b></b></h4>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>门店名
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtStore" name="name" placeholder="填写门店名">
+                                        <div class="ui-form-explain">门店名为必填字段。</div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>商户名
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtUsername" name="username" placeholder="填写商户名">
+                                        <div class="ui-form-explain">商户名为必填字段。</div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>密码
+                                        </label>
+                                        <input class="ui-input" type="password" id="txtPassword" name="password" placeholder="填写密码">
+                                        <div class="ui-form-explain">密码为必填字段。</div>
+                                    </div>
+
+                                    <div class="ui-form-item">
+                                        <label for="beginDate" class="ui-label"><span class="ui-form-required"></span>营业起止时间</label>
+                                        <select id="sltStartHour">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                        </select>
+										:
+                                        <select id="sltStartMinute">
+                                            <option value="00">00</option>
+                                            <option value="01" selected="selected">01</option>
+                                            <option value="02">02</option>
+                                        </select>
+                                        -
+                                        <select id="sltEndHour">
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02" selected="selected">02</option>
+                                        </select>
+										:
+                                        <select id="sltEndMinute">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                        </select>
+                                        <div class="ui-form-explain">营业起止时间</div>
+                                    </div>
+                                    
+                                    <div class="ui-form-item">
+                                        <label for="beginDate" class="ui-label"><span class="ui-form-required"></span>电子邮箱</label>
+                                        <input class="ui-input ui-input-large" data-rule="email" name="email" data-display="邮箱" type="text" id="txtEmail">
+                                        <div class="ui-form-explain">电子邮箱的格式为hanshang@hs.com</div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>手机
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtMobilePhone" data-rule="mobile" name="mobile" data-display="手机号">
+                                        <div class="ui-form-explain">手机为必填字段。</div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>行业
+                                        </label>
+                                        <select id="sltIndustry" name="categoryCode">
+                                            <option value="" selected="selected">请选择</option>
+                                            <option value="IT行业">IT行业</option>
+                                            <option value="物流行业">物流行业</option>
+                                        </select>
+                                        <div class="ui-form-explain">行业为必填字段。</div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required"></span>人均消费
+                                        </label>
+                                        <input class="ui-input" type="text" name="averagecost"> 元
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>公司名
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtCompany" placeholder="填写公司名">
+                                        <div class="ui-form-explain">公司名为必填字段。</div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>品牌名
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtBrand" name="brand" placeholder="填写品牌名">
+                                        <div class="ui-form-explain">品牌名为必填字段。</div>
+                                    </div>
+                                    <div class="ui-form-item ui-form-item-success">
+                                        <label for="" class="ui-label"><span class="ui-form-required">*</span>门店介绍</label>
+                                        <textarea id="txtDescription" class="ui-textarea" name="description" placeholder="请输入文字" required data-errormessage-required="请输入活动描述"></textarea><span class="ui-form-other"><a href="#" id="lblDescriptionMsg">还能输入1500个字</a></span>
+                                        <div class="ui-form-explain">门店介绍为必填字段。</div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>门店概要
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtSummary" name="brief" placeholder="填写门店概要">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>门店地址
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtAddress" name="address" placeholder="填写门门店地址">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>电话
+                                        </label>
+                                        <input class="ui-input telOne" type="text" id="txtTelephoneOne" placeholder="区号">
+                                        -
+                                        <input class="ui-input telTwo" type="text" id="txtTelephoneTwo" placeholder="号码">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    
+                                    <h4>收款账号管理<b></b></h4>
+                                    <div class="ui-form-item">
+                                        <!-- 白色按钮样式 ui-button-mwhite -->
+                                        <input type="button" id="btnAddAccount" class="ui-button ui-button-morange" value="添加帐号">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <div class="ui-form-item J_addAccount" style="display:none;">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required"></span>帐号类型
+                                        </label>
+                                        <select id="sltPaymentType">
+                                            <option value="" selected="selected">请选择帐号类型</option>
+                                            <option value="支付宝">支付宝</option>
+                                            <option value="财付通">财付通</option>
+                                            <option value="微信">微信</option>  
+                                            <option value="银行">银行</option>  
+                                        </select>
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <div class="ui-form-item J_addAccount" style="display:none;">
+                                        <label for="" class="ui-label">
+                                            银行类型
+                                        </label>
+                                        <select id="sltBank">
+                                            <option value="" selected="selected">请选择银行类型</option>
+                                            <option value="招商银行">招商银行</option>
+                                            <option value="农业银行">农业银行</option>
+                                            <option value="工商银行">工商银行</option>
+                                        </select>
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    
+                                    <div class="ui-form-item J_addAccount" style="display:none;">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required"></span>帐号
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtAccount" placeholder="填写帐号">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <div class="ui-form-item J_addAccount" style="display:none;">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required"></span>确认帐号
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtConfirmAccountAd" placeholder="填写确认帐号">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <div class="ui-form-item J_addAccount" style="display:none;">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required"></span>返佣比例
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtReturnFee" placeholder="填写返佣比例"> %<span class="ui-form-other"></span>
+                                        <div class="ui-form-explain"><!--填写0-100的数值--></div>
+                                    </div>
+                                    <div class="ui-form-item J_addAccount" id="lblInfoBefore" style="display:none;">
+                                        <input type="button" id="btnAccountList" class="ui-button ui-button-mwhite" value="保存">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <!-- 添加已有的支付信息 ，如果没有已有支付信息，注释中的全部不输出
+                                    <table class="ui-table" id="tblList">
+                                        <tbody>
+                                                <tr>
+                                                    <th>支付类型</th>
+                                                    <th>帐号</th>
+                                                    <th class="hand">操作</th>
+                                                </tr>
+                                                <tr class="ui-table-split">
+                                                    <td>
+                                                        招商银行
+                                                    </td>
+                                                    <td>6225880267876578</td>
+                                                    <td class="hand">
+                                                        <input type="button" class="ui-button ui-button-sorange" value="删除">
+                                                    </td>
+                                                </tr>
+                                        </tbody>
+                                    </table> 
+                                    -->
+
+                                    <h4>门店图片<b></b></h4>
+                                    <div class="ui-form-item ui-form-item-error ui-form-item-focus">
+                                        <label for="uploadImg1" class="ui-label"><span class="ui-form-required">*</span>门店logo</label>
+                                        <ul class="m-upload fn-clear" id="uploadImg1">
+                                            
+                                           <li class="btn-upload">
+                                               <img id="uploader-1" src="/static/images/upload.png" alt="点击上传">
+                                           </li>
+                                        </ul>
+
+                                        <p class="ui-form-explain">文件大小不超过500k。</p>
+                                    </div>
+                                   <% include ../../common/form_upload.ejs %>
+
+                                    <div class="ui-form-item">
+                                        <input type="submit" id="btnSave" class="ui-button ui-button-morange" value="确定">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/store_create.js"></script>
+<% include ../../common/footer.ejs %>

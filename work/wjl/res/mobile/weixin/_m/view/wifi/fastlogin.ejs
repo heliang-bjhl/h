@@ -1,0 +1,37 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="m-pic1">
+		<img src="http://192.168.1.124:8181/wx/img/ad.jpg">
+	</div>
+	<div class="main">
+		
+		<div class="m-form">
+			<form action="#" id="j_form">
+				<ul>		
+					<li>
+						<input class="m-bt1" type="submit" value="立即免费登录" id="j_sb" />
+					</li>
+					<li class="m-chk">
+						<input id="chk" type="checkbox" /><label for="chk">我已阅读并同意《<a href="#">XXX商场服务协议</a>》</label>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<div class="m-copy">
+		技术支持：武汉万江龙网络有限公司 ©2014
+	</div>
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

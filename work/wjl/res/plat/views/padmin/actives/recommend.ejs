@@ -1,0 +1,81 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/actives/recommend.css"></head>
+<body class="actives-recommend">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+        <div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>推荐管理</h3><input id="z_save" class="ui-button ui-button-lwhite fn-right" type="button" value="保存" />
+                                </div>
+                            </div>
+                            <div class="search-code">
+                                <form method="get" action="">
+                                    <div class="search-code">
+                                            活动主题：
+                                        <input placeholder="活动主题" class="ui-input ui-input-large" type="text" value="" name="">
+                                        <input type="submit" class="ui-button ui-button-lorange" value="添加" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="m-total">统计：关注人数30人</div>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th>活动主题</th>
+                                        <th>举办方</th>
+                                        <th>报名时间</th>
+                                        <th>活动时间</th>
+                                        <th>在线状态</th>
+                                        <th class="hand">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="td1"><a href="#" target="_blank">全畅通100元现金券</a></td>
+                                        <td class="td2">商场</td>
+                                        <td class="td3">2014-3-26</td>
+                                        <td class="td4">2014-5-19</td>
+                                        <td class="td5">线上</td>
+                                        <td class="hand hand6 td5"><input type="button" class="ui-button ui-button-sorange j_remove" data-id="11541404011104253762732" value="删除"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="td1"><a href="#" target="_blank">全畅通100元现金券1</a></td>
+                                        <td class="td2">商场</td>
+                                        <td class="td3">2014-3-26</td>
+                                        <td class="td4">2014-5-19</td>
+                                        <td class="td5">线上</td>
+                                        <td class="hand hand6 td5"><input type="button" class="ui-button ui-button-sorange j_remove" data-id="11541404011104253762732" value="删除"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="td1"><a href="#" target="_blank">全畅通100元现金券2</a></td>
+                                        <td class="td2">商场</td>
+                                        <td class="td3">2014-3-26</td>
+                                        <td class="td4">2014-5-19</td>
+                                        <td class="td5">线上</td>
+                                        <td class="hand hand6 td5"><input type="button" class="ui-button ui-button-sorange j_remove" data-id="11541404011104253762732" value="删除"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/jquery-ui.js"></script>
+<script src="<%=staticUrl%>/static/js/padmin/actives/recommend.js"></script>
+<% include ../../common/footer.ejs %>
+
+<style>
+    
+</style>

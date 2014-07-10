@@ -1,0 +1,196 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/coupons_create.css"></head>
+<body class="store-create">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20">
+                    <div class="main">
+                        <div class="ui-block ui-block-title">
+                            <div class="ui-title ui-title-line fn-clear">
+                                <h3>创建优惠券</h3>
+                            </div>
+                        </div>
+                        <div class="coupons_step coupons_step3">
+                            <div><span>第一步</span>&nbsp;选择优惠券类型</div>
+                            <div><span>第二步</span>&nbsp;填写优惠劵信息</div>
+                            <div class="coupons_step_title_strong"><span>第三步</span>&nbsp;确定领劵规则</div>
+                        </div>
+                        <form class="ui-form" id="frmCreate3" onsubmit="return false;">
+                            <fieldset>
+
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">
+                                        <span class="ui-form-required">*</span>
+                                        领取开始时间:
+                                    </label>
+                                    <p class="ui-form-text">
+                                        <input value=""  name="startGroundingDate" type="radio" id="" checked="checked">
+                                        <label for="">上架即可领取</label>
+                                        <input value=""  name="startGroundingDate" type="radio" id="">
+                                        <label for="">自定义</label>
+                                        <input placeholder="" id="txtStartGroundingDate" class="ui-input ui-input-large" type="text">
+                                        <select id="sltStartHour">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                        </select>
+										:
+                                        <select id="sltStartMinute">
+                                            <option value="00">00</option>
+                                            <option value="01" selected="selected">01</option>
+                                            <option value="02">02</option>
+                                        </select></p>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">
+                                        <span class="ui-form-required">*</span>
+                                        领取结束时间:
+                                    </label>
+                                    <p class="ui-form-text">
+                                        <input value=""  name="endGroundingDate" type="radio" id="" checked="checked">
+                                        <label for="">领取完结束</label>
+                                        <input value=""  name="endGroundingDate" type="radio" id="">
+                                        <label for="">自定义</label>
+                                        <input placeholder="" id="txtEndGroundingDate" class="ui-input ui-input-large" type="text">
+                                        <select id="sltEndHour">
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02" selected="selected">02</option>
+                                        </select>
+										:
+                                        <select id="sltEndMinute">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                        </select></p>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label class="ui-label">
+                                        <span class="ui-form-required">*</span>
+                                        领取规则:
+                                    </label>
+                                    <div id="get_coupon_rule" class="ui-tab">
+                                        <ul class="ui-tab-items">
+                                            <li class="ui-tab-item">
+                                                <a href="javascript:;">微信渠道</a>
+                                            </li>
+                                            <li class="ui-tab-item">
+                                                <a href="javascript:;">移动APP</a>
+                                            </li>
+                                        </ul>
+                                        <div class="ui-switchable-content">
+                                            <div class="hidden">
+                                                <ul>
+                                                    <li>
+                                                        <label for="">用户可领用总数量：</label>
+                                                        <input value=""  name="group1" type="radio" id="" checked="checked">
+                                                        不限量
+                                                        <input value=""  name="group1" type="radio" id="">
+                                                        <input placeholder="" id="txtGroup1Date" class="ui-input" type="text">个</li>
+                                                    <li>
+                                                        <label for="">每日券可领用总数量：</label>
+                                                        <input value=""  name="group2" type="radio" id="" checked="checked">
+                                                        不限量
+                                                        <input value=""  name="group2" type="radio" id="">
+                                                        <input placeholder="" id="txtGroup2Date" class="ui-input" type="text">个</li>
+                                                    <li>
+                                                        <label for="">用户领用限制：</label>
+                                                        <input value=""  name="group3" type="radio" id="" checked="checked">
+                                                        不限量
+                                                        <input value=""  name="group3" type="radio" id="">
+                                                        <input placeholder="" id="txtGroup3Date" class="ui-input" type="text">个</li>
+                                                </ul>
+                                            </div>
+                                            <div class="hidden">
+                                                <ul>
+                                                    <li class="J_radio">
+                                                        <label for="">用户可领用总数量：</label>
+                                                        <input value=""  name="group4" type="radio" id="" checked="checked">
+                                                        不限量
+                                                        <input value=""  name="group4" type="radio" id="">
+                                                        <input placeholder="" id="" class="ui-input" type="text">个</li>
+                                                    <li class="J_radio">
+                                                        <label for="">每日券可领用总数量：</label>
+                                                        <input value=""  name="group5" type="radio" id="" checked="checked">
+                                                        不限量
+                                                        <input value=""  name="group5" type="radio" id="">
+                                                        <input placeholder="" id="" class="ui-input" type="text">个</li>
+                                                    <li class="J_radio">
+                                                        <label for="">用户领用限制：</label>
+                                                        <input value=""  name="group6" type="radio" id="" checked="checked">
+                                                        不限量
+                                                        <input value=""  name="group6" type="radio" id="">
+                                                        <input placeholder="" id="" class="ui-input" type="text">个</li>
+                                                </ul>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">
+                                        <span class="ui-form-required">*</span>
+                                        上架时间:
+                                    </label>
+                                    <p class="ui-form-text">
+                                        <input value=""  name="groundingDate" type="radio" id="" checked="checked">
+                                        <label for="">审核成功后立即上线</label>
+                                        <input value=""  name="groundingDate" type="radio" id="">
+                                        <label for="">指定上架时间</label>
+                                        <input placeholder="" id="txtGroundingDate" class="ui-input ui-input-large" type="text">
+                                        <select id="sltGroundingHour">
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02" selected="selected">02</option>
+                                        </select>
+										:
+                                        <select id="sltGroundingMinute">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                        </select></p>
+                                </div>
+                                <div class="ui-form-item supply">
+                                    <label class="ui-label">
+                                        <span class="ui-form-required">*</span>
+                                        下架时间:
+                                    </label>
+                                    <p class="ui-form-text">
+                                        <input value=""  name="undercarriageDate" type="radio" id="" checked="checked">
+                                        <label for="">与优惠券实效时间相同</label>
+                                        <input value=""  name="undercarriageDate" type="radio" id="">
+                                        <label for="">指定下架时间</label>
+                                        <input placeholder="" id="txtUndercarriageDate" class="ui-input ui-input-large" type="text">
+                                        <select id="sltUndercarriageHour">
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02" selected="selected">02</option>
+                                        </select>
+										:
+                                        <select id="sltUndercarriageMinute">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                        </select></p>
+                                </div>
+
+                                <div class="ui-form-item">
+                                    <input type="submit" id="save" class="ui-button ui-button-morange" value="保存"></div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/coupons/create3.js"></script>
+<% include ../../common/footer.ejs %>

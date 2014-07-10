@@ -1,0 +1,59 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/wifi/mwifiedit.css">
+</head>
+<body class="wifi-mwifiedit">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20"><div class="loading" style="display: none;">努力加载中.......</div>
+                    <div class="main">
+                        <div class="ui-block ui-block-title">
+                            <div class="ui-title ui-title-line fn-clear">
+                                <h3>手机版Wifi营销编辑广告</h3>
+                            </div>
+                            <form action="" method="post" id="createFrm" >
+                                <div class="search-code">
+                                    选择页面频道：
+                                    <input type="radio" checked="checked" name="" value="" placeholder="" />
+                                    <label for="">首界面页</label>
+                                    <input type="radio" disabled="true" name="" value="" placeholder="" />
+                                    <label for="">快速登录页</label>
+                                    <input type="radio" disabled="true" name="" value="" placeholder="" />
+                                    <label for="">登录成功页</label>
+                                </div>
+                                <div class="m-main fn-clear">
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label"><span class="ui-form-required">*</span>推荐图片：</label>
+                                        <ul class="m-upload fn-clear" id="uploadImg1">
+                                           <li class="btn-upload">
+                                               <img id="uploader-1" src="<%=staticUrl%>/static/images/upload.png" alt="点击上传">
+                                           </li>
+                                        </ul>
+                                        <p class="ui-form-explain">图片规格：640×640像素</p>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label"><span class="ui-form-required">*</span>广告名称：</label>
+                                        <textarea name="" placeholder="广告名称" id="j_msgName"></textarea>
+                                        <div class="ui-form-explain">备注：名称字符数量不超过100个</div>
+                                    </div>
+                                </div>
+                                <div class="ui-form-item m-btns">
+                                    <input type="submit" id="btn_save" class="ui-button ui-button-morange" value="保存" />
+                                    <div class="ui-form-explain"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="<%=staticUrl%>/static/js/padmin/wifi/mwifiedit.js"></script>
+<% include ../../common/footer.ejs %>

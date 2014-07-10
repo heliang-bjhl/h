@@ -1,0 +1,42 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/msg/msg.css">
+</head>
+<body class="store-create">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>系统消息</h3>
+                                </div>
+                            </div>
+                            <form class="ui-form" name="" onsubmit="return false;">
+                                <fieldset>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>主题:
+                                        </label>
+                                        <p class="ui-form-text">
+                                            <textarea class="ui-textarea" id="j_content"></textarea>
+                                        </p>
+                                        <button id="insert">插入</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/msg/msg.js"></script>
+<% include ../../common/footer.ejs %>

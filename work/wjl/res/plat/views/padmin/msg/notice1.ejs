@@ -1,0 +1,59 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/msg/notice1.css">
+</head>
+<body class="msg-notice1">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>公告消息</h3>
+                                </div>
+                            </div>
+                            <div class="m-tab1">
+                                <a href="#" class="on">消息发布</a>
+                                <a href="#">发件箱</a>
+                            </div>
+                            <form class="ui-form" method="post" action="/" id="">
+                            <fieldset>                                
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">收件人:</label>
+                                    <p class="ui-box-content">人信汇全体会员</p>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">主题:</label>
+                                    <input class="ui-input" type="text" id="" name="" />
+                                </div>
+                                <div class="ui-form-item ">
+                                    <label for="" class="ui-label">类型:</label>                                   
+                                    <select id="jStyleSel" name="">
+                                        <option value="0">全部</option>
+                                        <option value="1">类型1</option>
+                                    </select>
+                                </div>
+                                <div class="ui-form-item">
+                                    <label for="" class="ui-label">内容:</label>
+                                    <p class="ui-form-text"><textarea class="ui-textarea" id=""></textarea></p>
+                                </div>
+                                 <div class="ui-form-item">
+                                    <input type="submit" id="" class="ui-button ui-button-morange" value="发送">
+                                </div>
+                            </fieldset>
+                        </form>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/msg/notice1.js"></script>
+<% include ../../common/footer.ejs %>

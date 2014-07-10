@@ -1,0 +1,55 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/actives/active1.css">
+</head>
+<body class="actives-create1">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>创建活动</h3>
+                                </div>
+                            </div>
+                            <div class="coupons_step coupons_step">
+                                <div class="coupons_step_title_strong"><span>第一步</span>&nbsp;选择活动类型</div>
+                                <div><span>第二步</span>&nbsp;填写活动信息</div>
+                                <div><span>第三步</span>&nbsp;等待审核通过</div>
+                            </div>
+                            <form class="ui-form" name="" onsubmit="return false;">
+                                <fieldset>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>商场名称
+                                        </label>
+                                        <p class="ui-form-text">武汉·人信汇商场</p>
+                                    </div>
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">选择活动类型:</label>
+                                        <p class="ui-form-text">
+                                            <input value="create2"  name="activityType" type="radio" id="rdCash" checked="checked"> <label for="rdCash">商场活动</label>
+                                            <input value="create2merchant"  name="activityType" type="radio" id="rdPark"> <label for="rdPark">商户活动</label>
+                                        </p>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <input type="button" id="save" class="ui-button ui-button-morange" value="下一步">                                        
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/actives/create1.js"></script>
+<% include ../../common/footer.ejs %>

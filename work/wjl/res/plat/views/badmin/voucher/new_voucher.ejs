@@ -1,0 +1,130 @@
+<% include ../../common/header.ejs %>
+
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/badmin/new_voucher.css">
+</head>
+<body class="new-voucher">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="content" class="content">
+    <div class="ui-grid-row">
+        <div class="ui-grid-5 asidenav">
+            <%include ../includes/sidebar.ejs%>
+        </div>
+        <div class="ui-grid-20">
+            <div class="main">
+                <div class="ui-block ui-block-title">
+                    <div class="ui-title ui-title-line fn-clear">
+                        <h3>填写代金券信息</h3>
+                    </div>
+                </div>
+                <form class="ui-form" name="" method="post" action="#" id="activityForm">
+                    <fieldset>
+                        <div class="ui-form-item">
+                            <label for="" class="ui-label">
+                                <span class="ui-form-required">*</span>标题
+                            </label>
+                            <input class="ui-input" type="text" id="input-title"> <span class="ui-form-other"><a href="#">还能输入8个字</a></span>
+                            <div class="ui-form-explain">标题为必填字段。</div>
+                        </div>
+
+                        <div class="ui-form-item">
+                            <label for="" class="ui-label"><span class="ui-form-required">*</span>优惠截止时间</label>
+                            <input class="ui-input ui-input-large" type="text" id="endDate">
+                            <div class="ui-form-explain">结束时间为必填字段。</div>
+                        </div>
+                        <div class="ui-form-item supply">
+                            <label class="ui-label"><span class="ui-form-required">*</span>供应量：</label>
+                            <input id="unlimit" value="" name="limit" type="radio"> <label for="unlimit">不限量</label>
+                            <input id="limit" value="" name="limit" type="radio"> <label for="limit">限量</label>
+                            <input class="ui-input ui-input-small" type="text" > 次
+                        </div>
+                        <div class="ui-form-item supply">
+                            <label class="ui-label"><span class="ui-form-required">*</span>每用户限量：</label>
+                            <input id="unlimit" value="" name="limit" type="radio"> <label for="unlimit">不限量</label>
+                            <input id="limit" value="" name="limit" type="radio"> <label for="limit">限量</label>
+                            <input class="ui-input ui-input-small" type="text" > 次
+                        </div>
+                        <div class="ui-form-item">
+                            <label for="uploadImg" class="ui-label"><span class="ui-form-required">*</span>图片</label>
+                            <ul class="m-upload fn-clear" id="uploadImg">
+                               <li class="btn-upload">
+                                   <img id="uploader-3" src="/static/images/upload.png" alt="点击上传">
+                               </li>
+                            </ul>
+
+                            <p class="ui-form-explain">文件大小不超过500k。</p>
+                        </div>
+
+                        <div class="ui-form-item">
+                            <label for="" class="ui-label"><span class="ui-form-required">*</span>优惠描述</label>
+                            <textarea id="description" class="ui-textarea" placeholder="请输入文字" required data-errormessage-required="优惠描述"></textarea>
+                            <div class="ui-form-explain">此项为必填字段。</div>
+                        </div>
+
+                        <div class="ui-form-item ui-multi-line-radio">
+                            <label for="" class="ui-label"><span class="ui-form-required">*</span>价格描述</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="price">
+                                    <input class="ui-input ui-input-small" type="text"><b>折</b>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price"><b>省</b>
+                                    <input class="ui-input ui-input-small" type="text"><b>元</b>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price"><b>原价</b>
+                                    <input class="ui-input ui-input-small" type="text"><b>元</b><b>送</b>
+                                    <input class="ui-input ui-input-small" type="text"><b>元</b>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price"><b>原价</b>
+                                    <input class="ui-input ui-input-small" type="text"><b>元</b><b>抵</b>
+                                    <input class="ui-input ui-input-small" type="text"><b>元</b>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price"><label for="">买送</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price"><label for="">免费</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="ui-form-item">
+                            <input type="radio" name="price"><b>省</b>
+                            <input class="ui-input ui-input-small" type="text"><b>元</b>
+                        </div>
+                        <div class="ui-form-item">
+                            <input type="radio" name="price"><b>原价</b>
+                            <input class="ui-input ui-input-small" type="text"><b>元</b><b>送</b>
+                            <input class="ui-input ui-input-small" type="text"><b>元</b>
+                        </div>
+                        <div class="ui-form-item">
+                            <input type="radio" name="price"><b>原价</b>
+                            <input class="ui-input ui-input-small" type="text"><b>元</b><b>抵</b>
+                            <input class="ui-input ui-input-small" type="text"><b>元</b>
+                        </div>
+                        <div class="ui-form-item">
+                            <input type="radio" name="price"><label for="">买送</label>
+                        </div>
+                        <div class="ui-form-item">
+                            <input type="radio" name="price"><label for="">免费</label>
+                        </div> -->
+                        <!-- 上架时间 -->
+                        <% include ../../badmin/includes/shelf_time.ejs %>
+                        <div class="ui-form-item">
+                            <input type="button" id="save" class="ui-button ui-button-morange" value="保存草稿">
+                            <input type="submit" class="ui-button ui-button-morange" value="确定">
+                            <input type="button" id="empty" class="ui-button ui-button-mwhite" value="清空">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/badmin/new_voucher.js"></script>
+<% include ../../common/footer.ejs %>

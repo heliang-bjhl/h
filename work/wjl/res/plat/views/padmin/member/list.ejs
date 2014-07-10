@@ -1,0 +1,69 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/member/list.css"></head>
+<body class="member-list">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+        <div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>会员列表</h3>
+                                </div>
+                            </div>
+                            <div class="search-code">
+                                <form method="get" action="">
+                                    <div class="search-code j-for-int-num">
+                                            手机号：
+                                        <input placeholder="手机号" data-num="num" class="ui-input ui-input-large" type="text" value="" name="" />
+                                        注册时间：
+                                        <input placeholder="" id="z_startDate" class="ui-input ui-calendar-icon" type="text" value="" name="" />
+                                        到
+                                        <input placeholder="" id="z_endDate" class="ui-input ui-calendar-icon" type="text" value="" name="" />
+                                        <input type="submit" class="ui-button ui-button-lorange" value="查询" />
+                                    </div>
+                                </form>
+                            </div>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>手机号</th>
+                                        <th>姓名</th>
+                                        <th>昵称</th>
+                                        <th>性别</th>
+                                        <th>出生日期</th>
+                                        <th>积分值</th>
+                                        <th>注册时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="#" target="_blank">13677777787</a></td>
+                                        <td>汪晓阳</td>
+                                        <td></td>
+                                        <td>男</td>
+                                        <td>1988年03月25日</td>
+                                        <td><a href="#" target="_blank">10</a></td>
+                                        <td>2014-5-18 18:12:39</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <% include ../../common/pager.ejs %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/member/list.js"></script>
+<% include ../../common/footer.ejs %>

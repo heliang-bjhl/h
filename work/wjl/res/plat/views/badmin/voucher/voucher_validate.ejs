@@ -1,0 +1,44 @@
+<% include ../../common/header.ejs %>
+
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/badmin/voucher_validate.css">
+</head>
+<body class="voucher-v">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="content" class="content">
+    <div class="ui-grid-row">
+        <div class="ui-grid-5 asidenav">
+            <%include ../includes/sidebar.ejs%>
+        </div>
+        <div class="ui-grid-20">
+            <div class="main">
+                <div class="ui-block ui-block-title">
+                    <div class="ui-title ui-title-line fn-clear">
+                        <h3>优惠券验证</h3>
+                    </div>
+                </div>
+                <div class="voucher-code">凭证编号： <input class="ui-input ui-input-large" type="text"><a href="javascript:;" class="ui-button ui-button-lorange">查询</a></div>
+                <table class="ui-table">
+                    <tbody>
+                        <%for(var i in voucherData) {%>
+                            <tr class='<% i % 2 == 0?"": "ui-table-split"%>'>
+                                <td>
+                                    <p><b>兑换券内容:</b><a href=""><%=voucherData[i].content%></a></p>
+                                    <p><b>兑换门店:</b><a href=""><%=voucherData[i].shop%></a></p>
+                                    <p><b>兑换有效期:</b><%=voucherData[i].begin%> 至 <%=voucherData[i].end%></p>
+                                </td>
+                                <td><span class="ui-button ui-button-sdisable">未兑换</span></td>
+                                <td><input type="button" class="ui-button ui-button-sorange" value="兑换"></td>
+                            </tr>
+                        <% } %>
+                        
+                    </tbody>
+                </table> 
+            </div>
+        </div>
+    </div>
+    
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/badmin/voucher_validate.js"></script>
+<% include ../../common/footer.ejs %>

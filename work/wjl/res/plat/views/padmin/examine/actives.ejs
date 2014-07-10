@@ -1,0 +1,87 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/examine/actives.css">
+</head>
+<body class="actives-examine">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                       <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>活动审核列表</h3>
+                                </div>
+                            </div>
+                            <div class="search-code">
+                                <form method="get" action="auditlist.j">
+                                    活动名称：
+                                    <input placeholder="活动名称" class="ui-input ui-input-large" type="text" value="" name="title">活动类型：
+                                    <select id="qtype" name="tickType">
+                                        <option value="0" selected>全部</option>
+                                        <option value="1">商场活动</option>
+                                        <option value="2">商户活动</option>
+                                    </select>
+                                    创建人：
+                                    <input placeholder="创建人" class="ui-input ui-input-large" type="text" value="" name="createName">
+
+                                    <input type="submit" class="ui-button ui-button-lorange" value="查询" />
+                                </form>
+                            </div>
+                            <span>统计：等待审核的活动还有1个</span>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>活动名称</th>
+                                        <th>活动类型</th>
+                                        <th>有效期</th>
+                                        <th>创建人</th>
+                                        <th>创建日期</th>
+                                        <th>状态</th>
+                                        <th class="hand hand6">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="viewtick.j?tickId=11541404011104253762732" target="_blank">1</a>
+                                        </td>
+                                        <td>商场活动</td>
+                                        <td>2014-04-15 - 2014-04-21</td>
+                                        <td>何建磊</td>
+                                        <td>2014-04-01</td>
+                                        <td>待审核</td>
+                                        <td class="hand hand6 ">
+                                            <input type="button" class="ui-button ui-button-sorange J_review" data-id="11541404011104253762732" value="审核">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <div class="ui-paging">
+                                    <a href="/t/tickapply/auditlist.j?tickType=0&pageSize=15&pageNo=1" class="ui-paging-item ui-paging-current">1</a>
+                                    <span class="ui-paging-info">
+                                        <span class="ui-paging-bold">1/1</span>页</span>
+                                    <span class="ui-paging-which">
+                                        <input name="some_name" value="" type="text">
+                                    </span>
+                                    <a class="ui-paging-info ui-paging-goto" href="#">跳转</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div><!-- ui-grid-20 -->
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/examine/actives.js"></script>
+<% include ../../common/footer.ejs %>

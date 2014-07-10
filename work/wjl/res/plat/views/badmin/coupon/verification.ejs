@@ -1,0 +1,66 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/badmin/coupons/verification.css">
+</head>
+<body class="coupons-password">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>优惠券核销</h3>
+                                </div>
+                            </div>
+                            <form class="ui-form" name="" method="get" action="" id="">
+                                <fieldset>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">券编号</label>
+                                        <input class="ui-input" type="text" id="" name="" />
+                                        <a id="jQueryById" class="ui-button ui-button-morange" href="javascript:;">查询</a>
+                                    </div>
+                                    <hr />
+                                </fieldset>
+                            </form>
+                            <br />
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th >编号</th>
+                                        <th>名称</th>
+                                        <th>有效期</th>
+                                        <th>不可用日期</th>
+                                        <th>有效时间</th>
+                                        <th>面额</th>
+                                        <th>状态</th>
+                                        <th class="hand">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>7878766767676578</td>
+                                        <td>开业典礼50元现金券</td>
+                                        <td>2014-4-7：2014-4-27</td>
+                                        <td>无</td>
+                                        <td>9:00-12:00</td>
+                                        <td>50</td>
+                                        <td>有效</td>
+                                        <td class="hand hand6 "><a class="ui-button ui-button-sorange jifverifi" href="javascript:;" >核销</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/badmin/coupons/verification.js"></script>
+<% include ../../common/footer.ejs %>

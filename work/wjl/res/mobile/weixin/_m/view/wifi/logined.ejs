@@ -1,0 +1,84 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="wifitime">
+		<img src="http://192.168.1.124:8181/wx/img/clock.png">
+		本次登陆，您可以免费上网4个小时。
+	</div>
+	<div class="m-pic1">
+		<img src="http://192.168.1.124:8181/wx/img/ad.jpg">
+	</div>
+	<div class="main">
+		<!-- <div class="m-pic1">
+			<img src="http://192.168.1.124:8181/wx/img/rxh/about.jpg">
+		</div> -->
+		<div class="m-list6">
+			<p>关注汉阳人信汇微信订阅号：</p>
+			<p style="color:#ca2516;">RXH_HYRXH</p>
+			<p>获得会员特有的权益，抢优惠券，参加活动！</p>
+		</div>
+		<div class="m-bt3">
+			<a class="go" href="javascript:void(0);">进入网址导航</a>
+			<!-- <a class="share" href="javascript:void(0);">分享（奖励20积分）</a> -->
+		</div>
+
+		<!-- <div class="m-mask"></div>
+		<div class="m-share">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="http://192.168.1.124:8181/wx/img/qq.png">
+						<span>QQ空间</span>
+					</a>	
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://192.168.1.124:8181/wx/img/wxhy.png">
+						<span>微信好友</span>
+					</a>	
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://192.168.1.124:8181/wx/img/wxpyq.png">
+						<span>微信朋友圈</span>
+					</a>	
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://192.168.1.124:8181/wx/img/qqhy.png">
+						<span>QQ好友</span>
+					</a>	
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://192.168.1.124:8181/wx/img/txwb.png">
+						<span>腾讯微博</span>
+					</a>	
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://192.168.1.124:8181/wx/img/sinawb.png">
+						<span>新浪微博</span>
+					</a>	
+				</li>
+			</ul>
+			<div class="close">
+				<a href="#">取消</a>
+			</div>
+		</div> -->
+	</div>
+	
+	
+</div>
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

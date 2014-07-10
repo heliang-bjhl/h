@@ -1,0 +1,73 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/store_manager.css">
+</head>
+<body class="store-manager">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+	<div id="wrap">
+		<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>商家列表</h3>
+                                </div>
+                            </div>
+                            <div class="store-code">
+                                商家状态：
+                                <select id="status">
+                                    <option value="option1">正常</option>
+                                    <option value="option2" selected="selected">全部</option>
+                                    <option value="option3">暂停中</option>
+                                </select>
+                                <!--<div class="ui-select" style="width: 120px">
+                                  <a href="javascript:void(0)" class="ui-select-trigger">全部<i class="iconfont" title="下三角形">&#xF03C;</i></a>
+                                  <ul class="ui-select-content">
+                                    <li class="ui-select-item"><a href="javascript:void(0)">正常</a></li>
+                                    <li class="ui-select-item ui-select-item-disabled"><a href="javascript:void(0)">全部</a></li>
+                                    <li class="ui-select-item"><a href="javascript:void(0)">暂停中</a></li>
+                                  </ul>
+                                </div>
+                                -->
+                                公司名/品牌：<input placeholder="公司名/品牌" class="ui-input ui-input-large" type="text"><a href="javascript:;" class="ui-button ui-button-lorange">查询</a>
+                            </div>
+                            <table class="ui-table">
+                                <thead>
+                                    <tr>
+                                        <th>logo</th>
+                                        <th>商家</th>
+                                        <th>品牌</th>
+                                        <th class="hand">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <%for(var i in storeData) {%>
+                                        <tr class='<% i % 2 == 0?"": "ui-table-split"%>'>
+                                            <td>
+                                                <img class="logo" src="<%=staticUrl%><%=storeData[i].logo%>">
+                                            </td>
+                                            <td><%=storeData[i].name%></td>
+                                            <td><%=storeData[i].brand%></td>
+                                            <td class="hand"><input type="button" class="ui-button ui-button-sorange" value="编辑"><input type="button" class="ui-button ui-button-sorange" value="暂停"></td>
+                                        </tr>
+                                    <% } %>
+                                    
+                                </tbody>
+                            </table> 
+                            
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <% include ../../common/pager.ejs %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/store_manager.js"></script>
+<% include ../../common/footer.ejs %>

@@ -1,0 +1,58 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/configure/manage.css">
+</head>
+<body class="configure-manage">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>配置管理</h3>
+                                </div>
+                            </div>
+                            <div class="m-tab1">
+                                <a href="#" class="on">消息类型</a>
+                                <a href="#">消息模板</a>
+                                <a href="#">商场业态</a>
+                                <a href="#">活动标签</a>
+                                <a href="#">部门配置</a>
+                            </div>
+                            <form class="ui-form" name="" onsubmit="return false;">
+                                <div class="ui-box-content">公告消息类型</div>
+                                <table class="ui-table" id="tblList">
+                                    <tbody>
+                                        <tr>
+                                            <th>类型</th>
+                                            <th class="hand">操作</th>
+                                        </tr>
+                                        <tr class="ui-table-split">
+                                            <td>促销活动</td>
+                                            <td class="hand">
+                                                <input type="button" class="ui-button ui-button-mwhite j-change-mes" value="编辑">
+                                                <input type="button" class="ui-button ui-button-mwhite j-delete-tr" value="删除">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table> 
+                            </form>
+                            <div class="ui-box-content">
+                                <input class="ui-input" type="text" id="jAddNextTrVal" name="subject">&nbsp;&nbsp;<input type="button" class="ui-button ui-button-sorange" id="jAddNextTr" value="添加" />
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/configure/manage.js"></script>
+<% include ../../common/footer.ejs %>

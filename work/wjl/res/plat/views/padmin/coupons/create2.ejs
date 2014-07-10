@@ -1,0 +1,333 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/coupons_create.css"></head>
+<body class="store-create">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content" class="content">
+            <div class="ui-grid-row">
+                <div class="ui-grid-5 asidenav">
+                    <%include ../includes/sidebar.ejs%></div>
+                <div class="ui-grid-20">
+                        <div class="loading">努力加载中.......</div>
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>创建优惠券</h3>
+                                </div>
+                            </div>
+                            <div class="coupons_step coupons_step2">
+                                <div>
+                                    <span>第一步</span>&nbsp;选择优惠券类型</div>
+                                <div class="coupons_step_title_strong">
+                                    <span>第二步</span>&nbsp;填写优惠劵信息</div>
+                                <div>
+                                    <span>第三步</span>&nbsp;确定领劵规则</div>
+                            </div>
+                            <form class="ui-form" name="" method="post" action="/t/tickapply/createsteptwo.j" id="frmStoreCreate">
+                                <input type="hidden" name="tickType" value="1">
+                                <fieldset>
+
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>
+                                            优惠券名称
+                                        </label>
+                                        <input class="ui-input" type="text" id="txtStore" name="title" placeholder="优惠券名称">
+
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>
+                                            券有效期
+                                        </label>
+                                        <input name="startTime" placeholder="" id="txtBeginDate" class="ui-input ui-input-large ui-calendar-icon" type="text">至
+                                        <input name="endTime" placeholder="" id="txtEndDate" class="ui-input ui-input-large ui-calendar-icon" type="text">
+
+                                    </div>
+                                    <div class="ui-form-item supply">
+                                        <label for="" class="ui-label">
+                                            不可用日期
+                                        </label>
+                                        <p class="ui-form-text">
+                                            <input name="banTime" type="text" class="ui-input" id="banTime" />
+                                        </p>
+                                    </div>
+
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">使用时间:</label>
+                                        <p class="ui-form-text">
+                                            <select id="useStartTime-m">
+                                                <option value="00">00</option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08" selected="selected">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <select id="useStartTime-s">
+                                                <option value="00" selected="selected">00</option>
+                                                <option value="15">15</option>
+                                                <option value="30">30</option>
+                                                <option value="45">45</option>
+                                            </select>
+                                            -
+                                            <select id="useEndTime-m">
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18" selected="selected">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                            </select>
+                                            <select id="useEndTime-s">
+                                                <option value="00" selected="selected">00</option>
+                                                <option value="15">15</option>
+                                                <option value="30">30</option>
+                                                <option value="45">45</option>
+                                            </select>
+
+                                        </p>
+                                    </div>
+
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">适用人群:</label>
+                                        <p class="ui-form-text">
+                                            <input id="" value="1" name="people" type="radio" checked="checked">
+                                            <label for="">会员</label>
+                                            <!-- <input id="" value="2"  name="people" type="radio"> <label for="">普通消费者</label> -->
+                                        </p>
+                                    </div>
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">面额大小:</label>
+                                        <p class="ui-form-text">
+                                            <input id="j_facePriceType_5" value="5" name="facePriceType" type="radio" checked="checked">
+                                            <label for="j_facePriceType_5">5元</label>
+                                            <input id="j_facePriceType_10" value="10" name="facePriceType" type="radio">
+                                            <label for="j_facePriceType_10">10元</label>
+                                            <input id="j_facePriceType_20" value="20" name="facePriceType" type="radio">
+                                            <label for="j_facePriceType_20">20元</label>
+                                            <input id="j_facePriceType_50" value="50" name="facePriceType" type="radio">
+                                            <label for="j_facePriceType_50">50元</label>
+                                            <input id="j_facePriceType_100" value="100" name="facePriceType" type="radio">
+                                            <label for="j_facePriceType_100">100元</label>
+                                            <input id="j_facePriceType_0" value="0" name="facePriceType" type="radio">
+                                            <label for="j_facePriceType_0">自定义</label>
+                                            <span id="j_facePriceType_0_k">
+                                             <input type="text" id="facePrice" name="facePrice" class="ui-input ui-input-large" />
+                                            </span>
+                                           
+                                        </p>
+                                    </div>
+
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>
+                                            使用范围
+                                        </label>
+                                        <ul class="ui-form-text">
+                                            <li>
+                                                <input id="j_useAreatype_1" value="1" name="useAreatype" type="radio" checked="checked">
+                                                <label for="j_useAreatype_1">商业通用</label>
+                                            </li>
+                                            <li>
+                                                <input id="j_useAreatype_2" value="2" name="useAreatype" type="radio">
+                                                <label for="j_useAreatype_2">指定业态</label>
+                                                <span id="j_useAreatype_2_k">
+                                                    <select id="sltStatus" name="format">
+                                                        <option value="100" selected="selected">餐饮</option>
+                                                        <option value="200" selected="selected">生活零售</option>
+                                                        <option value="300" selected="selected">儿童</option>
+                                                        <option value="400" selected="selected">文化娱乐</option>
+                                                    </select>    
+                                                </span>
+                                                
+                                            </li>
+                                            <li>
+                                                <input id="j_useAreatype_3" value="3" name="useAreatype" type="radio">
+                                                <label for="j_useAreatype_3">指定店铺</label>
+                                                <span id="j_useAreatype_3_k">
+                                                    <input id="j_useArea" type="text" class="ui-input ui-input-large" name="useArea" />
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">券的图片</label>
+                                        <ul class="m-upload fn-clear" id="uploadImg1">
+                                            <li class="btn-upload">
+                                                <img id="uploader-1" src="http://s-102888.gotocdn.com/static/images/upload.png" alt="点击上传">
+                                            </li>
+                                        </ul>
+                                        <p class="ui-form-explain">文件大小不超过500k。</p>
+                                    </div>
+
+                                    <div class="ui-form-item ui-form-item-success">
+                                        <label for="" class="ui-label">
+                                            <span class="ui-form-required">*</span>特别提示</label>
+                                        <textarea id="txtDescription" class="ui-textarea" name="remark" placeholder="请输入文字" required data-errormessage-required="请输入活动描述"></textarea>
+                                        <span class="ui-form-other"><a href="#" id="lblDescriptionMsg">还能输入1500个字</a>
+                                        </span>
+                                        <div class="ui-form-explain">门店介绍为必填字段。</div>
+                                    </div>
+
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">发行数量</label>
+                                        <input id="j_quantity_0" value="0" name="quantity" type="radio" checked="checked">
+                                        <label for="j_quantity_0">不限数量</label>
+                                        <input id="j_quantity_1" value="1" name="quantity" type="radio">
+                                        <label for="j_quantity_1">指定数量</label>
+                                        <input name="limitQuantity" id="limitQuantity" type="text" class="ui-input ui-input-large" />
+                                    </div>
+
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">设定渠道</label>
+                                        <p class="ui-form-text">
+                                            <input id="" value="1" name="tickChannel" type="radio" checked="checked">
+                                            <label for="">微信渠道</label>
+                                            <input id="" value="2" name="tickChannel" type="radio">
+                                            <label for="">APP渠道</label>
+                                        </p>
+                                    </div>
+
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">领取规则</label>
+                                        <ul class="ui-form-text">
+                                            <li>
+                                                渠道每日领取量：
+                                                <input id="" value="-1" name="dayNo" type="radio" checked="checked">
+                                                <label for="">不限</label>
+                                                <input id="" value="0" name="dayNo" type="radio">
+                                                <label for="">指定数量</label>
+                                                <input type="text" name="dayNoValue" class="ui-input ui-input-large" />
+                                            </li>
+                                            <li>
+                                                用户每日领取量：
+
+                                                <input id="" value="-1" name="dayUserNo" type="radio" checked="checked">
+                                                <label for="">不限</label>
+                                                <input id="" value="0" name="dayUserNo" type="radio">
+                                                <label for="">指定数量</label>
+                                                <input type="text" name="dayUserNoValue" class="ui-input ui-input-large" />
+                                            </li>
+                                            <li>用户最大领取量：
+
+                                                <input id="" value="-1" name="userNo" type="radio" checked="checked">
+                                                <label for="">不限</label>
+                                                <input id="" value="0" name="userNo" type="radio">
+                                                <label for="">指定数量</label>
+                                                <input type="text" name="userNoValue" class="ui-input ui-input-large" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">上架时间</label>
+                                        <input id="" value="1" name="onsaleTimetype" type="radio" checked="checked" />
+                                        <label for="">审核成功后立即上线</label>
+                                        <input id="" value="2" name="onsaleTimetype" type="radio" />
+                                        <label for="">指定上线时间</label>
+                                        <input type="text" name="onsaleTime" class="ui-input ui-input-large ui-calendar-icon" id="onsaleTime" />
+                                    </div>
+
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">下架时间</label>
+                                        <input id="" value="1" name="onsaleEndtimetype" type="radio" checked="checked">
+                                        <label for="">与优惠券失效时间相同</label>
+                                        <input id="" value="2" name="onsaleEndtimetype" type="radio">
+                                        <label for="">券领取完即自动下架</label>
+                                        <input id="" value="3" name="onsaleEndtimetype" type="radio">
+                                        <label for="">指定下架时间</label>
+                                        <input type="text" name="onsaleEndtime" class="ui-input ui-input-large ui-calendar-icon" id="onsaleEndtime" />
+                                    </div>
+
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">领取开始时间</label>
+                                        <input id="" value="1" name="pullStarttype" type="radio" checked="checked">
+                                        <label for="">上架后即可领取</label>
+                                        <input id="" value="2" name="pullStarttype" type="radio">
+                                        <label for="">指定时间</label>
+                                        <input type="text" class="ui-input ui-input-large ui-calendar-icon" id="pullStart" />
+                                        <select id="sltStartHour">
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08" selected="selected">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                        <select id="sltStartMinute">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="15">15</option>
+                                            <option value="30">30</option>
+                                            <option value="45">45</option>
+                                        </select>
+
+                                    </div>
+
+                                    <div class="ui-form-item supply">
+                                        <label class="ui-label">领取结束时间</label>
+                                        <input id="" value="1" name="pullEndtype" type="radio" checked="checked">
+                                        <label for="">领取完即结束</label>
+                                        <input id="" value="2" name="pullEndtype" type="radio">
+                                        <label for="">下架即结束</label>
+                                        <input id="" value="3" name="pullEndtype" type="radio">
+                                        <label for="">指定时间</label>
+                                        <input type="text" class="ui-input ui-input-large ui-calendar-icon" id="pullEnd" />
+
+                                        <select id="sltEndHour">
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18" selected="selected">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                        </select>
+                                        <select id="sltEndMinute">
+                                            <option value="00" selected="selected">00</option>
+                                            <option value="15">15</option>
+                                            <option value="30">30</option>
+                                            <option value="45">45</option>
+                                        </select>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <input type="submit" id="btnSave" class="ui-button ui-button-morange" value="保存且下一步">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/coupons/create2.js"></script>
+<% include ../../common/footer.ejs %>

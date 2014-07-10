@@ -1,0 +1,43 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-tit2"><h2>商场介绍</h2></div>
+		<div class="m-pic1">
+			<img src="<%= data['rootUrl'] %>/img/rxh/about.jpg">
+		</div>
+		<div class="m-list2">		
+			<p class="adr">商场地址：汉阳龙阳大道邱家大湾</p>
+			<p class="pho">商场电话：<a href="tel:027-84626888">027-84626888</a></p>
+			<p class="email">电子邮箱：renxinhui@sina.com</p>
+		</div>
+		<div class="m-list3">
+			<p><b>汉阳人信汇，4月26日盛大开业！</b></p>
+			<p>汉阳人信汇位于汉阳王家湾，毗邻龙阳大道，交通便利，与地铁3号线无缝连接，12条公交线路经过。</p>
+			<p>我们致力于打造充满人文关怀的家庭欢聚地，创建武汉首个体验悦读生活的中心书城，是您文化生活、休闲聚会、节庆活动的首选。</p>
+			<p><b>特色一：独特的项目属性</b></p>
+			<p>汉阳人信汇被武汉市政府命名为汉阳中心书城 ，打造集阅读成长、展示交流、文化休闲、创意生活于一体的复合性体验式文化生活空间。</p>
+			<p><b>特色二：专业的儿童业态</b></p>
+			<p>围绕孩子不同年龄段身心、行为特点以及成长发展要求，进行功能规划和品类组合，对项目的专业度、体验感、影响力等悉心甄选，坚持高品质、好品牌、结构美。</p>
+			<p><b>特色三：亲民的品质美食</b></p>
+			<p>人信汇的餐饮项目更多地从“社区家庭的厨房”、“换换口味的地方”、“聚会休闲的场所”进行定位和规划，涉及面包烘焙、咖啡轻食、风格简餐、异域美食及经典本帮菜等多品类。</p>
+			<p><b>特色四：多彩的艺文活动</b></p>
+			<p>武汉首个体验悦读的生活空间——中心书城，将定期开展出版物主题展、好书荐读、名家签售、特惠展售等活动。</p>
+			<p><b>特色五：智能的分享平台</b></p>
+			<p>人信汇建构的免费优质Wi-Fi环境和多渠道用户入口，以用户为核心提供增值服务。</p>
+		</div>
+	</div>
+</div>
+
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

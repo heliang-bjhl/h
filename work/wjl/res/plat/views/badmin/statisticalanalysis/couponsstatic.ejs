@@ -1,0 +1,79 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/badmin/statisticalanalysis/couponsstatic.css"></head>
+<body class="statisticalanalysis-couponsstatic">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+        <div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav"><%include ../includes/sidebar.ejs%></div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>优惠券统计</h3>
+                                </div>
+                            </div>
+                            <div class="search-code">
+                                <form method="get" action="">
+                                        <div class="search-code">
+                                            券名称：
+                                            <input pclass="ui-input ui-input-large" type="text" value="" name="">
+                                            状态:
+                                            <select id="qstate" name="">
+                                                <option value="0" selected>全部</option>
+                                                <option value="1" >上架中</option>
+                                                <option value="2" >已下架</option>
+                                            </select>
+                                                上架日期:
+                                            <input value="" id="jStartTime" name="" class="ui-input ui-input-large" type="text">
+                                            --
+                                            <input value="" id="jEndTime" name="" class="ui-input ui-input-large" type="text">
+                                            
+                                            <input type="submit" class="ui-button ui-button-lorange" value="查询" />
+                                        </div>
+                                    </form>
+                            </div>
+                            <p>统计：有256张优惠券（在上架的123张，已下架的133张），共发行5,000,000张，领取了1,000,000张，核销了500,000张。</p>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th >序号</th>
+                                        <th>券名称</th>
+                                        <th>券类型</th>
+                                        <th>有效期</th>
+                                        <th>上架日期</th>
+                                        <th>状态</th>
+                                        <th>发行数量</th>
+                                        <th>领取数量</th>
+                                        <th>核销数量</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="#" target="_blank">马二嫂专用10元现金券</a></td>
+                                        <td>现金券</td>
+                                        <td>2014-3-26：2014-3-29</td>
+                                        <td>2014-3-26</td>
+                                        <td>上架中</td>
+                                        <td>100,000</td>
+                                        <td>60,000</td>
+                                        <td>10000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //分页 -->
+                            <div class="pager">
+                                <% include ../../common/pager.ejs %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/badmin/statisticalanalysis/couponsstatic.js"></script>
+<% include ../../common/footer.ejs %>

@@ -1,0 +1,43 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-tit1"><h2>北京amp动感世界杯开幕</h2></div>
+		<div class="m-list2">
+			<p class="time">活动时间：2014-6-13 — 2014-7-16</p>
+			<p class="adr">活动地点：B1-10</p>
+			<p class="spo">主办方：西单大悦城店</p>
+			<p class="sig">报名名额：40人</p>
+			<p class="pho">咨询电话：<a href="tel:027-8462888">027-8462888</a></p>
+		</div>
+		<form action="#"  id="j_form">
+			<div>
+				<input class="m-ip" type="text" placeholder="姓名" data-v="require" />
+				<div class="m-err"></div>
+			</div>
+			<select class="m-sl">
+				<option value="性别">性别</option>
+				<option value="男">男</option>
+				<option value="女">女</option>
+			</select>
+			<div>
+				<input class="m-ip" type="tel" placeholder="手机号" data-v="require-phone" />
+				<div class="m-err"></div>
+			</div>
+			<input class="m-bt1" type="button" value="在线报名" id="j_sb" />
+		</form>
+	</div>
+</div>
+
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>

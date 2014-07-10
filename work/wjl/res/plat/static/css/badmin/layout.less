@@ -1,0 +1,53 @@
+/* 完美底部布局 */
+@height: 100px;
+
+html, body, #wrap {
+	height: 100%;
+	margin: 0;
+}
+body > #wrap {
+	height: auto;
+	min-height: 100%;
+}
+
+#main {
+	padding-bottom: @height;
+}
+#footer,footer{
+	position: relative;
+	margin-top: -(@height + 1);
+	height: @height;
+	clear:both;
+    border-top: 0px solid #CCCCCC;
+}
+.clearfix:after {
+	content: ".";
+	 display: block;
+	 height: 0;
+	 clear: both;
+	 visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+
+/* 修改已有样式 */
+header{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:27px;
+}
+.global-common-a{
+    position:absolute;
+    left:0px;
+    top:27px;
+    width:100%;
+    height:107px;
+}
+.ui-footer {
+    margin-top:0px;
+}

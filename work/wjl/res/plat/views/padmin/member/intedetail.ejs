@@ -1,0 +1,76 @@
+<% include ../../common/header.ejs %>
+<link rel="stylesheet" href="<%=staticUrl%>/static/css/padmin/member/intedetail.css">
+</head>
+<body class="member-intedetail">
+<% include ../../common/h5-header.ejs %>
+<% include ../../common/header_menu.ejs %>
+    <div id="wrap">
+    	<div id="main" class="clearfix">
+            <div id="content" class="content">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-5 asidenav">
+                        <%include ../includes/sidebar.ejs%>
+                    </div>
+                    <div class="ui-grid-20">
+                        <div class="main">
+                            <div class="ui-block ui-block-title">
+                                <div class="ui-title ui-title-line fn-clear">
+                                    <h3>会员积分详情</h3>
+                                </div>
+                            </div>
+                            <div class="ui-block ui-block-fortitle fn-clear">
+                                <h4>账号信息</h4>
+                            </div>
+                            <hr />
+                            <fieldset>
+                                <div class="abc_detail fn-clear">
+                                    <div class="leftfaceimg"><img src="<%=staticUrl%>/static/images/tmp/quan.jpg" alt="" title="" /></div>
+                                    <div class="right-msg">
+                                        <div class="ui-form-item">
+                                            <label for="" class="ui-label">会员昵称:</label>
+                                            <p class="ui-form-text">轻刀绿意</p>
+                                        </div>
+                                        <div class="ui-form-item">
+                                            <label for="" class="ui-label">会员手机:</label>
+                                            <p class="ui-form-text">13787823787</p>
+                                        </div>
+                                        <div class="ui-form-item">
+                                            <label for="" class="ui-label">当前积分:</label>
+                                            <p class="ui-form-text">220分</p>
+                                        </div>
+                                        <div class="ui-form-item">
+                                            <label for="" class="ui-label">注册时间:</label>
+                                            <p class="ui-form-text">2014-5-19 17:26:12</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <hr />
+                            <p class="m-total">共284条,共15页</p>
+                            <table class="ui-table" id="tblList">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>时间</th>
+                                        <th>描述</th>
+                                        <th>明细</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2014-5-19 11:11:27</td>
+                                        <td>第7日签到</td>
+                                        <td>+35</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+<% include ../../common/script_footer.ejs %>
+<script src="<%=staticUrl%>/static/js/padmin/member/intedetail.js"></script>
+<% include ../../common/footer.ejs %>

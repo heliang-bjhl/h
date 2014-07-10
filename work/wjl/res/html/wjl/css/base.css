@@ -1,0 +1,40 @@
+@charset "utf-8";
+/**********all************/
+body{font-family: 微软雅黑 !important;}
+a{font-family: 微软雅黑 !important;}
+/**********all  end************/
+/***********header开始*************/
+.header{width: 100%;height: 82px;overflow: hidden;background: #fff;border: 1px solid #e7e7e7;position: relative;left: 0;top: 0;}
+.headercon{width: 1000px;margin: 0 auto;height: 82px;overflow: hidden;position: relative;left: 0;top: 0;}
+.logo{float: left;width: 103px;height: 35px;margin-left: 43px;margin-top: 23px;}
+.logo img{width: 100%;height: 100%;}
+.headercon ul{float: right;height: 82px;}
+.headercon ul li{float: left;height: 82px;line-height: 82px;margin-right: 60px;}
+.headercon ul li a{font-size: 18px;font-family: 微软雅黑 !important;color: #343434;}
+.headercon ul li a:hover{color: #3d81e4;}
+.headercon ul .act a{color: #3d81e4;}
+/***********header结束*************/
+/***********content开始*************/
+.content{width: 100%;background: #f8f8f8;}
+.banner{width: 100%;height: 420px;position: relative;overflow: hidden;left: 0;top: 0;background: #121e2c;}
+.banner div{width: 1480px;height: 420px;position: absolute;position: absolute;left: 50%;margin-left: -740px;}
+.banner2{width: 100%;height: 511px;position: relative;overflow: hidden;left: 0;top: 0;background: #121e2c;}
+.banner2 div{width: 1480px;height: 4511px;position: absolute;position: absolute;left: 50%;margin-left: -740px;}
+.contentcon{width: 1000px;margin: 0 auto;}
+.contentcon img{width: 100%;}
+/***********content结束*************/
+/***********footer开始*************/
+.footer{width: 100%;background: #ebebeb;height: 60px;position: relative;overflow: hidden;left: 0;top: 0;}
+.footercon{width: 1000px;margin: 0 auto;}
+.footercon ul{float: left;height: 60px;}
+.footercon ul li{float: left;height: 60px;line-height: 60px;font-size: 13px;color: #656565;margin-left: 15px;}
+.footercon ul li a{font-size: 13px;color: #656565;}
+.footercon p{float: right;font-size: 13px;height: 60px;line-height: 60px;color: #656565;}
+/***********footer结束*************/
+/**********other************/
+.mask{position: absolute;width: 100%;left: 0;top: 0;background: #ddd;}
+.lbycontent{padding:15px; background: #fff;position: fixed;_position:absolute;left: 50%;top: 50%;margin-left: -175px;margin-top: -75px;z-index:15;_top:200px; _Top:expression(eval(documentElement.scrollTop) + 200);_left: 50%;_margin-left: -175px;}
+.password div input{width: 250px;height: 30px;outline: none;font-size: 14px;color: #ccc;line-height: 30px;border-radius: 3px;border: 1px solid #ddd;text-indent: 8px;}
+#j_subPwd{display: block; border-radius:3px; box-shadow:0 1px 1px rgba(0,0,0,0.2);width: 250px;height: 32px;font-size: 14px;background: #227ce1;line-height: 32px;margin-top: 15px;text-align: center;color: #fff;}
+#j_subPwd:hover{ background: #1e71ce;}
+/**********other  end************/

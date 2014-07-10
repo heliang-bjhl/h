@@ -1,0 +1,45 @@
+<% include ../_g/head.ejs %>
+<link rel="stylesheet" href="<%= data['rootUrl'] %>/css/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.css">
+</head>
+<body class="page-<%= data['catClass'] %>-<%= data['pageClass'] %>">
+
+<% include ../_g/pagehead.ejs %>
+
+<!--html start-->
+<div class="page">
+	<div class="main">
+		<div class="m-list4">
+			<section>
+				<div class="info">
+					<img src="http://i1.dpfile.com/pc/9f15542f3405b23ba0680b0cf1c47e55/31243539_m.jpg">
+					<div class="tex">
+						<p>店铺代金券</p>
+						<p>有效期：2014-03-09至2014-09-14</p>
+					</div>
+				</div>
+				<div class="pri">
+					面值<em>￥30.00</em>
+				</div>
+				<div class="rule">
+					<p>消费满100元，可使用一张，每次仅限一次使用</p>
+				</div>
+			</section>
+		</div>
+		<div class="m-bt3">
+			<a href="#">我要领取</a>
+		</div>
+		<div class="m-list5">
+			<p>*凭借本券在使用期内作为菜品及主食消费（酒水、饮料、香烟、麻辣凉菜、湿巾，服务费除外）</p>
+			<p>*每消费满100元，可使用一张券， 每次仅限一次使用</p>
+			<p>*此券仅限周一到周五 17：00前使用</p>
+			<p>*活动最终解释权归门店所有</p>
+		</div>
+	</div>
+</div>
+
+<!--html end-->
+
+<% include ../_g/pagefoot.ejs %>
+<% include ../_g/script.ejs %>
+<script src="<%= data['rootUrl'] %>/js/p/<%= data['catClass'] %>/<%= data['pageClass'] %>.js"></script>
+<% include ../_g/foot.ejs %>
