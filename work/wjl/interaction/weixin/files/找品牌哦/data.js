@@ -1,0 +1,65 @@
+﻿$axure.loadCurrentPage({
+  "url":"找品牌哦.html",
+  "generationDate":new Date(1402985729349.66),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"b39bd8dbffe34420b16d34de09f65f00",
+    "type":"Axure:Page",
+    "name":"找品牌哦",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"ea0ab7289df14d769655299ed25c77b6",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":740,
+              "height":2093}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"671fce1af7d94c5c884d341de513c791",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":740,
+                  "height":2093}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/找品牌哦/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "ea0ab7289df14d769655299ed25c77b6":{
+      "scriptId":"u0"},
+    "671fce1af7d94c5c884d341de513c791":{
+      "scriptId":"u1"}}});

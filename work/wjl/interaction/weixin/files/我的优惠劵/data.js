@@ -1,0 +1,145 @@
+﻿$axure.loadCurrentPage({
+  "url":"我的优惠劵.html",
+  "generationDate":new Date(1403514130921),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"ad3de2654769459298965faf679aaec7",
+    "type":"Axure:Page",
+    "name":"我的优惠劵",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"86af16be4f794e579b426b35b823d092",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":919,
+              "height":679}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"caaa364bd1b14620be2f2bea4c923ec2",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":919,
+                  "height":679}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/我的优惠劵/u0.png"}},
+{
+          "id":"cf8e3b8ee7f9438fb5d31d563a29877c",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":964,
+              "y":10},
+            "size":{
+              "width":336,
+              "height":555}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"1518eb2c93d44c67955e25df63cef2e7",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":964,
+                  "y":10},
+                "size":{
+                  "width":336,
+                  "height":555}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/我的优惠劵/u2.jpg"}},
+{
+          "id":"1c256b5715dc45268d05259ec737ab97",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"h2",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontWeight":"200",
+            "fontStyle":"normal",
+            "location":{
+              "x":1310,
+              "y":25},
+            "size":{
+              "width":207,
+              "height":25}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"c566773c780c431fb0b899d241bb71ad",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontWeight":"200",
+                "fontStyle":"normal",
+                "location":{
+                  "x":1310,
+                  "y":25},
+                "size":{
+                  "width":207,
+                  "height":25}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "86af16be4f794e579b426b35b823d092":{
+      "scriptId":"u0"},
+    "caaa364bd1b14620be2f2bea4c923ec2":{
+      "scriptId":"u1"},
+    "cf8e3b8ee7f9438fb5d31d563a29877c":{
+      "scriptId":"u2"},
+    "1518eb2c93d44c67955e25df63cef2e7":{
+      "scriptId":"u3"},
+    "1c256b5715dc45268d05259ec737ab97":{
+      "scriptId":"u4"},
+    "c566773c780c431fb0b899d241bb71ad":{
+      "scriptId":"u5"}}});

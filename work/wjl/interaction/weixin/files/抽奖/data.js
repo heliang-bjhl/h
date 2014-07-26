@@ -1,0 +1,71 @@
+﻿$axure.loadCurrentPage({
+  "url":"抽奖.html",
+  "generationDate":new Date(1402985728783.18),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"eb289f4d928642ac9a05cc540d302597",
+    "type":"Axure:Page",
+    "name":"抽奖",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"59c398ddae214128971dccd014358d41",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":31,
+              "y":0},
+            "size":{
+              "width":1109,
+              "height":478}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"debc1f45404a40adad5d601c565ab179",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":31,
+                  "y":0},
+                "size":{
+                  "width":1109,
+                  "height":478}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/抽奖/u0.jpg"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "59c398ddae214128971dccd014358d41":{
+      "scriptId":"u0"},
+    "debc1f45404a40adad5d601c565ab179":{
+      "scriptId":"u1"}}});

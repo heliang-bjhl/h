@@ -1,0 +1,51 @@
+<script>
+var sayName = function() {
+    alert(this.name)
+}
+var Person = function(name, age, job) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    this.sayName = sayName;
+}
+
+
+var person = new Person('a', 15, 'doctor');
+
+Person.prototype.hello = function(){
+
+}
+
+var hasPrototypeProperty = function(object,property){
+	return !object.hasOwnProperty(property) && property in object;
+}
+// console.log(person.__proto__ == Person.prototype)
+
+// console.log(person.hasOwnProperty('name'))
+
+// console.log(hasPrototypeProperty(person,'hello'))
+
+</script>
+
+<script type="text/javascript">
+	var S1 = function(){
+		this.property = true;
+	}
+	S1.prototype.getValue = function(){
+		return this.property;
+	}
+
+	var S2 = function(){
+		this.sproperty = false;
+	}
+	S2.prototype = new S1();
+
+	S2.prototype.getValue = function(){
+		return this.sproperty;
+	}
+	var s = new S2();
+	
+	//console.log(S2.prototype)
+	console.log(s.getValue())
+
+</script>

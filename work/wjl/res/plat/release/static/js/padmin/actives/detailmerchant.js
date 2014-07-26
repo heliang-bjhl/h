@@ -1,0 +1,1 @@
+seajs.use(["$","select","util"],function(){$$m.finish("ok")});

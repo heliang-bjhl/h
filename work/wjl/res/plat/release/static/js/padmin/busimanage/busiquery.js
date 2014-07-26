@@ -1,0 +1,1 @@
+seajs.use("calendar_css"),seajs.use(["$","select","calendar","util"],function(a,b){var c={setSlt:function(){new b({trigger:"#qtype"}).render(),new b({trigger:"#qstate"}).render()}},d=function(){c.setSlt()};d(),$$m.finish("ok")});

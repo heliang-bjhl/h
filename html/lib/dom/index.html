@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	    <title>dom</title>
+	    <script type="text/javascript" src="../../../lib/dom.js"></script>
+	</head>
+	<body>
+		<div id="beforeDom"><span>12312</span>
+		</div>
+
+		<script type="text/javascript">
+			var span = document.getElementById('beforeDom').getElementsByTagName('span')[0];
+			var beforeDom = document.getElementById('beforeDom');
+			var a = document.createElement('b');
+			a.appendChild(document.createTextNode('bbbb'))
+			var c = document.createElement('b');
+			c.appendChild(document.createTextNode('ccc'))
+			H.dom.insertBefore(a,span)
+			H.dom.insertAfter(c,span)
+		</script>
+	</body>
+</html>

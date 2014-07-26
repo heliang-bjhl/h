@@ -1,0 +1,1 @@
+seajs.use(["$"],function(a){a("#save").on("click",function(){var b=a("input[type=radio][name=qtype]:checked").val();location.href=b})});

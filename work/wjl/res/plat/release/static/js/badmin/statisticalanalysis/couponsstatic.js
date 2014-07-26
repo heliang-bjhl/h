@@ -1,0 +1,1 @@
+seajs.use("calendar_css"),seajs.use(["$","select","calendar","util"],function(a,b,c){new b({trigger:"#qstate"}).render();var d={setCal:function(){var a=new c({trigger:"#jStartTime"}),b=new c({trigger:"#jEndTime"});a.on("selectDate",function(a){b.range([a,null])}),b.on("selectDate",function(b){a.range([null,b])})}},e=function(){d.setCal()};e(),$$m.finish("ok")});

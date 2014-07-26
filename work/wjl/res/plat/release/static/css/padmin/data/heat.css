@@ -1,0 +1,1 @@
+.data-heat #heatmap{width:1300px;height:449px;position:absolute;left:0;top:0;z-index:10}.data-heat #heatmapbox{position:relative;width:1300px;height:600px}.data-heat #heatmapbox img{width:1300px;height:449px;overflow:hidden;position:absolute;left:0;top:0;z-index:1}.data-heat #contain{position:relative;overflow-x:scroll}

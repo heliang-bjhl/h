@@ -1,0 +1,1 @@
+seajs.use(["$","select","confirmbox","util"],function(a,b){new b({trigger:"#jTypeSel"}).render(),new b({trigger:"#jStateSel"}).render(),$$m.finish("ok")});

@@ -1,0 +1,15 @@
+<div id="a"></div>
+<script>
+	var tableHtml = "";
+
+	var tablehtml = document.createElement('table');
+	for(var i = 0 ; i < 3 ; i++){
+		var tr = document.createElement('tr');
+		var td = document.createElement('td');
+		var text = document.createTextNode(i);
+		td.appendChild(text);
+		tr.appendChild(td);
+		tablehtml.appendChild(tr);
+	}
+	document.getElementById('a').appendChild(tablehtml)
+</script>

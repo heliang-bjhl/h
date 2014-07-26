@@ -1,0 +1,2534 @@
+﻿$axure.loadCurrentPage({
+  "url":"注册页面.html",
+  "generationDate":new Date(1402913061512.62),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"b1d5cbb4a0e1445ba7882a5123605fba",
+    "type":"Axure:Page",
+    "name":"注册页面",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"4fda80c7b1494546b9756eace488fee6",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFF2F2F2},
+            "location":{
+              "x":370,
+              "y":10},
+            "size":{
+              "width":320,
+              "height":480},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF666666}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"d6617ec6114f4d32a0b7ee0a051347be",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFF2F2F2},
+                "location":{
+                  "x":370,
+                  "y":10},
+                "size":{
+                  "width":320,
+                  "height":480},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF666666}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/关注引导/u0.png"}},
+{
+          "id":"fbe472019ad94ab8a465ae64ef6f9ab2",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'FontAwesome'",
+            "fontSize":"28px",
+            "horizontalAlignment":"left",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+            "fill":{
+              "fillType":"solid",
+              "color":0xFF333333},
+            "location":{
+              "x":370,
+              "y":10},
+            "size":{
+              "width":320,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"14c5a57f68cd458eb4f9a37c2dc341b4",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'FontAwesome'",
+                "fontSize":"28px",
+                "horizontalAlignment":"left",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFF333333},
+                "location":{
+                  "x":370,
+                  "y":10},
+                "size":{
+                  "width":320,
+                  "height":40}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/__home/u8.png"}},
+{
+          "id":"ab90cad358104354b3936534ce69ed00",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'FontAwesome'",
+            "fontSize":"28px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+            "location":{
+              "x":400,
+              "y":16},
+            "size":{
+              "width":29,
+              "height":29}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"da98aae2f0994393a7c4437f454859ca",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'FontAwesome'",
+                "fontSize":"28px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+                "location":{
+                  "x":400,
+                  "y":16},
+                "size":{
+                  "width":29,
+                  "height":29}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"2f3870921c42481a97b1307e3ed0ea55",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "location":{
+              "x":439,
+              "y":22},
+            "size":{
+              "width":200,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"d7d0a2f95baf4f7eaddd62ba8371716c",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "location":{
+                  "x":439,
+                  "y":22},
+                "size":{
+                  "width":200,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"b4a339a7757346d4a5aa58c2cbf918d4",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFF2F2F2},
+            "location":{
+              "x":10,
+              "y":10},
+            "size":{
+              "width":320,
+              "height":480},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF666666}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"036e84fa51c041b79a0512a80501354d",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFF2F2F2},
+                "location":{
+                  "x":10,
+                  "y":10},
+                "size":{
+                  "width":320,
+                  "height":480},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF666666}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/关注引导/u0.png"}},
+{
+          "id":"d3c113c56abd400cb7f195ad6103211f",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'FontAwesome'",
+            "fontSize":"28px",
+            "horizontalAlignment":"left",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+            "fill":{
+              "fillType":"solid",
+              "color":0xFF333333},
+            "location":{
+              "x":10,
+              "y":10},
+            "size":{
+              "width":320,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"ebf7f72cf37e423f98a733d132c4103e",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'FontAwesome'",
+                "fontSize":"28px",
+                "horizontalAlignment":"left",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFF333333},
+                "location":{
+                  "x":10,
+                  "y":10},
+                "size":{
+                  "width":320,
+                  "height":40}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/__home/u8.png"}},
+{
+          "id":"c6bec1246a504d6ab56f8434eae5ef6d",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'FontAwesome'",
+            "fontSize":"28px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+            "location":{
+              "x":40,
+              "y":16},
+            "size":{
+              "width":29,
+              "height":29}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"d37b437079c943c6b5c64b0d25676c2f",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'FontAwesome'",
+                "fontSize":"28px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+                "location":{
+                  "x":40,
+                  "y":16},
+                "size":{
+                  "width":29,
+                  "height":29}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"2f83bee9c874403cb7a3d3f48109da64",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "location":{
+              "x":79,
+              "y":22},
+            "size":{
+              "width":200,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"3141b6f4ecca4d6cb3d6df85c3f53458",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "location":{
+                  "x":79,
+                  "y":22},
+                "size":{
+                  "width":200,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"920edee8ad0746a1871d4dadb6676bb9",
+          "label":"textfield control",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":false,
+          "style":{
+            "location":{
+              "x":390,
+              "y":125},
+            "size":{
+              "width":13,
+              "height":18},
+            "visible":false},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"d184d3dc236348d0ad503ab1772303a6",
+              "label":"State1",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"a1f146cfa9b34ef78a460b634c57a64f",
+                  "label":"label storage (ignore)",
+                  "parentDynamicPanel":"920edee8ad0746a1871d4dadb6676bb9",
+                  "type":"textBox",
+                  "styleType":"textBox",
+                  "visible":true,
+                  "style":{
+                    "baseStyle":"627587b6038d43cca051c114ac41ad32",
+                    "size":{
+                      "width":195,
+                      "height":25}},
+                  "adaptiveStyles":{
+}}],
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF},
+                "image":null,
+                "imageHorizontalAlignment":"near",
+                "imageVerticalAlignment":"near",
+                "imageRepeat":"auto"},
+              "adaptiveStyles":{
+                "":{
+}}}]},
+{
+          "id":"87cebc6f1b664e0f8c8c80d5c77eaed8",
+          "label":"textfield",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF666666,
+              "opacity":1},
+            "baseStyle":"627587b6038d43cca051c114ac41ad32",
+            "location":{
+              "x":390,
+              "y":125},
+            "size":{
+              "width":269,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onFocus":{
+              "description":"OnFocus",
+              "cases":[{
+                  "description":"clear and store label<br> (If text on label storage (ignore) equals &quot;&quot;)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetWidgetText",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["a1f146cfa9b34ef78a460b634c57a64f"]}]},
+                    "rightExpr":{
+                      "exprType":"stringLiteral",
+                      "value":"",
+                      "stos":[]}},
+                  "actions":[{
+                      "action":"setFunction",
+                      "description":"Set text on label storage (ignore) equal to text on textfield",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["a1f146cfa9b34ef78a460b634c57a64f"]},
+{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["87cebc6f1b664e0f8c8c80d5c77eaed8"]}]}]}]}},
+{
+                      "action":"setFunction",
+                      "description":"Set text on textfield equal to &quot;&quot;",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["87cebc6f1b664e0f8c8c80d5c77eaed8"]},
+{
+                                "exprType":"stringLiteral",
+                                "value":"",
+                                "stos":[]}]}]}}]}]},
+            "onLostFocus":{
+              "description":"OnLostFocus",
+              "cases":[{
+                  "description":"replace label<br> (If text on textfield equals &quot;&quot;)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetWidgetText",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["87cebc6f1b664e0f8c8c80d5c77eaed8"]}]},
+                    "rightExpr":{
+                      "exprType":"stringLiteral",
+                      "value":"",
+                      "stos":[]}},
+                  "actions":[{
+                      "action":"setFunction",
+                      "description":"Set text on textfield equal to text on label storage (ignore)",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["87cebc6f1b664e0f8c8c80d5c77eaed8"]},
+{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["a1f146cfa9b34ef78a460b634c57a64f"]}]}]}]}},
+{
+                      "action":"setFunction",
+                      "description":"Set text on label storage (ignore) equal to &quot;&quot;",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["a1f146cfa9b34ef78a460b634c57a64f"]},
+{
+                                "exprType":"stringLiteral",
+                                "value":"",
+                                "stos":[]}]}]}}]}]}},
+          "tabbable":true},
+{
+          "id":"97339f71b6734a729cd09e353927edb8",
+          "label":"textfield control",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":false,
+          "style":{
+            "location":{
+              "x":34,
+              "y":168},
+            "size":{
+              "width":13,
+              "height":18},
+            "visible":false},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"9da5139148374ac68e98a8381fc34180",
+              "label":"State1",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"fa654d9a3f7546839995d99d96bcf3b2",
+                  "label":"label storage (ignore)",
+                  "parentDynamicPanel":"97339f71b6734a729cd09e353927edb8",
+                  "type":"textBox",
+                  "styleType":"textBox",
+                  "visible":true,
+                  "style":{
+                    "baseStyle":"627587b6038d43cca051c114ac41ad32",
+                    "size":{
+                      "width":195,
+                      "height":25}},
+                  "adaptiveStyles":{
+}}],
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF},
+                "image":null,
+                "imageHorizontalAlignment":"near",
+                "imageVerticalAlignment":"near",
+                "imageRepeat":"auto"},
+              "adaptiveStyles":{
+                "":{
+}}}]},
+{
+          "id":"52c735afd445471e954a8a2c01afbedf",
+          "label":"textfield",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF666666,
+              "opacity":1},
+            "baseStyle":"627587b6038d43cca051c114ac41ad32",
+            "location":{
+              "x":34,
+              "y":168},
+            "size":{
+              "width":269,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onFocus":{
+              "description":"OnFocus",
+              "cases":[{
+                  "description":"clear and store label<br> (If text on label storage (ignore) equals &quot;&quot;)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetWidgetText",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["fa654d9a3f7546839995d99d96bcf3b2"]}]},
+                    "rightExpr":{
+                      "exprType":"stringLiteral",
+                      "value":"",
+                      "stos":[]}},
+                  "actions":[{
+                      "action":"setFunction",
+                      "description":"Set text on label storage (ignore) equal to text on textfield",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["fa654d9a3f7546839995d99d96bcf3b2"]},
+{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["52c735afd445471e954a8a2c01afbedf"]}]}]}]}},
+{
+                      "action":"setFunction",
+                      "description":"Set text on textfield equal to &quot;&quot;",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["52c735afd445471e954a8a2c01afbedf"]},
+{
+                                "exprType":"stringLiteral",
+                                "value":"",
+                                "stos":[]}]}]}}]}]},
+            "onLostFocus":{
+              "description":"OnLostFocus",
+              "cases":[{
+                  "description":"replace label<br> (If text on textfield equals &quot;&quot;)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetWidgetText",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["52c735afd445471e954a8a2c01afbedf"]}]},
+                    "rightExpr":{
+                      "exprType":"stringLiteral",
+                      "value":"",
+                      "stos":[]}},
+                  "actions":[{
+                      "action":"setFunction",
+                      "description":"Set text on textfield equal to text on label storage (ignore)",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["52c735afd445471e954a8a2c01afbedf"]},
+{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["fa654d9a3f7546839995d99d96bcf3b2"]}]}]}]}},
+{
+                      "action":"setFunction",
+                      "description":"Set text on label storage (ignore) equal to &quot;&quot;",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["fa654d9a3f7546839995d99d96bcf3b2"]},
+{
+                                "exprType":"stringLiteral",
+                                "value":"",
+                                "stos":[]}]}]}}]}]}},
+          "tabbable":true},
+{
+          "id":"f143816807d44d9993f0170b37fa5e19",
+          "label":"button",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"14px",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFBD6600,
+              "opacity":1},
+            "baseStyle":"627587b6038d43cca051c114ac41ad32",
+            "stateStyles":{
+              "mouseOver":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFD7AA},
+{
+                      "color":0xFFFFD7AA}]}},
+              "disabled":{
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFCCCCCC,
+                  "opacity":1},
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFF2F2F2},
+{
+                      "color":0xFFF2F2F2}]},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFCCCCCC}}},
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFFFFF5EA},
+{
+                  "color":0xFFFFF5EA},
+{
+                  "color":0xFFFFC88A},
+{
+                  "color":0xFFFFC88A}]},
+            "location":{
+              "x":34,
+              "y":280},
+            "size":{
+              "width":269,
+              "height":41},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFFD7B08A},
+            "cornerRadiusTopLeft":"5"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b54b1ce17cb9437da305c84177e0b2cb",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"14px",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFBD6600,
+                  "opacity":1},
+                "baseStyle":"627587b6038d43cca051c114ac41ad32",
+                "stateStyles":{
+                  "mouseOver":{
+                    "fill":{
+                      "fillType":"linearGradient",
+                      "colors":[{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFD7AA},
+{
+                          "color":0xFFFFD7AA}]}},
+                  "disabled":{
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC,
+                      "opacity":1},
+                    "fill":{
+                      "fillType":"linearGradient",
+                      "colors":[{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFF2F2F2},
+{
+                          "color":0xFFF2F2F2}]},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}}},
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFF5EA},
+{
+                      "color":0xFFFFF5EA},
+{
+                      "color":0xFFFFC88A},
+{
+                      "color":0xFFFFC88A}]},
+                "location":{
+                  "x":34,
+                  "y":280},
+                "size":{
+                  "width":269,
+                  "height":41},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFD7B08A},
+                "cornerRadiusTopLeft":"5"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/注册页面/button_u22.png",
+            "mouseOver~":"images/注册页面/button_u22_mouseOver.png",
+            "disabled~":"images/注册页面/button_u22_disabled.png"}},
+{
+          "id":"10208e151bf644368651503fa8116d1b",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"20px",
+            "fontWeight":"200",
+            "location":{
+              "x":34,
+              "y":71},
+            "size":{
+              "width":200,
+              "height":21}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"fc49e127674b4eee975c35d0a1103421",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"20px",
+                "fontWeight":"200",
+                "location":{
+                  "x":34,
+                  "y":71},
+                "size":{
+                  "width":200,
+                  "height":21}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"d67b6ca8e9a34266ac974b259908be3b",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF999999,
+              "opacity":1},
+            "location":{
+              "x":34,
+              "y":102},
+            "size":{
+              "width":269,
+              "height":66}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"83597a0948784d4cae03a3fb9f70ebf1",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFF999999,
+                  "opacity":1},
+                "location":{
+                  "x":34,
+                  "y":102},
+                "size":{
+                  "width":269,
+                  "height":66}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"705a2cf2a7214c968e5feaba8bc5ccaf",
+          "label":"textfield control",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":false,
+          "style":{
+            "location":{
+              "x":390,
+              "y":175},
+            "size":{
+              "width":13,
+              "height":18},
+            "visible":false},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"1e855c46520e43f38db4832cb9d87198",
+              "label":"State1",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"10289ab75dba481387987de7edf6e3fb",
+                  "label":"label storage (ignore)",
+                  "parentDynamicPanel":"705a2cf2a7214c968e5feaba8bc5ccaf",
+                  "type":"textBox",
+                  "styleType":"textBox",
+                  "visible":true,
+                  "style":{
+                    "baseStyle":"627587b6038d43cca051c114ac41ad32",
+                    "size":{
+                      "width":195,
+                      "height":25}},
+                  "adaptiveStyles":{
+}}],
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF},
+                "image":null,
+                "imageHorizontalAlignment":"near",
+                "imageVerticalAlignment":"near",
+                "imageRepeat":"auto"},
+              "adaptiveStyles":{
+                "":{
+}}}]},
+{
+          "id":"7cfc51a39eb04215aa63417dfe9043f8",
+          "label":"textfield",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF666666,
+              "opacity":1},
+            "baseStyle":"627587b6038d43cca051c114ac41ad32",
+            "location":{
+              "x":390,
+              "y":175},
+            "size":{
+              "width":269,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onFocus":{
+              "description":"OnFocus",
+              "cases":[{
+                  "description":"clear and store label<br> (If text on label storage (ignore) equals &quot;&quot;)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetWidgetText",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["10289ab75dba481387987de7edf6e3fb"]}]},
+                    "rightExpr":{
+                      "exprType":"stringLiteral",
+                      "value":"",
+                      "stos":[]}},
+                  "actions":[{
+                      "action":"setFunction",
+                      "description":"Set text on label storage (ignore) equal to text on textfield",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["10289ab75dba481387987de7edf6e3fb"]},
+{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["7cfc51a39eb04215aa63417dfe9043f8"]}]}]}]}},
+{
+                      "action":"setFunction",
+                      "description":"Set text on textfield equal to &quot;&quot;",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["7cfc51a39eb04215aa63417dfe9043f8"]},
+{
+                                "exprType":"stringLiteral",
+                                "value":"",
+                                "stos":[]}]}]}}]}]},
+            "onLostFocus":{
+              "description":"OnLostFocus",
+              "cases":[{
+                  "description":"replace label<br> (If text on textfield equals &quot;&quot;)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetWidgetText",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["7cfc51a39eb04215aa63417dfe9043f8"]}]},
+                    "rightExpr":{
+                      "exprType":"stringLiteral",
+                      "value":"",
+                      "stos":[]}},
+                  "actions":[{
+                      "action":"setFunction",
+                      "description":"Set text on textfield equal to text on label storage (ignore)",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["7cfc51a39eb04215aa63417dfe9043f8"]},
+{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["10289ab75dba481387987de7edf6e3fb"]}]}]}]}},
+{
+                      "action":"setFunction",
+                      "description":"Set text on label storage (ignore) equal to &quot;&quot;",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["10289ab75dba481387987de7edf6e3fb"]},
+{
+                                "exprType":"stringLiteral",
+                                "value":"",
+                                "stos":[]}]}]}}]}]}},
+          "tabbable":true},
+{
+          "id":"a5807d877d634bde95dc22581798688f",
+          "label":"textfield control",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":false,
+          "style":{
+            "location":{
+              "x":34,
+              "y":220},
+            "size":{
+              "width":7,
+              "height":18},
+            "visible":false},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"08571c4bdacb408581993610be89215e",
+              "label":"State1",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"475f41efc82b465f878037c3e2b2926b",
+                  "label":"label storage (ignore)",
+                  "parentDynamicPanel":"a5807d877d634bde95dc22581798688f",
+                  "type":"textBox",
+                  "styleType":"textBox",
+                  "visible":true,
+                  "style":{
+                    "baseStyle":"627587b6038d43cca051c114ac41ad32",
+                    "size":{
+                      "width":195,
+                      "height":25}},
+                  "adaptiveStyles":{
+}}],
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF},
+                "image":null,
+                "imageHorizontalAlignment":"near",
+                "imageVerticalAlignment":"near",
+                "imageRepeat":"auto"},
+              "adaptiveStyles":{
+                "":{
+}}}]},
+{
+          "id":"c447ecf9137d4304b40e12ad830641e2",
+          "label":"textfield",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF666666,
+              "opacity":1},
+            "baseStyle":"627587b6038d43cca051c114ac41ad32",
+            "location":{
+              "x":34,
+              "y":220},
+            "size":{
+              "width":136,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onFocus":{
+              "description":"OnFocus",
+              "cases":[{
+                  "description":"clear and store label<br> (If text on label storage (ignore) equals &quot;&quot;)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetWidgetText",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["475f41efc82b465f878037c3e2b2926b"]}]},
+                    "rightExpr":{
+                      "exprType":"stringLiteral",
+                      "value":"",
+                      "stos":[]}},
+                  "actions":[{
+                      "action":"setFunction",
+                      "description":"Set text on label storage (ignore) equal to text on textfield",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["475f41efc82b465f878037c3e2b2926b"]},
+{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["c447ecf9137d4304b40e12ad830641e2"]}]}]}]}},
+{
+                      "action":"setFunction",
+                      "description":"Set text on textfield equal to &quot;&quot;",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["c447ecf9137d4304b40e12ad830641e2"]},
+{
+                                "exprType":"stringLiteral",
+                                "value":"",
+                                "stos":[]}]}]}}]}]},
+            "onLostFocus":{
+              "description":"OnLostFocus",
+              "cases":[{
+                  "description":"replace label<br> (If text on textfield equals &quot;&quot;)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetWidgetText",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["c447ecf9137d4304b40e12ad830641e2"]}]},
+                    "rightExpr":{
+                      "exprType":"stringLiteral",
+                      "value":"",
+                      "stos":[]}},
+                  "actions":[{
+                      "action":"setFunction",
+                      "description":"Set text on textfield equal to text on label storage (ignore)",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["c447ecf9137d4304b40e12ad830641e2"]},
+{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["475f41efc82b465f878037c3e2b2926b"]}]}]}]}},
+{
+                      "action":"setFunction",
+                      "description":"Set text on label storage (ignore) equal to &quot;&quot;",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["475f41efc82b465f878037c3e2b2926b"]},
+{
+                                "exprType":"stringLiteral",
+                                "value":"",
+                                "stos":[]}]}]}}]}]}},
+          "tabbable":true},
+{
+          "id":"4dba3bbaf2d346a888f69b7e0f7e68c1",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "fill":{
+              "fillType":"solid",
+              "color":0xFF999999},
+            "location":{
+              "x":200,
+              "y":220},
+            "size":{
+              "width":103,
+              "height":40},
+            "cornerRadiusTopLeft":"52"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"656b32dfb50e4aec97abd95982c6bddd",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFF999999},
+                "location":{
+                  "x":200,
+                  "y":220},
+                "size":{
+                  "width":103,
+                  "height":40},
+                "cornerRadiusTopLeft":"52"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/注册页面/u34.png"}},
+{
+          "id":"0caa790803a242899ba6a3ac7498b1ca",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"20px",
+            "fontWeight":"200",
+            "location":{
+              "x":390,
+              "y":71},
+            "size":{
+              "width":200,
+              "height":21}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"646da14f4460403589d0b671e70f5fe5",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"20px",
+                "fontWeight":"200",
+                "location":{
+                  "x":390,
+                  "y":71},
+                "size":{
+                  "width":200,
+                  "height":21}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"084e5d29c692479f9a06fe98250b7774",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF999999,
+              "opacity":1},
+            "location":{
+              "x":390,
+              "y":102},
+            "size":{
+              "width":200,
+              "height":13}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"6c50079d6cc6435bad9108f9c7a1115b",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFF999999,
+                  "opacity":1},
+                "location":{
+                  "x":390,
+                  "y":102},
+                "size":{
+                  "width":200,
+                  "height":13}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"c1a7040062ef48a19f229b397b7582a6",
+          "label":"button",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"14px",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFBD6600,
+              "opacity":1},
+            "baseStyle":"627587b6038d43cca051c114ac41ad32",
+            "stateStyles":{
+              "mouseOver":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFD7AA},
+{
+                      "color":0xFFFFD7AA}]}},
+              "disabled":{
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFCCCCCC,
+                  "opacity":1},
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFF2F2F2},
+{
+                      "color":0xFFF2F2F2}]},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFCCCCCC}}},
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFFFFF5EA},
+{
+                  "color":0xFFFFF5EA},
+{
+                  "color":0xFFFFC88A},
+{
+                  "color":0xFFFFC88A}]},
+            "location":{
+              "x":390,
+              "y":280},
+            "size":{
+              "width":280,
+              "height":41},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFFD7B08A},
+            "cornerRadiusTopLeft":"5"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"dbfd395d2a6d49d7999a0d71f4571601",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"14px",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFBD6600,
+                  "opacity":1},
+                "baseStyle":"627587b6038d43cca051c114ac41ad32",
+                "stateStyles":{
+                  "mouseOver":{
+                    "fill":{
+                      "fillType":"linearGradient",
+                      "colors":[{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFD7AA},
+{
+                          "color":0xFFFFD7AA}]}},
+                  "disabled":{
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC,
+                      "opacity":1},
+                    "fill":{
+                      "fillType":"linearGradient",
+                      "colors":[{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFF2F2F2},
+{
+                          "color":0xFFF2F2F2}]},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}}},
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFF5EA},
+{
+                      "color":0xFFFFF5EA},
+{
+                      "color":0xFFFFC88A},
+{
+                      "color":0xFFFFC88A}]},
+                "location":{
+                  "x":390,
+                  "y":280},
+                "size":{
+                  "width":280,
+                  "height":41},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFD7B08A},
+                "cornerRadiusTopLeft":"5"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/注册页面/button_u40.png",
+            "mouseOver~":"images/注册页面/button_u40_mouseOver.png",
+            "disabled~":"images/注册页面/button_u40_disabled.png"}},
+{
+          "id":"e47f6d9771cd4973b58bf8d55d656cb5",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFCC0000,
+              "opacity":1},
+            "location":{
+              "x":400,
+              "y":225},
+            "size":{
+              "width":200,
+              "height":13}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"6d7f538abbd94e70bde1f0b0650d11c9",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFCC0000,
+                  "opacity":1},
+                "location":{
+                  "x":400,
+                  "y":225},
+                "size":{
+                  "width":200,
+                  "height":13}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"9b53d3ed0c5e45d0aa72d521d7d6f16b",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFF2F2F2},
+            "location":{
+              "x":740.000061035156,
+              "y":10},
+            "size":{
+              "width":320,
+              "height":480},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF666666}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"9418e8f1b0c04f3eba2bc53d9b9fe49d",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFF2F2F2},
+                "location":{
+                  "x":740.000061035156,
+                  "y":10},
+                "size":{
+                  "width":320,
+                  "height":480},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF666666}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/关注引导/u0.png"}},
+{
+          "id":"f62fb93d589545cd8a33f4b74d7b3f43",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'FontAwesome'",
+            "fontSize":"28px",
+            "horizontalAlignment":"left",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+            "fill":{
+              "fillType":"solid",
+              "color":0xFF333333},
+            "location":{
+              "x":740.000061035156,
+              "y":10},
+            "size":{
+              "width":320,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"d4195f02cebc4f07afef67c369d275f9",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'FontAwesome'",
+                "fontSize":"28px",
+                "horizontalAlignment":"left",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFF333333},
+                "location":{
+                  "x":740.000061035156,
+                  "y":10},
+                "size":{
+                  "width":320,
+                  "height":40}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/__home/u8.png"}},
+{
+          "id":"f0aeef39206147558465322a81634897",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'FontAwesome'",
+            "fontSize":"28px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+            "location":{
+              "x":770.000061035156,
+              "y":16},
+            "size":{
+              "width":29,
+              "height":29}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"70433df7fdf642ed9c350200cd106d86",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'FontAwesome'",
+                "fontSize":"28px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+                "location":{
+                  "x":770.000061035156,
+                  "y":16},
+                "size":{
+                  "width":29,
+                  "height":29}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"c958e341ad1d4e938b9bff034929ada3",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "location":{
+              "x":809.000061035156,
+              "y":22},
+            "size":{
+              "width":200,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"cf47bb4cd6cb42c89f0e8517116bbbf4",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "location":{
+                  "x":809.000061035156,
+                  "y":22},
+                "size":{
+                  "width":200,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"d673085dad9c41f2a7988fdbfd858cf3",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontWeight":"200",
+            "location":{
+              "x":765,
+              "y":120},
+            "size":{
+              "width":270,
+              "height":136}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"e48ad6ab442248a58900d4d9a275a31b",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontWeight":"200",
+                "location":{
+                  "x":765,
+                  "y":120},
+                "size":{
+                  "width":270,
+                  "height":136}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"4f57d8a9d6684561beac52b08419b94d",
+          "label":"button",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"14px",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFBD6600,
+              "opacity":1},
+            "baseStyle":"627587b6038d43cca051c114ac41ad32",
+            "stateStyles":{
+              "mouseOver":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFD7AA},
+{
+                      "color":0xFFFFD7AA}]}},
+              "disabled":{
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFCCCCCC,
+                  "opacity":1},
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFF2F2F2},
+{
+                      "color":0xFFF2F2F2}]},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFCCCCCC}}},
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFFFFF5EA},
+{
+                  "color":0xFFFFF5EA},
+{
+                  "color":0xFFFFC88A},
+{
+                  "color":0xFFFFC88A}]},
+            "location":{
+              "x":765,
+              "y":266},
+            "size":{
+              "width":280,
+              "height":41},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFFD7B08A},
+            "cornerRadiusTopLeft":"5"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"4e3e287b17d94726810c60f79052ee85",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"14px",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFBD6600,
+                  "opacity":1},
+                "baseStyle":"627587b6038d43cca051c114ac41ad32",
+                "stateStyles":{
+                  "mouseOver":{
+                    "fill":{
+                      "fillType":"linearGradient",
+                      "colors":[{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFD7AA},
+{
+                          "color":0xFFFFD7AA}]}},
+                  "disabled":{
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC,
+                      "opacity":1},
+                    "fill":{
+                      "fillType":"linearGradient",
+                      "colors":[{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFF2F2F2},
+{
+                          "color":0xFFF2F2F2}]},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}}},
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFF5EA},
+{
+                      "color":0xFFFFF5EA},
+{
+                      "color":0xFFFFC88A},
+{
+                      "color":0xFFFFC88A}]},
+                "location":{
+                  "x":765,
+                  "y":266},
+                "size":{
+                  "width":280,
+                  "height":41},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFD7B08A},
+                "cornerRadiusTopLeft":"5"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/注册页面/button_u40.png",
+            "mouseOver~":"images/注册页面/button_u40_mouseOver.png",
+            "disabled~":"images/注册页面/button_u40_disabled.png"}},
+{
+          "id":"cca4fc549c4e4e0d8bd109f66e45b371",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "fontName":"'FontAwesome'",
+            "fontSize":"28px",
+            "horizontalAlignment":"left",
+            "verticalAlignment":"top",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF333333,
+              "opacity":1},
+            "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+            "paddingTop":"0",
+            "paddingBottom":"0",
+            "location":{
+              "x":770,
+              "y":112},
+            "size":{
+              "width":29,
+              "height":29},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFFFFFF}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"8727d2b795324bc89f94c202dc37c433",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'FontAwesome'",
+                "fontSize":"28px",
+                "horizontalAlignment":"left",
+                "verticalAlignment":"top",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFF333333,
+                  "opacity":1},
+                "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+                "paddingTop":"0",
+                "paddingBottom":"0",
+                "location":{
+                  "x":770,
+                  "y":112},
+                "size":{
+                  "width":29,
+                  "height":29},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/注册页面/u56.png"}},
+{
+          "id":"29d74fdf3bf44d4aa92c580a030f91b4",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF666666,
+              "opacity":1},
+            "location":{
+              "x":750,
+              "y":60},
+            "size":{
+              "width":304,
+              "height":32}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"a30324438e8e4c73bc214ee6ce563649",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFF666666,
+                  "opacity":1},
+                "location":{
+                  "x":750,
+                  "y":60},
+                "size":{
+                  "width":304,
+                  "height":32}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/注册页面/u58.png"}},
+{
+          "id":"e122cfabd744481ea2fc8b1e73a30b37",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'FontAwesome'",
+            "fontSize":"20px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+            "location":{
+              "x":1030,
+              "y":21},
+            "size":{
+              "width":20,
+              "height":20},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"44d6c9d5cafe4afb8514d2583ed41b5a",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'FontAwesome'",
+                "fontSize":"20px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "baseStyle":"f2da49a81e4f49608c19f6ab785428ce",
+                "location":{
+                  "x":1030,
+                  "y":21},
+                "size":{
+                  "width":20,
+                  "height":20},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"db5959b4ce1c4135847935f216d7e14a",
+          "label":"button",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"14px",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFBD6600,
+              "opacity":1},
+            "baseStyle":"627587b6038d43cca051c114ac41ad32",
+            "stateStyles":{
+              "mouseOver":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFD7AA},
+{
+                      "color":0xFFFFD7AA}]}},
+              "disabled":{
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFCCCCCC,
+                  "opacity":1},
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFF2F2F2},
+{
+                      "color":0xFFF2F2F2}]},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFCCCCCC}}},
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFFFFF5EA},
+{
+                  "color":0xFFFFF5EA},
+{
+                  "color":0xFFFFC88A},
+{
+                  "color":0xFFFFC88A}]},
+            "location":{
+              "x":765,
+              "y":320},
+            "size":{
+              "width":280,
+              "height":41},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFFD7B08A},
+            "cornerRadiusTopLeft":"5"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"31cf2e709a5146308b9e65146c041080",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"14px",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFBD6600,
+                  "opacity":1},
+                "baseStyle":"627587b6038d43cca051c114ac41ad32",
+                "stateStyles":{
+                  "mouseOver":{
+                    "fill":{
+                      "fillType":"linearGradient",
+                      "colors":[{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFD7AA},
+{
+                          "color":0xFFFFD7AA}]}},
+                  "disabled":{
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC,
+                      "opacity":1},
+                    "fill":{
+                      "fillType":"linearGradient",
+                      "colors":[{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFFFFFFF},
+{
+                          "color":0xFFF2F2F2},
+{
+                          "color":0xFFF2F2F2}]},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}}},
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFF5EA},
+{
+                      "color":0xFFFFF5EA},
+{
+                      "color":0xFFFFC88A},
+{
+                      "color":0xFFFFC88A}]},
+                "location":{
+                  "x":765,
+                  "y":320},
+                "size":{
+                  "width":280,
+                  "height":41},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFD7B08A},
+                "cornerRadiusTopLeft":"5"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/注册页面/button_u40.png",
+            "mouseOver~":"images/注册页面/button_u40_mouseOver.png",
+            "disabled~":"images/注册页面/button_u40_disabled.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "4fda80c7b1494546b9756eace488fee6":{
+      "scriptId":"u0"},
+    "d6617ec6114f4d32a0b7ee0a051347be":{
+      "scriptId":"u1"},
+    "fbe472019ad94ab8a465ae64ef6f9ab2":{
+      "scriptId":"u2"},
+    "14c5a57f68cd458eb4f9a37c2dc341b4":{
+      "scriptId":"u3"},
+    "ab90cad358104354b3936534ce69ed00":{
+      "scriptId":"u4"},
+    "da98aae2f0994393a7c4437f454859ca":{
+      "scriptId":"u5"},
+    "2f3870921c42481a97b1307e3ed0ea55":{
+      "scriptId":"u6"},
+    "d7d0a2f95baf4f7eaddd62ba8371716c":{
+      "scriptId":"u7"},
+    "b4a339a7757346d4a5aa58c2cbf918d4":{
+      "scriptId":"u8"},
+    "036e84fa51c041b79a0512a80501354d":{
+      "scriptId":"u9"},
+    "d3c113c56abd400cb7f195ad6103211f":{
+      "scriptId":"u10"},
+    "ebf7f72cf37e423f98a733d132c4103e":{
+      "scriptId":"u11"},
+    "c6bec1246a504d6ab56f8434eae5ef6d":{
+      "scriptId":"u12"},
+    "d37b437079c943c6b5c64b0d25676c2f":{
+      "scriptId":"u13"},
+    "2f83bee9c874403cb7a3d3f48109da64":{
+      "scriptId":"u14"},
+    "3141b6f4ecca4d6cb3d6df85c3f53458":{
+      "scriptId":"u15"},
+    "920edee8ad0746a1871d4dadb6676bb9":{
+      "scriptId":"u16"},
+    "a1f146cfa9b34ef78a460b634c57a64f":{
+      "scriptId":"u17"},
+    "87cebc6f1b664e0f8c8c80d5c77eaed8":{
+      "scriptId":"u18"},
+    "97339f71b6734a729cd09e353927edb8":{
+      "scriptId":"u19"},
+    "fa654d9a3f7546839995d99d96bcf3b2":{
+      "scriptId":"u20"},
+    "52c735afd445471e954a8a2c01afbedf":{
+      "scriptId":"u21"},
+    "f143816807d44d9993f0170b37fa5e19":{
+      "scriptId":"u22"},
+    "b54b1ce17cb9437da305c84177e0b2cb":{
+      "scriptId":"u23"},
+    "10208e151bf644368651503fa8116d1b":{
+      "scriptId":"u24"},
+    "fc49e127674b4eee975c35d0a1103421":{
+      "scriptId":"u25"},
+    "d67b6ca8e9a34266ac974b259908be3b":{
+      "scriptId":"u26"},
+    "83597a0948784d4cae03a3fb9f70ebf1":{
+      "scriptId":"u27"},
+    "705a2cf2a7214c968e5feaba8bc5ccaf":{
+      "scriptId":"u28"},
+    "10289ab75dba481387987de7edf6e3fb":{
+      "scriptId":"u29"},
+    "7cfc51a39eb04215aa63417dfe9043f8":{
+      "scriptId":"u30"},
+    "a5807d877d634bde95dc22581798688f":{
+      "scriptId":"u31"},
+    "475f41efc82b465f878037c3e2b2926b":{
+      "scriptId":"u32"},
+    "c447ecf9137d4304b40e12ad830641e2":{
+      "scriptId":"u33"},
+    "4dba3bbaf2d346a888f69b7e0f7e68c1":{
+      "scriptId":"u34"},
+    "656b32dfb50e4aec97abd95982c6bddd":{
+      "scriptId":"u35"},
+    "0caa790803a242899ba6a3ac7498b1ca":{
+      "scriptId":"u36"},
+    "646da14f4460403589d0b671e70f5fe5":{
+      "scriptId":"u37"},
+    "084e5d29c692479f9a06fe98250b7774":{
+      "scriptId":"u38"},
+    "6c50079d6cc6435bad9108f9c7a1115b":{
+      "scriptId":"u39"},
+    "c1a7040062ef48a19f229b397b7582a6":{
+      "scriptId":"u40"},
+    "dbfd395d2a6d49d7999a0d71f4571601":{
+      "scriptId":"u41"},
+    "e47f6d9771cd4973b58bf8d55d656cb5":{
+      "scriptId":"u42"},
+    "6d7f538abbd94e70bde1f0b0650d11c9":{
+      "scriptId":"u43"},
+    "9b53d3ed0c5e45d0aa72d521d7d6f16b":{
+      "scriptId":"u44"},
+    "9418e8f1b0c04f3eba2bc53d9b9fe49d":{
+      "scriptId":"u45"},
+    "f62fb93d589545cd8a33f4b74d7b3f43":{
+      "scriptId":"u46"},
+    "d4195f02cebc4f07afef67c369d275f9":{
+      "scriptId":"u47"},
+    "f0aeef39206147558465322a81634897":{
+      "scriptId":"u48"},
+    "70433df7fdf642ed9c350200cd106d86":{
+      "scriptId":"u49"},
+    "c958e341ad1d4e938b9bff034929ada3":{
+      "scriptId":"u50"},
+    "cf47bb4cd6cb42c89f0e8517116bbbf4":{
+      "scriptId":"u51"},
+    "d673085dad9c41f2a7988fdbfd858cf3":{
+      "scriptId":"u52"},
+    "e48ad6ab442248a58900d4d9a275a31b":{
+      "scriptId":"u53"},
+    "4f57d8a9d6684561beac52b08419b94d":{
+      "scriptId":"u54"},
+    "4e3e287b17d94726810c60f79052ee85":{
+      "scriptId":"u55"},
+    "cca4fc549c4e4e0d8bd109f66e45b371":{
+      "scriptId":"u56"},
+    "8727d2b795324bc89f94c202dc37c433":{
+      "scriptId":"u57"},
+    "29d74fdf3bf44d4aa92c580a030f91b4":{
+      "scriptId":"u58"},
+    "a30324438e8e4c73bc214ee6ce563649":{
+      "scriptId":"u59"},
+    "e122cfabd744481ea2fc8b1e73a30b37":{
+      "scriptId":"u60"},
+    "44d6c9d5cafe4afb8514d2583ed41b5a":{
+      "scriptId":"u61"},
+    "db5959b4ce1c4135847935f216d7e14a":{
+      "scriptId":"u62"},
+    "31cf2e709a5146308b9e65146c041080":{
+      "scriptId":"u63"}}});

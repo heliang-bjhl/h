@@ -1,0 +1,65 @@
+﻿$axure.loadCurrentPage({
+  "url":"找美食哦.html",
+  "generationDate":new Date(1402985729058.97),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"b939795d2ecc45d1b87e02aae58303ba",
+    "type":"Axure:Page",
+    "name":"找美食哦",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"9f20fa230689452191a5007ee3ff9b79",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":1099,
+              "height":1855}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"7bdc38c752244825be940074e2b3bb95",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":1099,
+                  "height":1855}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/找美食哦/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "9f20fa230689452191a5007ee3ff9b79":{
+      "scriptId":"u0"},
+    "7bdc38c752244825be940074e2b3bb95":{
+      "scriptId":"u1"}}});
