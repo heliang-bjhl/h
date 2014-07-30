@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+ <HTML>
+   <HEAD>
+    <TITLE>日历</TITLE>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <STYLE>
+     SELECT {BORDER:1 SOLID #FFFFFF;}
+     BUTTON {BORDER:1 SOLID #FFFFFF;BACKGROUND-COLOR:#8CF;COLOR:#FFF;FONT-WEIGHT:BOLD;}
+   </STYLE>
+  </HEAD>
+ 
+  <BODY>
+  <table id="Calendar" width="212">
+        <tr>
+            <td height="21" bgcolor="#78b3ed" width="212">
+                <table id="LHeader" height="21" width="212">
+                    <tbody>
+                        <tr align="center">
+                            <td align="center" width="21">&lt;</td>
+                            <td align="center">
+                                <span id="showDate">2010.01</span>
+                            </td>
+                            <td align="center" width="21">&gt;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="18">
+                <table id="LDay" bgcolor="#e7f1fd">
+                    <tbody>
+                        <tr>
+                            <td>日</td>
+                            <td>一</td>
+                            <td>二</td>
+                            <td>三</td>
+                            <td>四</td>
+                            <td>五</td>
+                            <td>六</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="120" width="212" id="Container">
+            </td>
+        </tr>
+    </table>
+<input id="Button1" type="button" value="生成日历" onclick="calendar();" />
+CSS：
+    <style type="text/css">
+        #Header /*标题样式*/
+        {
+            height: 21px;
+            font-family: "宋体";
+            font-size: 12px;
+        }
+        #LDay td /*星期的单元格样式*/
+        {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-family: "宋体";
+            font-size: 12px;
+        }
+        #LBody td /*日期的单元格样式*/
+        {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-family: "宋体";
+            font-size: 12px;
+            color: #999;
+            font-weight: bold;
+        }
+</style>
+JS代码：
+<script type="text/javascript">
+    //实现日历
+    function calendar() {
+        var today = new Date();
+ 
+        var year = today.getFullYear();      //本年
+        var month = today.getMonth() + 1;    //本月
+        var day = today.getDate();           //本日
+ 
+        //本月第一天是星期几（距星期日离开的天数）
+        var startDay = new Date(year, month - 1, 1).getDay();
+ 
+        //本月有多少天(即最后一天的getDate()，但是最后一天不知道，我们可以用“上个月的0来表示本月的最后一天”)
+        var nDays = new Date(year, month, 0).getDate();
+ 
+        //开始画日历
+        var numRow = 0;  //记录行的个数，到达7的时候创建tr
+        var i;        //日期
+        var html = '';
+        html += '<table id="Body" width="212"><tbody>';
+        //第一行
+        html += '<tr>';
+        for (i = 0; i < startDay; i++) {
+            html += '<td></td>';
+            numRow++;
+        }
+        for (var j = 1; j <= nDays; j++) {
+            //如果是今天则显示红色
+            if (j == day) {
+                html += '<td style="color:red" onclick="' + "alert('今天是" + j + "号');" + '">';
+                html += j;    //开始加日期
+            }
+            else {
+                html += '<td onclick="' + "alert('你点的是" + j + "号');" + '">';
+                html += j;    //开始加日期
+            }
+            html += '</td>';
+            numRow++;
+            if (numRow == 7) {  //如果已经到一行（一周）了，重新创建tr
+                numRow = 0;
+                html += '</tr><tr>';
+            }
+        }
+ 
+        html += '</tbody></table>';
+        document.getElementById("Container").innerHTML = html;
+    }
+</script>
+
+ </BODY>
+</HTML>
+
+<script language = "javascript">
+    var getDateString = function(){
+        var year = document.all("syear").value;
+        var month = /\d{2}$/.exec(("0" + document.all("smonth").value));
+        var date = "01";
+        return year +"-"+ month +"-"+ date;
+    }
+
+    var getCalendar = function(flag){
+        if(flag == 1){
+            if(document.all("syear").value == 2050 && document.all("smonth").value == 12){
+                return;
+            }
+            if(parseInt(document.all("smonth").value) < 12){
+                document.all("smonth").value = parseInt(document.all("smonth").value) + 1;
+            }else{
+                document.all("syear").value = parseInt(document.all("syear").value) + 1;
+                document.all("smonth").value = 1;
+            }
+        }else if(flag == -1){
+            if(document.all("syear").value == 1980 && document.all("smonth").value == 1){
+                return;
+            }
+            if(parseInt(document.all("smonth").value) > 1){
+                document.all("smonth").value = parseInt(document.all("smonth").value) - 1;
+            }else{
+                document.all("syear").value = parseInt(document.all("syear").value) - 1;
+                document.all("smonth").value = 12;
+            }
+        }else if(flag == 0){
+            var dateTmp = new Date();
+            var year = dateTmp.getYear();
+            var month = dateTmp.getMonth() + 1;
+            document.all("syear").value = year;
+            document.all("smonth").value = month;
+        }
+
+        Calendar.reload(getDateString());
+    }
+
+    var mouseclick = function(){
+        da = event.srcElement.getAttribute('date');
+        if(da && da.length == 3){
+            if(da[1] != document.all("smonth").value){
+                var flag = 1;
+                var m = document.all("smonth").value;
+                if(da[1] == 12 && m == 1){
+                    flag = -1;
+                }else if(da[1] == 1 && m == 12){
+                    flag = 1;
+                }else{
+                    flag = da[1] > document.all("smonth").value?1:-1;
+                }
+                getCalendar(flag);
+            }else{
+                //处理方法写在这里
+                alert(da[0] + /\d{2}$/.exec("0"+da[1]) + /\d{2}$/.exec("0"+da[2]))
+            }
+        }
+    }
+    
+    var setCssText = function(obj,bgColor){
+        var bgColor = "#AADDFF";
+        if(obj.style.color.toUpperCase() == "#FF0000"){
+            var bgColor = "#FFDDAA";
+        }
+        obj.style.backgroundColor = bgColor;
+    }
+        var mouseover = function(){
+        var element = event.srcElement;
+        if(element.tagName == "TD"){
+            element.style.backgroundColor = "#DDEEFF";
+        }
+    }
+
+    var mouseout = function(){
+        var element = event.srcElement;
+        window.setTimeout(function(){eval("setCssText(element)")},200)
+    }
+</script>

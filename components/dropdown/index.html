@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+    <TITLE>日历</TITLE>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0
+    }
+    .box {
+        width: 900px;
+        margin: 0 auto
+    }
+    ul,
+    li {
+        list-style: none;
+    }
+    .m-dropbox {
+        position: relative;
+    }
+    .m-dropbox .list {
+        position: absolute;
+        top: 25px;
+        border: 1px solid #69c;
+        width: 200px;
+        display: none;
+    }
+    .m-dropbox .tit {
+        border: 1px solid #c00;
+        float: left;
+        height: 20px;
+        background: url(drop.jpg) right 3 no-repeat;
+        padding-right: 20px;
+        transform: rotate(-0);
+        -ms-transform: rotate(-0);
+        /* IE 9 */
+        -moz-transform: rotate(-0);
+        /* Firefox */
+        -webkit-transform: rotate(-0);
+        /* Safari 和 Chrome */
+        -o-transform: rotate(-0);
+        transition:all 0.3s ease ;
+    }
+     .tit:hover  {
+       
+    }
+    </style>
+
+</HEAD>
+
+<BODY>
+
+
+    <div class="box">
+        <div id="dropbox" class="m-dropbox">
+            <div class="tit">下拉</div>
+            <div class="list">
+                <ul>
+                    <li><a href="#">123</a>
+                    </li>
+                    <li><a href="#">123</a>
+                    </li>
+                    <li><a href="#">123</a>
+                    </li>
+                    <li><a href="#">123</a>
+                    </li>
+                    <li><a href="#">123</a>
+                    </li>
+                    <li><a href="#">123</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dropdown.js"></script>
+    <script type="text/javascript">
+    $('#dropbox .tit').on('mouseover',function  (argument) {
+        
+        $(this).parent().find('.list').slideDown();
+    })
+    $('#dropbox .tit').on('mouseout',function  (argument) {
+        
+        $(this).parent().find('.list').slideUp();
+    })
+    
+    </script>
+</BODY>
+
+</HTML>
