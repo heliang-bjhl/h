@@ -1,14 +1,26 @@
 // 计算当前日期在本年度的周数
 var Calendar = function(opt) {
 
-    this.box = $(opt.box);
-    this._isBind = false;
-    this.defaultDate = opt.curDate || this.getNowString();
+    this.box = $(opt.box); //render box 
+    this._isBind = false;  //是否绑定过事件 
+    this.defaultDate = opt.curDate || this.getNowString(); //当前时间高亮
 
-    this.setDate(this.defaultDate)
+    this._init();
 
 }
 Calendar.prototype = {
+    _init : function(D){ //初始化的时候设置默认日期 ,用于高亮记录
+        D = D || this.defaultDate;
+        this._setDate(D);
+        this._setWeek();
+    },
+    _setWeek : function(){
+        this.weekNum = this.getWeekOfYear(1); //当前日期是本年内第几周
+        console.log(this.getWeekOfMonth(1 ,this._getCurLastDay()))
+        this.curMonthWeekLength = 1 + this.getWeekOfMonth(1,this._getCurLastDay()) - this.getWeekOfMonth(1,this._getCurFirstDay());
+        
+    },
+   
     //render 
     render: function() {
         var a = this._getCurMdays();
@@ -32,7 +44,7 @@ Calendar.prototype = {
 
     //初始化日期
 
-    setDate: function(curDate) {
+    _setDate: function(curDate) {
         this.curDate = new Date(curDate);
         this.curYear = this.curDate.getFullYear(); //当前年
         this.curMonth = this.curDate.getMonth() + 1; //当前月
@@ -83,7 +95,9 @@ Calendar.prototype = {
         for (var i = 1; i <= days; i++) {
 
             if (
-                (parseInt(this.defaultDate.split('/')[0]) == parseInt(this.curYear)) && (parseInt(this.defaultDate.split('/')[1]) == parseInt(this.curMonth)) && (parseInt(this.defaultDate.split('/')[2]) == parseInt(i))
+                (parseInt(this.defaultDate.split('/')[0]) == parseInt(this.curYear)) 
+                && (parseInt(this.defaultDate.split('/')[1]) == parseInt(this.curMonth)) && 
+                (parseInt(this.defaultDate.split('/')[2]) == parseInt(i))
             ) {
                 html.push('<td style="background:#c00">' + i + '</td>');
             } else {
@@ -97,10 +111,15 @@ Calendar.prototype = {
             }
             td++;
         }
+
+        if(tr >= this.curMonthWeekLength){
+            tr = this.curMonthWeekLength;
+        }
+        
+
         //最后一行补全
         if (td < tr * 7) {
             var num = tr * 7 - td;
-
             for (var p = 0; p < num; p++) {
                 var myNext = this.curYear + '/' + this.curMonth + '/' + this._getCurMdays()
                 var next = this._getDateRangeTime(myNext,p+1);
@@ -135,7 +154,15 @@ Calendar.prototype = {
 
     //取本月第一天是周几
     _getCurMfirstDay: function() {
-        return new Date(this.curYear, this.curMonth - 1, 1).getDay();
+        return this._getCurFirstDay().getDay();
+    },
+    //取本月第一天
+    _getCurFirstDay : function(){
+        return new Date(this.curYear, this.curMonth - 1, 1);
+    },
+    //取本月最后一天
+    _getCurLastDay : function(){
+        return new Date(this.curYear, this.curMonth , 0);
     },
     //事件绑定
     bind: function() {
@@ -173,7 +200,7 @@ Calendar.prototype = {
             }
             return d;
         })
-        this.setDate(nextDate())
+        this._init(nextDate())
         this.render();
     },
     //渲染上一个月
@@ -186,7 +213,7 @@ Calendar.prototype = {
             }
             return d;
         })
-        this.setDate(preDate())
+        this._init(preDate())
         this.render();
     },
     // weekStart：每周开始于周几：周日：0，周一：1，周二：2 ...，默认为周日
@@ -201,13 +228,14 @@ Calendar.prototype = {
         var dayOfYear = (((new Date(year, this.curDate.getMonth(), this.curDate.getDate())) - firstDay) / (24 * 3600 * 1000)) + 1;
         return Math.ceil((dayOfYear - firstWeekDays) / 7) + 1;
     },
-    getWeekOfMonth: function(weekStart) {
+    //D 是本月第几周
+    getWeekOfMonth: function(weekStart,D) {
         weekStart = (weekStart || 0) - 0;
         if (isNaN(weekStart) || weekStart > 6)
             weekStart = 0;
 
-        var dayOfWeek = this.curDate.getDay();
-        var day = this.curDate.getDate();
+        var dayOfWeek = D.getDay();
+        var day = D.getDate();
         return Math.ceil((day - dayOfWeek - 1) / 7) + ((dayOfWeek >= weekStart) ? 1 : 0);
     }
 
@@ -216,7 +244,7 @@ Calendar.prototype = {
 
 var d = new Calendar({
     box: '#rili'
-    // curDate : '2013-1-1'
+    ,curDate : '2014-4-1'
 })
 
 d.render()
