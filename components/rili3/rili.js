@@ -2,167 +2,104 @@
 var Calendar = function(opt) {
 
     this.box = $(opt.box); //render box 
-    this._isBind = false;  //是否绑定过事件 
+    this._isBind = false; //是否绑定过事件 
     this.defaultDate = opt.curDate || this.getNowString(); //当前时间高亮
-
+    // 记录周数据
+    this.weekData = {};
     this._init();
-
 }
 Calendar.prototype = {
-    _init : function(D){ //初始化的时候设置默认日期 ,用于高亮记录
+    _init: function(D) { //初始化的时候设置默认日期 ,用于高亮记录
         D = D || this.defaultDate;
         this._setDate(D);
         this._setWeek();
     },
-    _setWeek : function(){
-        this.weekNum = this.getWeekOfYear(1); //当前日期是本年内第几周
-        console.log(this.getWeekOfMonth(1 ,this._getCurLastDay()))
-        this.curMonthWeekLength = 1 + this.getWeekOfMonth(1,this._getCurLastDay()) - this.getWeekOfMonth(1,this._getCurFirstDay());
-        
+    _setWeek: function() {
+        // this.weekNum = this._getWeekOfYear(1); //当前日期是本年内第几周
+        // 本月第一日是本年的第几周
+        this.startWeek = this._getWeekOfYear(this._getCurFirstDay()); 
+        // 本月最后一日是本年第几周
+        this.endWeek = this._getWeekOfYear(this._getCurLastDay());
+        this.curMonthWeekLength = 1 + this.endWeek - this.startWeek;
     },
-   
-    //render 
-    render: function() {
-        var a = this._getCurMdays();
-        var html = this._getHtml();
-
-        this.box.html(html);
+    render2: function() {
+        this.renderMonth();
         if (this._isBind) {
-
         } else {
             this.bind();
             this._isBind = true;
         }
-
     },
+    // 渲染月日
+    renderMonth: function() {
+        var html  = this._getMonthHtml(this.startWeek,this.endWeek);
+        this.box.html(html);
+    },
+    _getMonthHtml: function(start,end) {
+        
+        var html = [];
+        for(var i = start ; i <= end ; i++){
+            
+            html.push(this._getWeekHtml(this.curYear, i))
+        }
+        html = html.join('')
+        return html;
+        
+    },
+    _getWeekHtml: function(year, week) {
+        var week1 = this._getXDate(year, week); //取周一时间
+        var arr = [];
+        var row = '<ul>';
+        for (var i = 0; i < 7; i++) {
+            var dd = new Date(week1.getTime());
+            dd.setDate(week1.getDate() + i);
+            var today = '';
+            if(this.curDate.toLocaleDateString() == dd.toLocaleDateString()){
+                today = ' class="today"';
+            }
+            
+            arr.push('<li data-y="' + dd.getFullYear() + '"  data-m="' + (parseInt(dd.getMonth()) + 1) + '" '+ today+'>' + dd.getDate() + '</li>');
+            dd = null;
+        }
+        row = row + arr.join('') + '</ul>';
 
+        return row
+    },
     //取当前时间
     getNowString: function() {
         var now = new Date();
         return now.getFullYear() + '/' + (now.getMonth() + 1) + '/' + now.getDate();
     },
-
     //初始化日期
-
     _setDate: function(curDate) {
         this.curDate = new Date(curDate);
         this.curYear = this.curDate.getFullYear(); //当前年
         this.curMonth = this.curDate.getMonth() + 1; //当前月
         this.curDay = this.curDate.getDate(); //当前日
     },
-
-    // 取得拼接日历的html模板
-    _getHtml: function() {
-        var top = [
-            '<span class="j_month" data-act="pre">上月</span>',
-            '<span>' + this.curYear + '- ' + this.curMonth + '</span>',
-            '<span class="j_month" data-act="next">下月</span>'
-        ].join('');
-        var s = '<table>';
+    // getCalendarHeader
+    _getCalendarHeader: function() {
         var thead = [
             '<tr>',
-            '<th>一</th>',
-            '<th>二</th>',
-            '<th>三</th>',
-            '<th>四</th>',
-            '<th>五</th>',
-            '<th>六</th>',
-            '<th>日</th>',
+            '<th>周一</th>',
+            '<th>周二</th>',
+            '<th>周三</th>',
+            '<th>周四</th>',
+            '<th>周五</th>',
+            '<th>周六</th>',
+            '<th>周日</th>',
             '</tr>'
         ].join('');
-        var e = '</table>';
-        var html = [];
-        var days = this._getCurMdays();
-        var firstDay = this._getCurMfirstDay();
-
-        var row = 0; // row =7 插入tr
-        var tr = 0; // 共有几行
-        var td = 0; //共有多少个td 用于补起最后一行用
-        //创建首行
-        html.push('<tr>');
-        tr++;
-
-        //首行补充空td
-        for (var k = firstDay-1; k > 0; k--) {
-            var pre = this._getDateRangeTime(this.curYear + '/' + this.curMonth + '/' + firstDay, (-k - firstDay + 1));
-
-            var tdDate = new Date(pre).getDate();
-            html.push('<td class="preM" data-m="pre">' + tdDate + '</td>');
-            row++;
-            td++;
-        }
-        //插入主体日期
-        for (var i = 1; i <= days; i++) {
-
-            if (
-                (parseInt(this.defaultDate.split('/')[0]) == parseInt(this.curYear)) 
-                && (parseInt(this.defaultDate.split('/')[1]) == parseInt(this.curMonth)) && 
-                (parseInt(this.defaultDate.split('/')[2]) == parseInt(i))
-            ) {
-                html.push('<td style="background:#c00">' + i + '</td>');
-            } else {
-                html.push('<td>' + i + '</td>');
-            }
-            row++;
-            if (row == 7) {
-                row = 0;
-                html.push('</tr><tr>')
-                tr++
-            }
-            td++;
-        }
-
-        if(tr >= this.curMonthWeekLength){
-            tr = this.curMonthWeekLength;
-        }
-        
-
-        //最后一行补全
-        if (td < tr * 7) {
-            var num = tr * 7 - td;
-            for (var p = 0; p < num; p++) {
-                var myNext = this.curYear + '/' + this.curMonth + '/' + this._getCurMdays()
-                var next = this._getDateRangeTime(myNext,p+1);
-                var tdDate = new Date(next).getDate();
-                
-                html.push('<td class="nextM" data-m="next">'+tdDate+'</td>');
-            }
-        }
-        html.push('</tr>');
-
-        return top + s + thead + html.join('') + e;
-
+        return thead;
     },
-
-    //以当前时间为起点 取day天后的日期
-    _getDateRangeTime: function(time, range) {
-        var curday = new Date();
-        var year = parseInt(time.split('/')[0]),
-            mon = parseInt(time.split('/')[1]),
-            day = parseInt(time.split('/')[2]);
-
-        curday.setFullYear(year, mon - 1, day);
-        curday.setDate(day + range);
-        var finalDay = curday.getFullYear() + '/' + (curday.getMonth() + 1) + '/' + curday.getDate();
-        return finalDay;
-    },
-    //取当月有多少天
-    _getCurMdays: function() {
-        // 下个月的第0天 
-        return new Date(this.curYear, this.curMonth, 0).getDate();
-    },
-
-    //取本月第一天是周几
-    _getCurMfirstDay: function() {
-        return this._getCurFirstDay().getDay();
-    },
+    
     //取本月第一天
-    _getCurFirstDay : function(){
+    _getCurFirstDay: function() {
         return new Date(this.curYear, this.curMonth - 1, 1);
     },
     //取本月最后一天
-    _getCurLastDay : function(){
-        return new Date(this.curYear, this.curMonth , 0);
+    _getCurLastDay: function() {
+        return new Date(this.curYear, this.curMonth, 0);
     },
     //事件绑定
     bind: function() {
@@ -176,30 +113,21 @@ Calendar.prototype = {
                 me.renderPreMonth();
             }
         })
-        this.box.on('click', 'td', function() {
-            var m  = me.curMonth;
-            if($(this).data('m') == 'pre'){
-                m = m-1;
-            }
-            if($(this).data('m') == 'next'){
-                m = m+1;
-            }
-            var date = me.curYear + '/' + m + '/' + $(this).html();
+        this.box.on('click', 'li', function() {
+            var date = $(this).data('y') + '/' + $(this).data('m') + '/' + $(this).html();
             alert(date)
         })
-
     },
     //渲染下一个月
     renderNextMonth: function() {
         var me = this;
         var nextDate = (function() {
             var d = me.curYear + '/' + (me.curMonth + 1) + '/' + 1;
-
             if (me.curMonth == 12) {
                 d = (me.curYear + 1) + '/' + 1 + '/' + 1;
             }
             return d;
-        })
+        });
         this._init(nextDate())
         this.render();
     },
@@ -217,37 +145,53 @@ Calendar.prototype = {
         this.render();
     },
     // weekStart：每周开始于周几：周日：0，周一：1，周二：2 ...，默认为周日
-    getWeekOfYear: function(weekStart) {
-        weekStart = (weekStart || 0) - 0;
-        if (isNaN(weekStart) || weekStart > 6)
-            weekStart = 0;
+    // 当前日期是本年的第几zhou
+    _getWeekOfYear: function(D) {
+        var weekStart = 1;
 
-        var year = this.curDate.getFullYear();
+        if (isNaN(weekStart) || weekStart > 6){
+            weekStart = 0;
+        }
+            
+        var year = D.getFullYear();
         var firstDay = new Date(year, 0, 1);
         var firstWeekDays = 7 - firstDay.getDay() + weekStart;
-        var dayOfYear = (((new Date(year, this.curDate.getMonth(), this.curDate.getDate())) - firstDay) / (24 * 3600 * 1000)) + 1;
+        var dayOfYear = (((new Date(year, D.getMonth(), D.getDate())) - firstDay) / (24 * 3600 * 1000)) + 1;
         return Math.ceil((dayOfYear - firstWeekDays) / 7) + 1;
+        
     },
     //D 是本月第几周
-    getWeekOfMonth: function(weekStart,D) {
-        weekStart = (weekStart || 0) - 0;
-        if (isNaN(weekStart) || weekStart > 6)
-            weekStart = 0;
+    // _getWeekOfMonth: function(D) {
 
-        var dayOfWeek = D.getDay();
-        var day = D.getDate();
-        return Math.ceil((day - dayOfWeek - 1) / 7) + ((dayOfWeek >= weekStart) ? 1 : 0);
+    //     var weekStart =1;
+    //     if (isNaN(weekStart) || weekStart > 6)
+    //         weekStart = 0;
+    //     var dayOfWeek = D.getDay();
+    //     var day = D.getDate();
+    //     return Math.ceil((day - dayOfWeek - 1) / 7) + ((dayOfWeek >= weekStart) ? 1 : 0);
+    // },
+    //根据 年周 周几（1表示周一 0 表示周日）反回日期
+    _getXDate: function(year, weeks) {
+        var weekDay = 1;
+        weekDay %= 7;
+        var date = new Date(year, "0", "1"); //当年1月1日
+        var time = date.getTime();
+        weekDay == 0 ? time += weeks * 7 * 24 * 3600000 : time += (weeks - 1) * 7 * 24 * 3600000; //以周日为一周的结束，如果设定周日为一周的开始，去掉这个判断，选择后者。
+        date.setTime(time);
+        return this._getNextDate(date, weekDay);
+    },
+    _getNextDate: function(nowDate, weekDay) {
+        var day = nowDate.getDay();
+        var time = nowDate.getTime();
+        var sub = weekDay - day;
+        time += sub * 24 * 3600000;
+        nowDate.setTime(time);
+
+        return nowDate;
     }
-
 }
-
-
-var d = new Calendar({
-    box: '#rili'
-    ,curDate : '2014-4-1'
+var c = new Calendar({
+    box: '#rili2',
+    curDate : '2014/7/1'
 })
-
-d.render()
-
-
-
+c.render2();

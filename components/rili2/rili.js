@@ -68,7 +68,9 @@ Calendar.prototype = {
         //创建首行
         html.push('<tr>');
         tr++;
-
+        if(firstDay == 0){
+            firstDay = 7;
+        }
         //首行补充空td
         for (var k = firstDay-1; k > 0; k--) {
             var pre = this._getDateRangeTime(this.curYear + '/' + this.curMonth + '/' + firstDay, (-k - firstDay + 1));
@@ -192,8 +194,8 @@ Calendar.prototype = {
 
 
 var d = new Calendar({
-    box: '#rili'
-    // curDate : '2013-1-1'
+    box: '#rili',
+    curDate : '2015/2/1'
 })
 
 d.render()
