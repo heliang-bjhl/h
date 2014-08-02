@@ -31,7 +31,7 @@ Calendar.prototype = {
             this._isBind = true;
             
         }
-        this.setCurDate(this.curYear,this.curMonth,this.curDay);
+        this.setCurDate(null,[this.curYear,this.curMonth,this.curDay]);
     },
     //渲染下一个月
     renderNextMonth: function() {
@@ -76,17 +76,30 @@ Calendar.prototype = {
             var d = y + '/' + m + '/' + d;
             return d;
         })
-        this._init(preDate())
+        this._init(preDate());
         this.render();
     },
     //选择某天
-    setCurDate: function(y,m,d) {
-        
+    setCurDate: function(item,arr) {
+        var y,m,d;
+        if(item){
+             y = item.data('y');
+             m = item.data('m');
+             d = item.data('d');
+             this.box.find('li').removeClass('curDate')
+             item.addClass('curDate');   
+        }else{
+            y = arr[0];
+             m = arr[1];
+             d = arr[2];
+        }
+        this.curDay = d;
         this.setCurDateCallBack({
             y : y,
             m : m,
             d : d
         })
+       
     },
 
     // 渲染月
@@ -175,9 +188,9 @@ Calendar.prototype = {
 
         })
         this.box.on('click', 'li', function() {
-            var datas = $(this);
+            var item = $(this);
            
-            me.setCurDate(datas.data('y'),datas.data('m'),datas.data('d'));
+            me.setCurDate(item);
         })
     },
 
@@ -228,6 +241,7 @@ Calendar.prototype = {
 var mySelect = function(data){
     $('#j_calendar_opt').find('.date').html(data.y + '年' + data.m + '月');
     $('#j_day').html(data.d);
+
 }
 var c = new Calendar({
     box: '#rili2',
