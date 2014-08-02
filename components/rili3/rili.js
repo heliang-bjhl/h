@@ -81,6 +81,7 @@ Calendar.prototype = {
     },
     //选择某天
     setCurDate: function(y,m,d) {
+        
         this.setCurDateCallBack({
             y : y,
             m : m,
@@ -174,8 +175,9 @@ Calendar.prototype = {
 
         })
         this.box.on('click', 'li', function() {
-            var datas = $(this).data;
-            me.setCurDate(datas('y'),datas('m'),datas('d'));
+            var datas = $(this);
+           
+            me.setCurDate(datas.data('y'),datas.data('m'),datas.data('d'));
         })
     },
 
