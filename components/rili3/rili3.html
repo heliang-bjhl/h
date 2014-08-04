@@ -60,9 +60,8 @@
     .ui-calendarBox .nextM {
         color: #c7c7c7;
     }
-    .ui-calendarBox .j_month {
+    .ui-calendarBox .j_month,.ui-calendarBox .j_week {
         position: absolute;
-        
     }
     .ui-calendarBox .j_pre {
         left: 0
@@ -72,18 +71,26 @@
     }
     .ui-calendarBox .opt {
         text-align: center;
-     
         position: relative;
-       
     }
-    .j_calendar_day{color: #b3b3b3;text-align: center;}
-    .j_calendar_day #j_day{font-size: 90px;line-height: 1em}
+    .j_calendar_day {
+        color: #b3b3b3;
+        text-align: center;
+        *zoom: 1;
+    }
+    .j_calendar_day #j_day {
+        font-size: 90px;
+        line-height: 1em
+    }
+    #rili2 li {
+        cursor: pointer;
+    }
     </style>
 
 </HEAD>
 
 <BODY>
-<!-- this.act.find('.date').html(item.data('y') + '年' + item.data('m')); -->
+    <!-- this.act.find('.date').html(item.data('y') + '年' + item.data('m')); -->
     <div class="ui-calendarBox">
         <div class="calendar_l">
             <div class="cheader">
@@ -101,18 +108,57 @@
         </div>
         <div class="calendar_r">
             <div class="opt" id="j_calendar_opt">
-                <span class="j_month j_pre" data-act="pre">上月</span>
+                <span class="j_month j_pre" data-act="pre" >上月</span>
+                <span class="j_week j_pre" data-act="pre">上周</span>
                 <span class="date"></span>
+                <span class="j_week j_next" data-act="next">下周</span>
                 <span class="j_month j_next" data-act="next">下月</span>
             </div>
-            <div class="j_calendar_day"><span id="j_day"></span></div>
+            <div class="j_calendar_day">
+                <span id="j_day"></span>
+            </div>
         </div>
         <div class="clear"></div>
     </div>
 
+    <button id="c_week">周日历</button>
+    <button id="c_month">月日历</button>
+
+
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="rili.js"></script>
+    <script type="text/javascript">
+    var mySelect = function(data) {
+        $('#j_calendar_opt').find('.date').html(data.y + '年' + data.m + '月');
+        $('#j_day').html(data.d);
+    }
+    var c = new Calendar({
+        box: '#rili2',
+        act: '#j_calendar_opt', //操作区域id
+        // type : 'week',//类型 month 表示月  week表示周
+        curDate: '2014/7/1',
+        clickDayCallBack: function(data) {
+            mySelect(data)
+        }
+    })
+    c.render();
+    $('.j_week').hide();
+    $('#c_week').bind('click',function(){
+        $('.j_month').hide();
+        $('.j_week').show();
 
+        c._init(c.curDate);
+        c.type = 'week';
+        c.render()
+    })
+     $('#c_month').bind('click',function(){
+        $('.j_month').show();
+        $('.j_week').hide();
+        c._init(c.curDate);
+        c.type = 'month';
+        c.render()
+    })
+    </script>
 </BODY>
 
 </HTML>

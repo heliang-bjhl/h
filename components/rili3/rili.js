@@ -5,7 +5,8 @@ var Calendar = function(opt) {
     this.act = $(opt.act);
     this._isBind = false; //是否绑定过事件 
     this.nowDate = new Date(opt.curDate || this.getNowString()); //当前时间高亮
-    this.setCurDateCallBack = opt.setCurDateCallBack || function(){};
+    this.clickDayCallBack = opt.clickDayCallBack || function(){};
+    this.type = opt.type || 'month';
     // 记录周数据
     this.weekData = {};
     this._init();
@@ -17,7 +18,7 @@ Calendar.prototype = {
         this._setWeek();
     },
     _setWeek: function() {
-        // this.weekNum = this._getWeekOfYear(1); //当前日期是本年内第几周
+         this.curWeekNum = this._getWeekOfYear(this.curDate); //当前日期是本年内第几周
         // 本月第一日是本年的第几周
         this.startWeek = this._getWeekOfYear(this._getCurFirstDay());
         // 本月最后一日是本年第几周
@@ -25,13 +26,55 @@ Calendar.prototype = {
         this.curMonthWeekLength = 1 + this.endWeek - this.startWeek;
     },
     render: function() {
-        this.renderMonth();
+        if(this.type == 'month'){
+            this.renderMonth();
+        }
+        if(this.type == 'week'){
+            this.renderWeek();
+        }
         if (this._isBind) {} else {
             this.bind();
             this._isBind = true;
             
         }
-        this.setCurDate(null,[this.curYear,this.curMonth,this.curDay]);
+        // 设置当前日期
+        this.selectCurDate(null,[this.curYear,this.curMonth,this.curDay]);
+    },
+    renderWeek : function(){
+        var html = this._getWeekHtml(this.curYear,this.curWeekNum);
+        this.box.html(html);
+    },
+    //渲染下一个周
+    renderNextWeek: function() {
+        var me = this;
+        var nextDate = (function() {
+            var y = me.curYear;
+            var m = me.curMonth ;
+            var d = me.curDay ;
+            var day = me.curDate.getDay(); //周几
+            var lastWeekDay = me._getDateRangeTime((y + '/' + m + '/' + d), 7);
+            var dd = lastWeekDay.getFullYear() + '/' + (lastWeekDay.getMonth()+1) + '/' + lastWeekDay.getDate();
+            
+            return dd;
+        });
+        this._init(nextDate())
+        this.render();
+    },
+    //渲染上一个周
+    renderPreWeek: function() {
+        var me = this;
+        var nextDate = (function() {
+            var y = me.curYear;
+            var m = me.curMonth ;
+            var d = me.curDay ;
+            var day = me.curDate.getDay(); //周几
+            var lastWeekDay = me._getDateRangeTime((y + '/' + m + '/' + d), -7);
+            var dd = lastWeekDay.getFullYear() + '/' + (lastWeekDay.getMonth()+1) + '/' + lastWeekDay.getDate();
+            
+            return dd;
+        });
+        this._init(nextDate())
+        this.render();
     },
     //渲染下一个月
     renderNextMonth: function() {
@@ -62,9 +105,9 @@ Calendar.prototype = {
             var y = me.curYear;
             var m = me.curMonth - 1;
             var d = me.curDay;
-            var nextLastDay = me._getLastDay(y,m).getDate();//下个月最后一天
-            if(d > nextLastDay){
-                d = nextLastDay;
+            var preLastDay = me._getLastDay(y,m).getDate();//下个月最后一天
+            if(d > preLastDay){
+                d = preLastDay;
             }
 
             if(m == 0){  //上一年
@@ -80,8 +123,9 @@ Calendar.prototype = {
         this.render();
     },
     //选择某天
-    setCurDate: function(item,arr) {
+    selectCurDate: function(item,arr) {
         var y,m,d;
+        // 点击日历每一个item
         if(item){
              y = item.data('y');
              m = item.data('m');
@@ -93,12 +137,25 @@ Calendar.prototype = {
              m = arr[1];
              d = arr[2];
         }
-        this.curDay = d;
-        this.setCurDateCallBack({
+        {
+            
+            if(item){
+                if(item.hasClass('preM')){
+                    this.curDay = d;
+                    this.renderPreMonth();
+                }
+                if(item.hasClass('nextM')){
+                    this.curDay = d;
+                    this.renderNextMonth();
+                }
+            }
+        }
+        this.clickDayCallBack({
             y : y,
             m : m,
             d : d
-        })
+        });
+        this._init(y + '/' + m + '/' + d);
        
     },
 
@@ -107,6 +164,7 @@ Calendar.prototype = {
         var html = this._getMonthHtml(this.startWeek, this.endWeek);
         this.box.html(html);
     },
+    //取一个月的html
     _getMonthHtml: function(start, end) {
 
         var html = [];
@@ -117,6 +175,19 @@ Calendar.prototype = {
         html = html.join('')
         return html;
 
+    },
+    //以当前时间为起点 取day天后的日期
+    _getDateRangeTime: function(time, range) {
+        var curday = new Date();
+        var year = parseInt(time.split('/')[0]),
+            mon = parseInt(time.split('/')[1]),
+            day = parseInt(time.split('/')[2]);
+
+        curday.setFullYear(year, mon - 1, day);
+        curday.setDate(day + range);
+        // var finalDay = curday.getFullYear() + '/' + (curday.getMonth() + 1) + '/' + curday.getDate();
+
+        return curday;
     },
     _getWeekHtml: function(year, week) {
         var week1 = this._getXDate(year, week); //取周一时间
@@ -129,6 +200,7 @@ Calendar.prototype = {
             var m = (parseInt(dd.getMonth()) + 1);
             var d = dd.getDate();
             var classNames = [];
+
             if (this.nowDate.toLocaleDateString() == dd.toLocaleDateString()) {
                 classNames.push('today');
             } else if (this.curDate.toLocaleDateString() == dd.toLocaleDateString()) {
@@ -187,10 +259,20 @@ Calendar.prototype = {
             }
 
         })
+        this.act.on('click', '.j_week', function() {
+            var act = $(this).data('act');
+            if (act == 'next') {
+                me.renderNextWeek();
+            }
+            if (act == 'pre') {
+                me.renderPreWeek();
+            }
+
+        })
         this.box.on('click', 'li', function() {
             var item = $(this);
            
-            me.setCurDate(item);
+            me.selectCurDate(item);
         })
     },
 
@@ -224,7 +306,7 @@ Calendar.prototype = {
         weekDay %= 7;
         var date = new Date(year, "0", "1"); //当年1月1日
         var time = date.getTime();
-        weekDay == 0 ? time += weeks * 7 * 24 * 3600000 : time += (weeks - 1) * 7 * 24 * 3600000; //以周日为一周的结束，如果设定周日为一周的开始，去掉这个判断，选择后者。
+        weekDay == 0 ? time += weeks * 7 * 24 * 3600000 : time += (weeks - 1) * 7 * 24 * 3600000; //以周日为一周的开始，如果设定周日为一周的开始，去掉这个判断，选择后者。
         date.setTime(time);
         return this._getNextDate(date, weekDay);
     },
@@ -238,17 +320,3 @@ Calendar.prototype = {
         return nowDate;
     }
 }
-var mySelect = function(data){
-    $('#j_calendar_opt').find('.date').html(data.y + '年' + data.m + '月');
-    $('#j_day').html(data.d);
-
-}
-var c = new Calendar({
-    box: '#rili2',
-    act: '#j_calendar_opt', //操作区域id
-    // curDate: '2014/7/31',
-    setCurDateCallBack : function(data){
-        mySelect(data)
-    }
-})
-c.render();
