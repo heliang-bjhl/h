@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+    <TITLE>乐视上传demo</TITLE>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <link rel="stylesheet" type="text/css" href="webuploader.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="webuploader.min.js"></script>
+    <style type="text/css">#picker{position: relative;width: 100px;}</style>
+</HEAD>
+
+<BODY>
+
+    <div id="uploader" class="wu-example">
+        <!--用来存放文件信息-->
+        <div id="thelist" class="uploader-list"></div>
+        <div class="btns">
+            <div id="picker">选择文件</div>
+            <button id="stopBtn" class="btn btn-default">取消上传</button>
+        </div>
+    </div>
+    <ul>
+        <li>上传进度 :
+            <span id="j_progress"></span>
+        </li>
+
+    </ul>
+
+    <dl id="jindu"></dl>
+
+
+    <script type="text/javascript">
+    var uploader;
+    var cur_file = null;
+    uploader = WebUploader.create({
+        swf: 'Uploader.swf',
+        server: '/',
+        pick: '#picker',
+        runtimeOrder: 'flash'
+    });
+    // 当有文件添加进来的时候
+    uploader.on('fileQueued', function(file) {
+        cur_file = file;
+        $('#thelist').append('<div id="' + file.id + '" class="item">' +
+            '<h4 class="info">' + file.name + '</h4>' +
+           
+            '</div>');
+    });
+    uploader.on('uploadBeforeSend', function(object, data, headers) {
+                
+       
+        headers['Content-Type'] = '';
+        headers['X_FILENAME'] = encodeURIComponent(123123);
+        // headers['Content-Range'] = 'bytes ' + (object.start + 1) + '-' + object.end + '/' + cur_file.size;
+        
+
+    });
+    // 文件上传过程中创建进度条实时显示。
+    uploader.on('uploadProgress', function(file, percentage) {
+
+        $('#j_progress').html(percentage * 100 + '%')
+
+    });
+
+    uploader.on('uploadBeforeSend', function(object, data, headers) {
+
+// uploader.stop(true);
+//         uploader.removeFile(cur_file,true);
+//         uploader.reset();
+    });
+
+    uploader.on('reset', function(a,b,c) {
+        console.log(a)
+        console.log(b)
+        console.log(c)
+
+        // console.log(type)
+        // console.log(uploader.getFiles())
+    });
+
+    
+    uploader.on('fileQueued', function(file) {
+        uploader.upload();
+        console.log(uploader)
+    })
+
+    //点击取消的时候 做清空队列的操作
+    $('#stopBtn').on('click', function() {
+        uploader.stop(true);
+        uploader.removeFile(cur_file,true);
+        uploader.reset();
+
+        // console.log(new WebUploader.Queue()._queue)
+        
+    });
+    </script>
+</BODY>
+
+</HTML>
