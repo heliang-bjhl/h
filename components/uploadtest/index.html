@@ -41,7 +41,7 @@
         swf: 'Uploader.swf',
         server: '/',
         pick: '#picker',
-        runtimeOrder: 'flash'
+       
     });
     // 当有文件添加进来的时候
     uploader.on('fileQueued', function(file) {
@@ -50,6 +50,9 @@
             '<h4 class="info">' + file.name + '</h4>' +
            
             '</div>');
+
+
+        uploader.upload();
     });
     uploader.on('uploadBeforeSend', function(object, data, headers) {
                 

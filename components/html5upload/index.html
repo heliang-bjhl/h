@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+    <TITLE>html5上传组件</TITLE>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="html5upload.js"></script>
+
+</HEAD>
+
+<BODY>
+
+<input type="file" id="file" />
+
+<div id="aaa"></div>
+
+<script type="text/javascript">
+    var up = new Html5Upload({
+        file : '#file',
+        url : '/',
+        progress : function  (loaded,total) {
+            
+            $('#aaa').html('已经上传' + loaded + '共' + total)
+        }
+    });
+
+</script>
+</BODY>
+
+</HTML>
