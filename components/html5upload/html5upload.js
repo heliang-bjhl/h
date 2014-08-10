@@ -1,3 +1,4 @@
+
 var Html5Upload = function(opt) {
 
     this.file = $(opt.file);
@@ -17,9 +18,11 @@ Html5Upload.prototype = {
     // 初始化文件数据
     _initFileData: function(e) {
         var me = this;
-        me.fileO = e.target.files[0];
-        me.name = me.fileO.name;
-        me.size = me.fileO.size;
+        me.fileO = e.target.files;
+        me.name = me.fileO[0].name;
+        me.size = me.fileO[0].size;
+
+
 
         var data = {
             name: me.name,
@@ -29,10 +32,12 @@ Html5Upload.prototype = {
 
             // md5 : 
         }
+        // me._up();
         $.ajax({
             url: $$C.baseUrl + '/video/getUploadUrl',
             data: data,
             success: function(d) {
+                console.log(d)
                 me.url = d.data.upload_url;
                 me._up();
             },
@@ -55,11 +60,26 @@ Html5Upload.prototype = {
 
     _up: function() {
         var me = this;
+        // try {
+        //     if (XMLHttpRequest.prototype.sendAsBinary) return;
+        //     XMLHttpRequest.prototype.sendAsBinary = function(datastr) {
+        //         function byteValue(x) {
+        //             return x.charCodeAt(0) & 0xff;
+        //         }
+        //         var ords = Array.prototype.map.call(datastr, byteValue);
+        //         var ui8a = new Uint8Array(ords);
+        //         this.send(ui8a.buffer);
+        //     }
+        // } catch (e) {}
+
+
+
+
         var xhr = new XMLHttpRequest();
 
         var formData = new FormData();　
         formData.append('name', me.fileO);　
-       
+
 
         // xhr.overrideMimeType("application/octet-stream");
 
@@ -68,16 +88,19 @@ Html5Upload.prototype = {
             me.progress(e.loaded, e.total)
         };
 
-        var range = 'bytes ' + (1) + '-' + 10000 + '/' + me.size;
+        var range = 'bytes ' + (1) + '-' + 999 + '/' + me.size;
 
-
+        
         // 开始上传
         xhr.open("POST", me.url, true);
         xhr.setRequestHeader("Content-Type", '');
         xhr.setRequestHeader("X_FILENAME", encodeURIComponent(me.name));
         xhr.setRequestHeader("Content-Range", range);
 
-        xhr.send(formData);
+
+        
+        // xhr.sendAsBinary(bindata);
+        xhr.send(me.fileO[0].slice(1,1000));
     },
     init: function() {
         this.bind();
@@ -86,11 +109,11 @@ Html5Upload.prototype = {
 }
 
 
-
+$('#v_tagsTwo').attr('type','file')
 
 
 var up = new Html5Upload({
-    file: '#filehtml',
+    file: '#v_tagsTwo',
     url: '/',
     progress: function(loaded, total) {
 
