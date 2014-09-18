@@ -57,6 +57,19 @@ Pizhu.prototype = {
         var html = range.cloneContents();
         this.hiddenSlelectDom.html(html);
         html = this.hiddenSlelectDom.html();
+
+
+        if(/\<\/span\>/gi.test(html)){
+
+        }else{
+            var span = $(range.commonAncestorContainer).parent();
+            var offset = span.data('offset');
+            html = '<span data-offset="' + offset + '">' + html + '</span>';
+            html = '<p data-pid="' + span.parent().data('pid') + '">' + html + '</p>';
+            
+            return html;
+        }
+        
         //如果有p
         if (/\<\/p\>/gi.test(html)) {
 
@@ -65,6 +78,7 @@ Pizhu.prototype = {
 
             html = '<p data-pid="' + pid + '">' + html + '</p>';
         }
+        
         return html;
     },
     //格式化选中的
