@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>bassclass</title>
+    <script type="text/javascript" src="../../../lib/dom.js"></script>
+    <script type="text/javascript" src="../../../lib/BassClass.js"></script>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+    var myClass = function() {
+
+    }
+    var o = new myClass();
+    //判断实例
+    console.log(H.Bass.instanceof(o, Object));
+    </script>
+
+
+    <div id="guidtest"></div>
+    <div id="guidtest2"></div>
+    <script type="text/javascript">
+
+    var GUIDS = {};
+    var GUIDSNUM = 1;
+    var  BassClass = function(){
+    	this.guid = GUIDSNUM;
+    	GUIDS[GUIDSNUM] = this;
+    	GUIDSNUM++;
+    }
+  
+    var SubClass = function(){
+    	BassClass.call(this)
+    }
+    H.Bass.extend(SubClass,BassClass);
+    SubClass.prototype.show = function(){
+    	alert(this.guid);
+    }
+    SubClass.prototype.setHtml = function(d){
+    	H.dom.gid(d).innerHTML = '<div onclick="GUIDS['+this.guid+'].show()">123</div>';
+    }
+   var a =  new SubClass();
+   var b = new SubClass().setHtml('guidtest2');
+   console.log(a)
+    </script>
+</body>
+
+</html>

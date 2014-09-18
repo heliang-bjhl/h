@@ -10,20 +10,18 @@
 		
 		<script type="text/javascript">
 			var arr = [2,3,[1,2,2],7];
-			
-			var b = H.array.clone(arr);
-			H.array.del(arr[2],1);
-
-			console.log(arr)
-			console.log(b)
-			
+			var b = arr;
+			H.array.del(arr,2)
+			console.log(b)			
 		</script>
 		<h2>sort</h2>
 		<script type="text/javascript">
-			var arr2 = [4,3,5,8];
-			H.array.sort(arr2,'asc');
-			H.array.sort(arr2,'desc')
-			console.log(arr2) 
+			var arr2 = [[1,2],[1,2],{a:1},{a:1}];
+			// H.array.sort(arr2,'asc');
+			// H.array.sort(arr2,'desc')
+			// console.log(arr2) 
+			var arr3 = H.array.unique(arr2);
+			console.log(arr3)
 		</script>
 	</body>
 </html>

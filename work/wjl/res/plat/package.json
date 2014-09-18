@@ -1,7 +1,7 @@
 {
     "name": "application-name",
     "version": "0.0.1",
-    "staticUrl": "http://localhost:18080",
+    "staticUrl": "http://localhost:18080/release",
     "debug": 1,
     "private": true,
     "scripts": {
