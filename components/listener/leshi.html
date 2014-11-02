@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+    <TITLE>事件</TITLE>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="base.js"></script>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0
+    }
+    .box {
+        background: #c00;
+        color: #fff;
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    </style>
+</HEAD>
+
+<BODY>
+
+    <div id="a" class="box">a
+        <ul style="display:none">
+            <li>aaa</li>
+            <li>aaa</li>
+            <li>aaa</li>
+        </ul>
+    </div>
+    <div id="b" class="box">b
+        <ul style="display:none">
+            <li>
+                <button>anniu</button>
+            </li>
+        </ul>
+    </div>
+    <div id="c" class="box">c</div>
+  
+    <script type="text/javascript">
+    var a = {
+        init : function(){
+
+        },
+        showList: function() {
+            $('#a ul').show();
+            
+            $le.listener.trigger('a', 'show', {aaaa:1});
+        },
+        hideList: function() {
+            $('#a ul').hide();
+            $le.listener.trigger('a', 'hide', {aaaa:1});
+        }
+    }
+    var b = $.extend({
+        // tpl : <div data-node="Abc" ds='2yuan'>  <%#aa%></div>''
+        // listener: {
+        //     'a.showlist': 'showButton'
+        // },
+        init : function() {
+            $le.listener.on('a', 'show', function(c1,c2) {
+                console.log(c1)
+              
+                b.showButton();
+            });
+            $le.listener.on('a', 'hide', function(c1,c2) {
+                console.log(c1)
+               
+                b.showButton();
+            });
+            // this.$dom.Abc
+            // $(a).on()
+        },
+        showButton: function() {
+            $('#b ul').show();
+            
+        },
+        hideButton: function() {
+            $('#b ul').hide();
+            
+        },
+        di: $le.listener.off()
+    });
+
+    // var  b  = new Lis({
+    //     init : function(){
+
+    //     }
+    // })
+    
+//     {
+//         create: function() {
+//             init();
+//             render();
+//             initEvent();
+//         }
+//     }
+
+// b.create();
+    </script>
+    <script type="text/javascript">
+    b.init()
+    </script>
+</BODY>
+
+</HTML>

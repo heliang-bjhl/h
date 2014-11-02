@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+    <TITLE>事件</TITLE>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="base.js"></script>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0
+    }
+    .box {
+        background: #c00;
+        color: #fff;
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    </style>
+</HEAD>
+
+<BODY>
+
+    <div id="a" class="box">a
+        <ul style="display:none">
+            <li>aaa</li>
+            <li>aaa</li>
+            <li>aaa</li>
+        </ul>
+    </div>
+    <div id="b" class="box">b
+        <ul style="display:none">
+            <li>
+                <button>anniu</button>
+            </li>
+        </ul>
+    </div>
+    <div id="c" class="box">c</div>
+    <script type="text/javascript">
+    var plat =  {
+        a: {
+            showListCallBack: function() {
+                $le.listener.trigger('m.b', 'showButton');
+            },
+            hideListCallBack: function() {
+
+            }
+        },
+        b: {
+            showButtonCallBack: function() {
+
+            },
+            hideButtonCallBack: function() {
+
+            }
+        },
+        init : function(){
+            $le.listener.trigger('m.a', 'showList');
+        }
+    }
+    </script>
+    <script type="text/javascript">
+    var a = {
+        showList: function() {
+            $('#a ul').show();
+            plat.a.showListCallBack();
+        },
+        hideList: function() {
+            $('#a ul').hide();
+            plat.a.hideListCallBack();
+        }
+    }
+    var b = {
+        showButton: function() {
+            $('#b ul').show();
+            plat.b.showButtonCallBack();
+        },
+        hideButton: function() {
+            $('#b ul').hide();
+            plat.b.hideButtonCallBack()
+        }
+    }
+    </script>
+    <script type="text/javascript">
+    var _listenerA = function() {
+        $le.listener.on('m.a', 'showList', function(d) {
+            a.showList()
+        });
+        $le.listener.on('m.a', 'hideList', function(d) {
+            a.hideList()
+        });
+    }
+    var _listenerB = function() {
+        $le.listener.on('m.b', 'showButton', function(d) {
+            b.showButton();
+        });
+        $le.listener.on('m.b', 'hideButton', function(d) {
+            b.hideButton();
+        });
+    }
+    _listenerA();
+    _listenerB();
+    </script>
+</BODY>
+
+</HTML>
