@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+    <TITLE>html5上传组件</TITLE>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.mousewheel.js"></script>
+    <style type="text/css">
+    /*overflow: hidden; height: 100%;body{*/
+    
+    body {
+        overflow: hidden;
+        height: 100%;
+    }
+    #div{
+        width: 300px;height: 300px;background: #c00;
+    }
+    </style>
+</HEAD>
+
+<BODY>
+
+   <div id="div"></div>
+
+    <script type="text/javascript">
+    $('#div').on('mousewheel', function(event,a) {
+        console.log(a)
+        console.log(event.deltaX, event.deltaY, event.deltaFactor);
+    });
+    </script>
+</BODY>
+
+</HTML>
