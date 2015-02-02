@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>路由器</title>
+    <link rel="stylesheet" type="text/css" href="../res_luyou/css/g.css">
+    <link rel="stylesheet" type="text/css" href="../res_luyou/css/ui.css">
+</head>
+
+<body>
+    <div id="pre_html_1_html">
+        <button id="j_textbutton">打开dialog（dialog显示隐藏）</button>
+
+    </div>
+    <script type="text/javascript" src="../res_luyou/js/jq_sea.js"></script>
+    <script type="text/javascript" src="../res_luyou/js/base.js"></script>
+    <script type="text/javascript" id="pre_js_1_js">
+    seajs.use('Dialog', function(Dialog) {
+        var myDialogId;
+        var dialog;
+        $('#j_textbutton').bind('click', function() {
+            if (dialog) {
+                dialog.show();
+            } else {
+                dialog = new Dialog({
+                    title: 'title',
+                    content: '打开dialog（dialog显示隐藏）',
+                    model: 'hide'
+                })
+                dialog.open();
+            }
+        })
+    })
+    </script>
+</body>
+
+</html>
