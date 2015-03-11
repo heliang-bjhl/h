@@ -1,0 +1,650 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="Author" content="Created by Javacatz, maintained by Harrow International School Beijing" />
+    <!-- Initializing JS -->
+    <script type="text/javascript" language="javaScript" src="js/prototype.js"></script>
+    <!-- Common CSS -->
+    <link href="css/common.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/harrow.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Print CSS -->
+    <link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
+    <!-- Common JS -->
+    <script type="text/javascript" language="javascript" src="js/scriptaculous/scriptaculous.js?load=effects"></script>
+    <script type="text/javaScript" language="javaScript" src="js/common.js"></script>
+    <!-- Flash Object -->
+    <script type="text/javascript" language="javascript" src="js/swfobject.js"></script>
+    <!-- Project -->
+    <script type="text/javaScript" language="javaScript" src="js/harrow.js"></script>
+    <!-- FavIcon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Social Bookmark -->
+    <link href="http://www.javacatz.com/modules/socialbookmark/socialbookmark.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" language="javascript" src="http://www.javacatz.com/modules/socialbookmark/socialbookmark.js"></script>
+	<!-- WebFonts -->
+	<link href="http://fonts.googleapis.com/css?family=Arimo:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Tinos:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
+    <!-- RSS Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Harrow RSS Feed" href="rss.aspx" />
+    
+	<title>Harrow International School Beijing</title>
+	<meta id="ctl00_head_headerKeywords" name="Keywords" content="Harrow Beijing, international school of beijing, international school, Education, K-12, school for foreigners, foreign school, elementary school, middle school, high school, pre-school, nursery, creche, kindergarten, pre-prep phase, prep phase, sixth form, lower school, upper school, pre-kindergarten, Beijing International School, Beijing International Education"></meta>
+	<meta id="ctl00_head_headerDescription" name="Description" content="Harrow International School Beijing follows the British independent school model that recognises the importance of leadership in all phases of the school.  We take our students from age 9 weeks through to GCSE and A Levels to provide access routes into top universities worldwide."></meta>
+
+</head>
+<body class="homepage webfonts en" onload="bodyOnLoader('homepage');">
+    <form name="aspnetForm" method="post" action="index.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE0MjYxMTMxMDMPZBYCZg9kFgQCAQ9kFgQCAQ8WAh4HY29udGVudAXsAkhhcnJvdyBCZWlqaW5nLCBpbnRlcm5hdGlvbmFsIHNjaG9vbCBvZiBiZWlqaW5nLCBpbnRlcm5hdGlvbmFsIHNjaG9vbCwgRWR1Y2F0aW9uLCBLLTEyLCBzY2hvb2wgZm9yIGZvcmVpZ25lcnMsIGZvcmVpZ24gc2Nob29sLCBlbGVtZW50YXJ5IHNjaG9vbCwgbWlkZGxlIHNjaG9vbCwgaGlnaCBzY2hvb2wsIHByZS1zY2hvb2wsIG51cnNlcnksIGNyZWNoZSwga2luZGVyZ2FydGVuLCBwcmUtcHJlcCBwaGFzZSwgcHJlcCBwaGFzZSwgc2l4dGggZm9ybSwgbG93ZXIgc2Nob29sLCB1cHBlciBzY2hvb2wsIHByZS1raW5kZXJnYXJ0ZW4sIEJlaWppbmcgSW50ZXJuYXRpb25hbCBTY2hvb2wsIEJlaWppbmcgSW50ZXJuYXRpb25hbCBFZHVjYXRpb25kAgMPFgIfAAWYAkhhcnJvdyBJbnRlcm5hdGlvbmFsIFNjaG9vbCBCZWlqaW5nIGZvbGxvd3MgdGhlIEJyaXRpc2ggaW5kZXBlbmRlbnQgc2Nob29sIG1vZGVsIHRoYXQgcmVjb2duaXNlcyB0aGUgaW1wb3J0YW5jZSBvZiBsZWFkZXJzaGlwIGluIGFsbCBwaGFzZXMgb2YgdGhlIHNjaG9vbC4gIFdlIHRha2Ugb3VyIHN0dWRlbnRzIGZyb20gYWdlIDkgd2Vla3MgdGhyb3VnaCB0byBHQ1NFIGFuZCBBIExldmVscyB0byBwcm92aWRlIGFjY2VzcyByb3V0ZXMgaW50byB0b3AgdW5pdmVyc2l0aWVzIHdvcmxkd2lkZS5kAgMPZBYIAgUPZBYGAgEPD2QWAh4Kb25rZXlwcmVzcwU2ZW50ZXJQcmVzcyh0aGlzLGV2ZW50LCAnY3RsMDAkaGVhZGVyMSRsYnRuU2VhcmNoJywgJycpZAIFDxYCHgtfIUl0ZW1Db3VudAICFgRmD2QWAgIBDw8WBB4LTmF2aWdhdGVVcmwFJmh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9pbmRleC5hc3B4HgZUYXJnZXRlFgIeBWNsYXNzBQdjdXJyZW50FgJmDw8WAh4EVGV4dAUESG9tZWRkAgEPZBYCAgEPDxYEHwMFNGh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9BYm91dFVzSGFycm93RmFtaWx5LmFzcHgfBGVkFgJmDw8WAh8GBRFUaGUgSGFycm93IEZhbWlseWRkAgcPFgIfAgIJFhJmD2QWBAIBDw8WBB8DBTJodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQWJvdXRVc3BoaWxvc29waHkuYXNweB8EZRYCHwUFB21vcmVOYXYWAmYPDxYCHwYFCEFib3V0IFVzZGQCAw9kFgICAQ8WAh8CAgYWDGYPZBYCAgEPDxYEHwMFMmh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9BYm91dFVzcGhpbG9zb3BoeS5hc3B4HwRlZBYCZg8PFgIfBgUVVGhlIEhhcnJvdyBQaGlsb3NvcGh5ZGQCAQ9kFgICAQ8PFgQfAwU0aHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL0Fib3V0VXNIYXJyb3dGYW1pbHkuYXNweB8EZWQWAmYPDxYCHwYFEVRoZSBIYXJyb3cgRmFtaWx5ZGQCAg9kFgICAQ8PFgQfAwU8aHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL0Fib3V0VXNMZXR0ZXJmcm9tSGVhZE1hc3Rlci5hc3B4HwRlZBYCZg8PFgIfBgUbTGV0dGVyIGZyb20gdGhlIEhlYWQgTWFzdGVyZGQCAw9kFgICAQ8PFgQfAwUuaHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL25ld3NpdGUyMDEyMTMuYXNweB8EZWQWAmYPDxYCHwYFCkZhY2lsaXRpZXNkZAIED2QWAgIBDw8WBB8DBTdodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQWJvdXRVc0ZyaWVuZHNvZkhhcnJvdy5hc3B4HwRlZBYCZg8PFgIfBgURRnJpZW5kcyBvZiBIYXJyb3dkZAIFD2QWAgIBDw8WBB8DBUBodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQWJvdXRVc0xldHRlcmZyb21IZWFkYm95YW5kZ2lybC5hc3B4HwRlZBYCZg8PFgIfBgUgTGV0dGVyIGZyb20gSGVhZCBHaXJsICYgSGVhZCBCb3lkZAIBD2QWBAIBDw8WBB8DBThodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQWNhZGVtaWNTdWNjZXNzT3ZlcnZpZXcuYXNweB8EZRYCHwUFB21vcmVOYXYWAmYPDxYCHwYFEEFjYWRlbWljIFN1Y2Nlc3NkZAIDD2QWAgIBDxYCHwICBhYMZg9kFgICAQ8PFgQfAwU4aHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL0FjYWRlbWljU3VjY2Vzc092ZXJ2aWV3LmFzcHgfBGVkFgJmDw8WAh8GBRFBY2FkZW1pYyBPdmVydmlld2RkAgEPZBYCAgEPDxYEHwMFOmh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9BY2FkZW1pY1N1Y2Nlc3NDdXJyaWN1bHVtLmFzcHgfBGVkFgJmDw8WAh8GBRNBY2FkZW1pYyBDdXJyaWN1bHVtZGQCAg9kFgICAQ8PFgQfAwU3aHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL0FjYWRlbWljQ291cnNlT3V0bGluZXMuYXNweB8EZWQWAmYPDxYCHwYFD0NvdXJzZSBPdXRsaW5lc2RkAgMPZBYCAgEPDxYEHwMFPGh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9BY2FkZW1pY1N1Y2Nlc3NFeGFtaW5hdGlvbnMuYXNweB8EZWQWAmYPDxYCHwYFDEV4YW1pbmF0aW9uc2RkAgQPZBYCAgEPDxYEHwMFN2h0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9Vbml2ZXJzaXR5RGVzdGluYXRpb25zLmFzcHgfBGVkFgJmDw8WAh8GBRdVbml2ZXJzaXR5IERlc3RpbmF0aW9uc2RkAgUPZBYCAgEPDxYEHwMFPGh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9BY2FkZW1pY1N1Y2Nlc3NQYXN0b3JhbGNhcmUuYXNweB8EZWQWAmYPDxYCHwYFDVBhc3RvcmFsIENhcmVkZAICD2QWBAIBDw8WBB8DBStodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vSGFycm93dGhvbi5hc3B4HwRlFgIfBQUHbW9yZU5hdhYCZg8PFgIfBgUKTGVhZGVyc2hpcGRkAgMPZBYCAgEPFgIfAgIIFhBmD2QWAgIBDw8WBB8DBStodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vSGFycm93dGhvbi5hc3B4HwRlZBYCZg8PFgIfBgUPSGFycm93dGhvbiAyMDE1ZGQCAQ9kFgICAQ8PFgQfAwUraHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL091dHNpZGVMaUEuYXNweB8EZWQWAmYPDxYCHwYFCkFjdGl2aXRpZXNkZAICD2QWAgIBDw8WBB8DBTZodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vT3V0c2lkZUxpQUV4cGVkaXRpb25zLmFzcHgfBGVkFgJmDw8WAh8GBQtFeHBlZGl0aW9uc2RkAgMPZBYCAgEPDxYEHwMFOmh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9PdXRzaWRlSW50ZXJuYXRpb25hbEF3YXJkLmFzcHgfBGVkFgJmDw8WAh8GBRdUaGUgSW50ZXJuYXRpb25hbCBBd2FyZGRkAgQPZBYCAgEPDxYEHwMFLmh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9PdXRzaWRlU3BvcnRzLmFzcHgfBGVkFgJmDw8WAh8GBQZTcG9ydHNkZAIFD2QWAgIBDw8WBB8DBS9odHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vT3V0c2lkZUZPQklTSUEuYXNweB8EZWQWAmYPDxYCHwYFB0ZPQklTSUFkZAIGD2QWAgIBDw8WBB8DBTZodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vT3V0c2lkZXBlcmZvcm1pbmdhcnRzLmFzcHgfBGVkFgJmDw8WAh8GBQ9QZXJmb3JtaW5nIEFydHNkZAIHD2QWAgIBDw8WBB8DBTZodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vT3V0c2lkZVdvcmtFeHBlcmllbmNlLmFzcHgfBGVkFgJmDw8WAh8GBQ9Xb3JrIEV4cGVyaWVuY2VkZAIDD2QWBAIBDw8WBB8DBSlodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vbmV3c0xpc3QuYXNweB8EZRYCHwUFB21vcmVOYXYWAmYPDxYCHwYFBE5ld3NkZAIDD2QWAgIBDxYCHwICAxYGZg9kFgICAQ8PFgQfAwUpaHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL25ld3NMaXN0LmFzcHgfBGVkFgJmDw8WAh8GBQROZXdzZGQCAQ9kFgICAQ8PFgQfAwUpaHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL0NhbGVuZGFyLmFzcHgfBGVkFgJmDw8WAh8GBQ5FdmVudCBDYWxlbmRhcmRkAgIPZBYCAgEPDxYEHwMFNmh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9OZXdzQ2FsZW5kYXJUZXJtRGF0ZXMuYXNweB8EZWQWAmYPDxYCHwYFClRlcm0gRGF0ZXNkZAIED2QWBAIBDw8WBB8DBTdodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vU2Nob29sTGlmZVNjaG9vbEhvdXNlcy5hc3B4HwRlFgIfBQUHbW9yZU5hdhYCZg8PFgIfBgULU2Nob29sIExpZmVkZAIDD2QWAgIBDxYCHwICBRYKZg9kFgICAQ8PFgQfAwU3aHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL1NjaG9vbExpZmVTY2hvb2xIb3VzZXMuYXNweB8EZWQWAmYPDxYCHwYFDVNjaG9vbCBIb3VzZXNkZAIBD2QWAgIBDw8WBB8DBTdodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vU2Nob29sTGlmZUhlYWx0aENsaW5pYy5hc3B4HwRlZBYCZg8PFgIfBgUVSGVhbHRoIGFuZCBXZWxsLUJlaW5nZGQCAg9kFgICAQ8PFgQfAwU5aHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL1NjaG9vbExpZmVUcmFuc3BvcnRNZWFscy5hc3B4HwRlZBYCZg8PFgIfBgUTVHJhbnNwb3J0IGFuZCBNZWFsc2RkAgMPZBYCAgEPDxYEHwMFNGh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9TY2hvb2xMaWZlSGFuZGJvb2tzLmFzcHgfBGVkFgJmDw8WAh8GBRRIYW5kYm9va3MgJiBQb2xpY2llc2RkAgQPZBYCAgEPDxYEHwMFMmh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9TY2hvb2xMaWZlVW5pZm9ybS5hc3B4HwRlZBYCZg8PFgIfBgUHVW5pZm9ybWRkAgUPZBYEAgEPDxYEHwMFMGh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9XaHlXb3JrQXRIYXJyb3cuYXNweB8EZRYCHwUFB21vcmVOYXYWAmYPDxYCHwYFCkVNUExPWU1FTlRkZAIDD2QWAgIBDxYCHwICBBYIZg9kFgICAQ8PFgQfAwUwaHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL1doeVdvcmtBdEhhcnJvdy5hc3B4HwRlZBYCZg8PFgIfBgUaV2h5IHdvcmsgYXQgSGFycm93IEJlaWppbmdkZAIBD2QWAgIBDw8WBB8DBS9odHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQWJvdXRVc1dvcmtpbmcuYXNweB8EZWQWAmYPDxYCHwYFH09wcG9ydHVuaXRpZXMgYXQgSGFycm93IEJlaWppbmdkZAICD2QWAgIBDw8WBB8DBSlodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQmVuZWZpdHMuYXNweB8EZWQWAmYPDxYCHwYFM1RlYWNoaW5nIGF0IEhhcnJvdyBCZWlqaW5nIC0gYSByZXdhcmRpbmcgZXhwZXJpZW5jZWRkAgMPZBYCAgEPDxYEHwMFMGh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9MaXZpbmdJbkJlaWppbmcuYXNweB8EZWQWAmYPDxYCHwYFEUxpdmluZyBpbiBCZWlqaW5nZGQCBg9kFgQCAQ8PFgQfAwUyaHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL3doeS1jaG9vc2UtaGFycm93LmFzcHgfBGUWAh8FBQdtb3JlTmF2FgJmDw8WAh8GBQpBZG1pc3Npb25zZGQCAw9kFgICAQ8WAh8CAgYWDGYPZBYCAgEPDxYEHwMFMmh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi93aHktY2hvb3NlLWhhcnJvdy5hc3B4HwRlZBYCZg8PFgIfBgURV2h5IENob29zZSBIYXJyb3dkZAIBD2QWAgIBDw8WBB8DBTBodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQWRtaXNzaW9uc0hvd1RvLmFzcHgfBGVkFgJmDw8WAh8GBQxIb3cgVG8gQXBwbHlkZAICD2QWAgIBDw8WBB8DBTNodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQWRtaXNzaW9uc0hvd1RvQWdlLmFzcHgfBGVkFgJmDw8WAh8GBRhBZ2UgR3VpZGVsaW5lcyBmb3IgRW50cnlkZAIDD2QWAgIBDw8WBB8DBS9odHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQWRtaXNzaW9uc0ZlZXMuYXNweB8EZWQWAmYPDxYCHwYFFUZlZXMgYW5kIFNjaG9sYXJzaGlwc2RkAgQPZBYCAgEPDxYEHwMFOWh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9FbnF1aXJpZXNhbmRTY2hvb2xWaXNpdHMuYXNweB8EZWQWAmYPDxYCHwYFI0FkbWlzc2lvbiBFbnF1aXJpZXMgJiBTY2hvb2wgVmlzaXRzZGQCBQ9kFgICAQ8PFgQfAwUtaHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL09wZW5Nb3JuaW5ncy5hc3B4HwRlZBYCZg8PFgIfBgUkSW5mb3JtYXRpb24gU2Vzc2lvbnMgLyBPcGVuIE1vcm5pbmdzZGQCBw9kFgQCAQ8PFgQfAwU3aHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL0hhcnJvd1NhdHVyZGF5c1dlbGNvbWUuYXNweB8EZRYCHwUFB21vcmVOYXYWAmYPDxYCHwYFE0xhbmd1YWdlICYgTGVhcm5pbmdkZAIDD2QWAgIBDxYCHwICBxYOZg9kFgICAQ8PFgQfAwU3aHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL0hhcnJvd1NhdHVyZGF5c1dlbGNvbWUuYXNweB8EZWQWAmYPDxYCHwYFG1dlbGNvbWUgdG8gSGFycm93IFNhdHVyZGF5c2RkAgEPZBYCAgEPDxYEHwMFQWh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9IYXJyb3dTYXR1cmRheXMtQUxldHRlclRvUGFyZW50cy5hc3B4HwRlZBYCZg8PFgIfBgUTQSBMZXR0ZXIgdG8gUGFyZW50c2RkAgIPZBYCAgEPDxYEHwMFQGh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9oYXJyb3dzYXR1cmRheWNvdXJzZXNhbmRmZWVzKDEpLmFzcHgfBGVkFgJmDw8WAh8GBRRMJkwgQ291cnNlcyBhbmQgRmVlc2RkAgMPZBYCAgEPDxYEHwMFMWh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9IU0VucXVpcnlmb3JtKDEpLmFzcHgfBGVkFgJmDw8WAh8GBR5FbnJvbGxtZW50IGFuZCBUdWl0aW9uIFBheW1lbnRkZAIED2QWAgIBDw8WBB8DBTlodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vSGFycm93c2F0dXJkYXlzY29udGFjdHVzLmFzcHgfBGVkFgJmDw8WAh8GBQ5MJkwgQ29udGFjdCB1c2RkAgUPZBYCAgEPDxYEHwMFNGh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9IYXJyb3dzYXR1cmRheXNGQVFzLmFzcHgfBGVkFgJmDw8WAh8GBQVGQVEnc2RkAgYPZBYCAgEPDxYEHwMFOWh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9TYXR1cmRheS1TY2hvb2wtQ2FsZW5kYXIuYXNweB8EZWQWAmYPDxYCHwYFCENhbGVuZGFyZGQCCA9kFgQCAQ8PFgQfAwUraHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL2NvbnRhY3QtdXMuYXNweB8EZWQWAmYPDxYCHwYFCkNvbnRhY3QgVXNkZAIDDxYCHgdWaXNpYmxlaBYCAgEPFgIfAgL/////D2QCBw9kFgICAQ9kFgICAQ8WAh8CAgQWCGYPZBYCAgEPDxYCHwMFKWh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9uZXdzTGlzdC5hc3B4ZBYEAgEPDxYCHghJbWFnZVVybAU9L3VwbG9hZC9iYW5uZXJzLzIwMTQvMTg0MTEwaG9tZXBhZ2VmZWF0dXJlL0lNR181NTIyX2phcGFuLmpwZ2RkAgMPFgIfBgUETmV3c2QCAQ9kFgICAQ8PFgIfAwUpaHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL0NhbGVuZGFyLmFzcHhkFgQCAQ8PFgIfCAUrL3VwbG9hZC9iYW5uZXJzLzIwMTQvZmVhdHVyZXMvY2FsZW5kYXIyLmpwZ2RkAgMPFgIfBgUPU2Nob29sIENhbGVuZGFyZAICD2QWAgIBDw8WAh8DBTdodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vVW5pdmVyc2l0eURlc3RpbmF0aW9ucy5hc3B4ZBYEAgEPDxYCHwgFIy91cGxvYWQvYmFsbG9vbnNob21lcGFnZWZlYXR1cmUuanBnZGQCAw8WAh8GBRdVbml2ZXJzaXR5IERlc3RpbmF0aW9uc2QCAw9kFgICAQ8PFgIfAwU5aHR0cDovL3d3dy5oYXJyb3diZWlqaW5nLmNuL0VucXVpcmllc2FuZFNjaG9vbFZpc2l0cy5hc3B4ZBYEAgEPDxYCHwgFRC91cGxvYWQvYmFubmVycy8yMDE0LzE4NDExMGhvbWVwYWdlZmVhdHVyZS9jb21lYW5kVmlzaXRVc18xODQxMTAuanBnZGQCAw8WAh8GBQlPcGVuIERheXNkAgkPZBYIAgEPZBYCAgEPFgIfAgIFFgpmD2QWBAIBDw8WBB8DBUVodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQWNhZGVtaWNDdXJyaWN1bHVtRWFybHlZZWFycy5hc3B4I2NvbnRlbnQfBgUVVGhlIEVhcmx5IFllYXJzIFBoYXNlZGQCAw8WAh8GBUUoIENyZWNoZSwgUHJlLU51cnNlcnksIE51cnNlcnkgYW5kIFJlY2VwdGlvbiBmcm9tIDkgd2Vla3MgdG8gNSBZZWFycylkAgEPZBYEAgEPDxYEHwMFQmh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9BY2FkZW1pY0N1cnJpY3VsdW1QcmVQcmVwLmFzcHgjY29udGVudB8GBRJUaGUgUHJlLVByZXAgUGhhc2VkZAIDDxYCHwYFDihZZWFycyAxIHRvIDUpZAICD2QWBAIBDw8WBB8DBT9odHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQWNhZGVtaWNDdXJyaWN1bHVtUHJlcC5hc3B4I2NvbnRlbnQfBgUOVGhlIFByZXAgUGhhc2VkZAIDDxYCHwYFDihZZWFycyA2IHRvIDgpZAIDD2QWBAIBDw8WBB8DBUdodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vQWNhZGVtaWNDdXJyaWN1bHVtU2VuaW9yU2Nob29sLmFzcHgjY29udGVudB8GBQ1TZW5pb3IgU2Nob29sZGQCAw8WAh8GBQ8oWWVhcnMgOSB0byAxMSlkAgQPZBYEAgEPDxYEHwMFRGh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9BY2FkZW1pY0N1cnJpY3VsdW1TaXh0aEZvcm0uYXNweCNjb250ZW50HwYFClNpeHRoIEZvcm1kZAIDDxYCHwYFEShZZWFycyAxMiBhbmQgMTMpZAIFD2QWAmYPZBYCAgEPPCsACgEADxYGHg1OZXh0TW9udGhUZXh0BTs8aW1nIHNyYz0iaW1nL2NhbGVuZGFyL2J1dHRvbi1uZXh0LnBuZyIgYWx0PSJOZXh0IE1vbnRoIiAvPh4LVmlzaWJsZURhdGUGAIC6ENAn0ogeDVByZXZNb250aFRleHQFPzxpbWcgc3JjPSJpbWcvY2FsZW5kYXIvYnV0dG9uLXByZXYucG5nIiBhbHQ9IlByZXZpb3VzIE1vbnRoIiAvPmRkAgsPFgIfAgIBFgJmD2QWBAIBDxYCHwYFCVR1ZSAzIEZlYmQCAw8WAh8CAgEWAmYPZBYCAgEPDxYEHwYFM0Jvb2sgV2VlayAyMDE1IC0gRnJvbSBTbWFsbCBQcmludCB0byB0aGUgQmlnIFNjcmVlbh8DBRRuZXdzLzIwMTUtMDItMDMuYXNweGRkAg0PFgIfB2hkAgsPZBYEAgMPFgIfAgICFgRmD2QWAgIBDw8WAh8DBShodHRwOi8vd3d3LmhhcnJvd2JlaWppbmcuY24vc2l0ZW1hcC5hc3B4ZBYCZg8PFgIfBgUHU2l0ZW1hcGRkAgEPZBYEAgEPDxYCHwMFJGh0dHA6Ly93d3cuaGFycm93YmVpamluZy5jbi9yc3MuYXNweGQWAmYPDxYCHwYFA1JTU2RkAgMPFgIfB2hkAgUPFgIfBgUEMjAxNWRkRt1LbZA52C7FzCw6+VZMgaPdmIY=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=-Dd_f4i0IM12JWGVi1cKJrN01grq75CpIRmmEvjIWM7BoIZ_0kCZzmvRDwW6FH7rNJLSEAmNsTKX5O0tdUhauY99ASc1&amp;t=635299309051754117" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=2GwWiP1WpLLompg0GS8lYLLaMmwHElanPZ24PRZLmZPkL0RN3LgRzOWHfebHsbLFAtiVy64bsN5l_tIgS164UJo4dOJGCx9RkXnvT1LQQ9K1ixqz3Fz-w98i_LT69x-1ROvUbwjuxxNZLZURMCfycxgDjpJ9pbdeJhBKk_85fGFJneZI0&amp;t=4944baa1" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=VUT1pXmf3KSzDv4KRDewDhZ-7ykSsyF3XevVJ-LFipvYgRvwjqZAfArHusaHLa7MU-9vZ1agVJwums8Qt3noKbwVoWIhSYV1alKIXofweHOdzcKVP6N_DI8qaqnXd3W3uiD45YiyEgZWGRtrkuVy6djSuAmLOZiICP82YKI6sAuL3LlI0&amp;t=4944baa1" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWLwLSjYKYCwKU5MriCgLH1vPEBgLao4TvCgLTo6CnBgL98++tCgL98/vWAgL988fzCwL989OcBAL987+5DQL984viBQL985ePDgL986PmCwL984+DBAKayaGaBwKayY3HDwKayZngCAKayeWMAQKayfGpCgKayd3SAgKayan/CwKaybWYBAKaycHzAQKaya2cCgKnpt+3DQKnpqvQBQKnprf9DgKnpoOmBwKnpu/CDwKnpvvvCAKnpseIAQKnptO1CgKnpv+MBwKnpsspAsy//cACAsy/ye0LAsy/1ZYEAsy/obMNAsy/jdwFAsy/mfkOAsy/5aUHAsy/8c4PAsy/naYNAsy/6cIFAumUm9oIAumU54YBAumU86MKn8qKFBWrcdmxdW+2+MUQ5kk02O4=" />
+</div>
+    <div class="bodywrap">
+	    <noscript>
+	    <div class="noscript">Note: This site contains enhanced user experience that javascript support for your web browser is recommended.</div>
+	    </noscript>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$sManager', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$ContentPlaceHolder1$ctl00'], [], [], 90);
+//]]>
+</script>
+
+        
+	<div class="topBanner">
+		<div id="pageBanner" class="pageBanner"></div>
+		<script language="javascript" type="text/javascript">
+		<!--
+			pageBanner.bannerSlideTimer = 10000;
+			pageBanner.boolAutoPlay = true;
+			pageBanner.boolVertMiddle = false;
+			pageBanner.boolBannerCenter = true;
+			pageBanner.effects = {
+				'next': 'pageBannerHelper.Fade',
+				'prev': 'pageBannerHelper.Fade',
+				'goto': 'pageBannerHelper.Fade'
+			};
+			pageBanner.banners = [ '/upload/banners/HomePageBanner3Sep2012.jpg', '/upload/banners/2014/659/Harrowthon2014.jpg', '/upload/banners/2014/659/Science_prep2.jpg', '/upload/banners/2014/659/MusicClassroom.jpg' ];
+			pageBanner.init();
+			//-->
+			</script>
+	</div>
+
+        <div id="page">
+		    <div class="pageInner">
+			    <div id="top">
+				    <div class="topInner">
+					    
+<div id="header">
+	<div class="headerInner">
+		<h1><a href="index.aspx"><img src="img/logo/logo-harrow.png" alt="Harrow International School Beijing" /></a></h1>
+		<div class="slogan">Leadership for a better world</div>
+        <div class="searchbox">
+            <input name="ctl00$header1$txtSearchBox" type="text" id="ctl00_header1_txtSearchBox" class="search text auto" title="Search keywords here..." onkeypress="enterPress(this,event, 'ctl00$header1$lbtnSearch', '')" />
+            <a id="ctl00_header1_lbtnSearch" class="smallbutton" href="javascript:__doPostBack('ctl00$header1$lbtnSearch','')">
+                <span>Go</span>
+            </a>
+        </div>
+	</div>
+</div>
+<div class="extraNav">
+	<div class="navDiv navDiv2">
+		<ul class="kyMenu2 nav">
+            
+                    <li>
+                        <a id="ctl00_header1_repExNav_ctl00_hlExNav" class="current" href="http://www.harrowbeijing.cn/index.aspx"><span id="ctl00_header1_repExNav_ctl00_lblExNav">Home</span></a>
+                    </li>
+                
+                    <li>
+                        <a id="ctl00_header1_repExNav_ctl01_hlExNav" href="http://www.harrowbeijing.cn/AboutUsHarrowFamily.aspx"><span id="ctl00_header1_repExNav_ctl01_lblExNav">The Harrow Family</span></a>
+                    </li>
+                
+			<li><a href="javascript:void(0);" onclick="overlayer.open('overlayer-login');return false;" class="button-login"><span>Login</span></a></li>
+		</ul>
+	</div>
+</div>
+<div class="navDiv-wrap">
+	<div id="nav" class="navDiv navDiv1">
+		<ul class="kyMenu2 nav">
+            
+                    <li class="one-column">
+                        <a id="ctl00_header1_repMenu_ctl00_hlMenu" class="moreNav" href="http://www.harrowbeijing.cn/AboutUsphilosophy.aspx"><span id="ctl00_header1_repMenu_ctl00_lblMenu">About Us</span></a>
+                        
+                            <div class="ul" style="display:none;">
+					            <div class="ulInner">
+                                    
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl00_hlSubMenu" href="http://www.harrowbeijing.cn/AboutUsphilosophy.aspx"><span id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl00_lblSubMenu">The Harrow Philosophy</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl01_hlSubMenu" href="http://www.harrowbeijing.cn/AboutUsHarrowFamily.aspx"><span id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl01_lblSubMenu">The Harrow Family</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl02_hlSubMenu" href="http://www.harrowbeijing.cn/AboutUsLetterfromHeadMaster.aspx"><span id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl02_lblSubMenu">Letter from the Head Master</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl03_hlSubMenu" href="http://www.harrowbeijing.cn/newsite201213.aspx"><span id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl03_lblSubMenu">Facilities</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl04_hlSubMenu" href="http://www.harrowbeijing.cn/AboutUsFriendsofHarrow.aspx"><span id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl04_lblSubMenu">Friends of Harrow</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl05_hlSubMenu" href="http://www.harrowbeijing.cn/AboutUsLetterfromHeadboyandgirl.aspx"><span id="ctl00_header1_repMenu_ctl00_repSubMenu_ctl05_lblSubMenu">Letter from Head Girl & Head Boy</span></a>
+                                            </div>
+                                        
+                                </div>
+                            </div>
+                        
+                        
+                    </li>
+                
+                    <li class="one-column">
+                        <a id="ctl00_header1_repMenu_ctl01_hlMenu" class="moreNav" href="http://www.harrowbeijing.cn/AcademicSuccessOverview.aspx"><span id="ctl00_header1_repMenu_ctl01_lblMenu">Academic Success</span></a>
+                        
+                            <div class="ul" style="display:none;">
+					            <div class="ulInner">
+                                    
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl00_hlSubMenu" href="http://www.harrowbeijing.cn/AcademicSuccessOverview.aspx"><span id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl00_lblSubMenu">Academic Overview</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl01_hlSubMenu" href="http://www.harrowbeijing.cn/AcademicSuccessCurriculum.aspx"><span id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl01_lblSubMenu">Academic Curriculum</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl02_hlSubMenu" href="http://www.harrowbeijing.cn/AcademicCourseOutlines.aspx"><span id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl02_lblSubMenu">Course Outlines</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl03_hlSubMenu" href="http://www.harrowbeijing.cn/AcademicSuccessExaminations.aspx"><span id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl03_lblSubMenu">Examinations</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl04_hlSubMenu" href="http://www.harrowbeijing.cn/UniversityDestinations.aspx"><span id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl04_lblSubMenu">University Destinations</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl05_hlSubMenu" href="http://www.harrowbeijing.cn/AcademicSuccessPastoralcare.aspx"><span id="ctl00_header1_repMenu_ctl01_repSubMenu_ctl05_lblSubMenu">Pastoral Care</span></a>
+                                            </div>
+                                        
+                                </div>
+                            </div>
+                        
+                        
+                    </li>
+                
+                    <li class="one-column">
+                        <a id="ctl00_header1_repMenu_ctl02_hlMenu" class="moreNav" href="http://www.harrowbeijing.cn/Harrowthon.aspx"><span id="ctl00_header1_repMenu_ctl02_lblMenu">Leadership</span></a>
+                        
+                            <div class="ul" style="display:none;">
+					            <div class="ulInner">
+                                    
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl00_hlSubMenu" href="http://www.harrowbeijing.cn/Harrowthon.aspx"><span id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl00_lblSubMenu">Harrowthon 2015</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl01_hlSubMenu" href="http://www.harrowbeijing.cn/OutsideLiA.aspx"><span id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl01_lblSubMenu">Activities</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl02_hlSubMenu" href="http://www.harrowbeijing.cn/OutsideLiAExpeditions.aspx"><span id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl02_lblSubMenu">Expeditions</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl03_hlSubMenu" href="http://www.harrowbeijing.cn/OutsideInternationalAward.aspx"><span id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl03_lblSubMenu">The International Award</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl04_hlSubMenu" href="http://www.harrowbeijing.cn/OutsideSports.aspx"><span id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl04_lblSubMenu">Sports</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl05_hlSubMenu" href="http://www.harrowbeijing.cn/OutsideFOBISIA.aspx"><span id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl05_lblSubMenu">FOBISIA</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl06_hlSubMenu" href="http://www.harrowbeijing.cn/Outsideperformingarts.aspx"><span id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl06_lblSubMenu">Performing Arts</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl07_hlSubMenu" href="http://www.harrowbeijing.cn/OutsideWorkExperience.aspx"><span id="ctl00_header1_repMenu_ctl02_repSubMenu_ctl07_lblSubMenu">Work Experience</span></a>
+                                            </div>
+                                        
+                                </div>
+                            </div>
+                        
+                        
+                    </li>
+                
+                    <li class="one-column">
+                        <a id="ctl00_header1_repMenu_ctl03_hlMenu" class="moreNav" href="http://www.harrowbeijing.cn/newsList.aspx"><span id="ctl00_header1_repMenu_ctl03_lblMenu">News</span></a>
+                        
+                            <div class="ul" style="display:none;">
+					            <div class="ulInner">
+                                    
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl03_repSubMenu_ctl00_hlSubMenu" href="http://www.harrowbeijing.cn/newsList.aspx"><span id="ctl00_header1_repMenu_ctl03_repSubMenu_ctl00_lblSubMenu">News</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl03_repSubMenu_ctl01_hlSubMenu" href="http://www.harrowbeijing.cn/Calendar.aspx"><span id="ctl00_header1_repMenu_ctl03_repSubMenu_ctl01_lblSubMenu">Event Calendar</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl03_repSubMenu_ctl02_hlSubMenu" href="http://www.harrowbeijing.cn/NewsCalendarTermDates.aspx"><span id="ctl00_header1_repMenu_ctl03_repSubMenu_ctl02_lblSubMenu">Term Dates</span></a>
+                                            </div>
+                                        
+                                </div>
+                            </div>
+                        
+                        
+                    </li>
+                
+                    <li class="one-column">
+                        <a id="ctl00_header1_repMenu_ctl04_hlMenu" class="moreNav" href="http://www.harrowbeijing.cn/SchoolLifeSchoolHouses.aspx"><span id="ctl00_header1_repMenu_ctl04_lblMenu">School Life</span></a>
+                        
+                            <div class="ul" style="display:none;">
+					            <div class="ulInner">
+                                    
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl04_repSubMenu_ctl00_hlSubMenu" href="http://www.harrowbeijing.cn/SchoolLifeSchoolHouses.aspx"><span id="ctl00_header1_repMenu_ctl04_repSubMenu_ctl00_lblSubMenu">School Houses</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl04_repSubMenu_ctl01_hlSubMenu" href="http://www.harrowbeijing.cn/SchoolLifeHealthClinic.aspx"><span id="ctl00_header1_repMenu_ctl04_repSubMenu_ctl01_lblSubMenu">Health and Well-Being</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl04_repSubMenu_ctl02_hlSubMenu" href="http://www.harrowbeijing.cn/SchoolLifeTransportMeals.aspx"><span id="ctl00_header1_repMenu_ctl04_repSubMenu_ctl02_lblSubMenu">Transport and Meals</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl04_repSubMenu_ctl03_hlSubMenu" href="http://www.harrowbeijing.cn/SchoolLifeHandbooks.aspx"><span id="ctl00_header1_repMenu_ctl04_repSubMenu_ctl03_lblSubMenu">Handbooks & Policies</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl04_repSubMenu_ctl04_hlSubMenu" href="http://www.harrowbeijing.cn/SchoolLifeUniform.aspx"><span id="ctl00_header1_repMenu_ctl04_repSubMenu_ctl04_lblSubMenu">Uniform</span></a>
+                                            </div>
+                                        
+                                </div>
+                            </div>
+                        
+                        
+                    </li>
+                
+                    <li class="one-column">
+                        <a id="ctl00_header1_repMenu_ctl05_hlMenu" class="moreNav" href="http://www.harrowbeijing.cn/WhyWorkAtHarrow.aspx"><span id="ctl00_header1_repMenu_ctl05_lblMenu">EMPLOYMENT</span></a>
+                        
+                            <div class="ul" style="display:none;">
+					            <div class="ulInner">
+                                    
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl05_repSubMenu_ctl00_hlSubMenu" href="http://www.harrowbeijing.cn/WhyWorkAtHarrow.aspx"><span id="ctl00_header1_repMenu_ctl05_repSubMenu_ctl00_lblSubMenu">Why work at Harrow Beijing</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl05_repSubMenu_ctl01_hlSubMenu" href="http://www.harrowbeijing.cn/AboutUsWorking.aspx"><span id="ctl00_header1_repMenu_ctl05_repSubMenu_ctl01_lblSubMenu">Opportunities at Harrow Beijing</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl05_repSubMenu_ctl02_hlSubMenu" href="http://www.harrowbeijing.cn/Benefits.aspx"><span id="ctl00_header1_repMenu_ctl05_repSubMenu_ctl02_lblSubMenu">Teaching at Harrow Beijing - a rewarding experience</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl05_repSubMenu_ctl03_hlSubMenu" href="http://www.harrowbeijing.cn/LivingInBeijing.aspx"><span id="ctl00_header1_repMenu_ctl05_repSubMenu_ctl03_lblSubMenu">Living in Beijing</span></a>
+                                            </div>
+                                        
+                                </div>
+                            </div>
+                        
+                        
+                    </li>
+                
+                    <li class="one-column">
+                        <a id="ctl00_header1_repMenu_ctl06_hlMenu" class="moreNav" href="http://www.harrowbeijing.cn/why-choose-harrow.aspx"><span id="ctl00_header1_repMenu_ctl06_lblMenu">Admissions</span></a>
+                        
+                            <div class="ul" style="display:none;">
+					            <div class="ulInner">
+                                    
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl00_hlSubMenu" href="http://www.harrowbeijing.cn/why-choose-harrow.aspx"><span id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl00_lblSubMenu">Why Choose Harrow</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl01_hlSubMenu" href="http://www.harrowbeijing.cn/AdmissionsHowTo.aspx"><span id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl01_lblSubMenu">How To Apply</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl02_hlSubMenu" href="http://www.harrowbeijing.cn/AdmissionsHowToAge.aspx"><span id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl02_lblSubMenu">Age Guidelines for Entry</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl03_hlSubMenu" href="http://www.harrowbeijing.cn/AdmissionsFees.aspx"><span id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl03_lblSubMenu">Fees and Scholarships</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl04_hlSubMenu" href="http://www.harrowbeijing.cn/EnquiriesandSchoolVisits.aspx"><span id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl04_lblSubMenu">Admission Enquiries & School Visits</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl05_hlSubMenu" href="http://www.harrowbeijing.cn/OpenMornings.aspx"><span id="ctl00_header1_repMenu_ctl06_repSubMenu_ctl05_lblSubMenu">Information Sessions / Open Mornings</span></a>
+                                            </div>
+                                        
+                                </div>
+                            </div>
+                        
+                        
+                    </li>
+                
+                    <li class="one-column">
+                        <a id="ctl00_header1_repMenu_ctl07_hlMenu" class="moreNav" href="http://www.harrowbeijing.cn/HarrowSaturdaysWelcome.aspx"><span id="ctl00_header1_repMenu_ctl07_lblMenu">Language & Learning</span></a>
+                        
+                            <div class="ul" style="display:none;">
+					            <div class="ulInner">
+                                    
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl00_hlSubMenu" href="http://www.harrowbeijing.cn/HarrowSaturdaysWelcome.aspx"><span id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl00_lblSubMenu">Welcome to Harrow Saturdays</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl01_hlSubMenu" href="http://www.harrowbeijing.cn/HarrowSaturdays-ALetterToParents.aspx"><span id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl01_lblSubMenu">A Letter to Parents</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl02_hlSubMenu" href="http://www.harrowbeijing.cn/harrowsaturdaycoursesandfees(1).aspx"><span id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl02_lblSubMenu">L&L Courses and Fees</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl03_hlSubMenu" href="http://www.harrowbeijing.cn/HSEnquiryform(1).aspx"><span id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl03_lblSubMenu">Enrollment and Tuition Payment</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl04_hlSubMenu" href="http://www.harrowbeijing.cn/Harrowsaturdayscontactus.aspx"><span id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl04_lblSubMenu">L&L Contact us</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl05_hlSubMenu" href="http://www.harrowbeijing.cn/HarrowsaturdaysFAQs.aspx"><span id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl05_lblSubMenu">FAQ's</span></a>
+                                            </div>
+                                        
+                                            <div class="li">
+                                                <a id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl06_hlSubMenu" href="http://www.harrowbeijing.cn/Saturday-School-Calendar.aspx"><span id="ctl00_header1_repMenu_ctl07_repSubMenu_ctl06_lblSubMenu">Calendar</span></a>
+                                            </div>
+                                        
+                                </div>
+                            </div>
+                        
+                        
+                    </li>
+                
+                    <li class="one-column">
+                        <a id="ctl00_header1_repMenu_ctl08_hlMenu" href="http://www.harrowbeijing.cn/contact-us.aspx"><span id="ctl00_header1_repMenu_ctl08_lblMenu">Contact Us</span></a>
+                        
+                        
+                    </li>
+                
+		</ul>
+	</div>
+</div>
+					    <div class="topBody">
+						    <div class="topBodyInner">
+								<div class="slidescroller">
+									<div class="slider-mask">
+										<div class="homeHighlights slider-canvas">
+											
+	
+    <div class="highlights slider-items">
+        
+                <a id="ctl00_topBody_repHighLights_ctl00_hlLink" class="item" href="http://www.harrowbeijing.cn/newsList.aspx">
+                    <span class="thumbnail"><img id="ctl00_topBody_repHighLights_ctl00_imgThumbnail" src="/upload/banners/2014/184110homepagefeature/IMG_5522_japan.jpg" style="border-width:0px;" /></span>
+		            <span class="title">News</span>
+                </a>
+            
+                <a id="ctl00_topBody_repHighLights_ctl01_hlLink" class="item" href="http://www.harrowbeijing.cn/Calendar.aspx">
+                    <span class="thumbnail"><img id="ctl00_topBody_repHighLights_ctl01_imgThumbnail" src="/upload/banners/2014/features/calendar2.jpg" style="border-width:0px;" /></span>
+		            <span class="title">School Calendar</span>
+                </a>
+            
+                <a id="ctl00_topBody_repHighLights_ctl02_hlLink" class="item" href="http://www.harrowbeijing.cn/UniversityDestinations.aspx">
+                    <span class="thumbnail"><img id="ctl00_topBody_repHighLights_ctl02_imgThumbnail" src="/upload/balloonshomepagefeature.jpg" style="border-width:0px;" /></span>
+		            <span class="title">University Destinations</span>
+                </a>
+            
+                <a id="ctl00_topBody_repHighLights_ctl03_hlLink" class="item" href="http://www.harrowbeijing.cn/EnquiriesandSchoolVisits.aspx">
+                    <span class="thumbnail"><img id="ctl00_topBody_repHighLights_ctl03_imgThumbnail" src="/upload/banners/2014/184110homepagefeature/comeandVisitUs_184110.jpg" style="border-width:0px;" /></span>
+		            <span class="title">Open Days</span>
+                </a>
+            
+    </div>
+    
+	
+
+										</div>
+									</div>
+									<div class="slider-prev"></div>
+									<div class="slider-next"></div>
+								</div>
+						    </div>
+					    </div>
+				            
+				    </div>
+			    </div>
+			    <div id="body">
+				    <div class="bodyInner">
+					    
+	<div id="side">
+		<div class="sideInner">
+			
+			<ul class="bullet bullet2">
+			
+					<li>
+						<a id="ctl00_ContentPlaceHolder1_repSide_ctl00_hlSide" href="http://www.harrowbeijing.cn/AcademicCurriculumEarlyYears.aspx#content">The Early Years Phase</a><br />
+						<span class="info">( Creche, Pre-Nursery, Nursery and Reception from 9 weeks to 5 Years)</span>
+					</li>
+				
+					<li>
+						<a id="ctl00_ContentPlaceHolder1_repSide_ctl01_hlSide" href="http://www.harrowbeijing.cn/AcademicCurriculumPrePrep.aspx#content">The Pre-Prep Phase</a><br />
+						<span class="info">(Years 1 to 5)</span>
+					</li>
+				
+					<li>
+						<a id="ctl00_ContentPlaceHolder1_repSide_ctl02_hlSide" href="http://www.harrowbeijing.cn/AcademicCurriculumPrep.aspx#content">The Prep Phase</a><br />
+						<span class="info">(Years 6 to 8)</span>
+					</li>
+				
+					<li>
+						<a id="ctl00_ContentPlaceHolder1_repSide_ctl03_hlSide" href="http://www.harrowbeijing.cn/AcademicCurriculumSeniorSchool.aspx#content">Senior School</a><br />
+						<span class="info">(Years 9 to 11)</span>
+					</li>
+				
+					<li>
+						<a id="ctl00_ContentPlaceHolder1_repSide_ctl04_hlSide" href="http://www.harrowbeijing.cn/AcademicCurriculumSixthForm.aspx#content">Sixth Form</a><br />
+						<span class="info">(Years 12 and 13)</span>
+					</li>
+				
+			</ul>
+			
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="mainInner">
+			<div class="halves">
+				<div class="half half1">
+					
+					<h3>Calendar</h3>
+                    <div class="homeCalendar">
+                        <div id="ctl00_ContentPlaceHolder1_ctl00">
+	
+                                <table id="ctl00_ContentPlaceHolder1_calEvents" class="calEvents" cellspacing="0" cellpadding="2" title="Calendar" border="0" style="border-width:1px;border-style:solid;border-collapse:collapse;">
+		<tr><td colspan="7" style="background-color:Silver;"><table class="calendarTitle" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+			<tr><td style="width:15%;"><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$calEvents','V5510')" style="color:Black" title="Go to the previous month"><img src="img/calendar/button-prev.png" alt="Previous Month" /></a></td><td align="center" style="width:70%;">March 2015</td><td align="right" style="width:15%;"><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$calEvents','V5569')" style="color:Black" title="Go to the next month"><img src="img/calendar/button-next.png" alt="Next Month" /></a></td></tr>
+		</table></td></tr><tr><th class="dayHeader" align="center" abbr="Sunday" scope="col">Sun</th><th class="dayHeader" align="center" abbr="Monday" scope="col">Mon</th><th class="dayHeader" align="center" abbr="Tuesday" scope="col">Tue</th><th class="dayHeader" align="center" abbr="Wednesday" scope="col">Wed</th><th class="dayHeader" align="center" abbr="Thursday" scope="col">Thu</th><th class="dayHeader" align="center" abbr="Friday" scope="col">Fri</th><th class="dayHeader" align="center" abbr="Saturday" scope="col">Sat</th></tr><tr><td class="otherMonthDay" align="center" style="width:14%;">22</td><td class="otherMonthDay" align="center" style="width:14%;">23</td><td class="otherMonthDay" align="center" style="width:14%;">24</td><td class="otherMonthDay" align="center" style="width:14%;">25</td><td class="otherMonthDay" align="center" style="width:14%;">26</td><td class="otherMonthDay" align="center" style="width:14%;">27</td><td class="otherMonthDay" align="center" style="width:14%;">28</td></tr><tr><td align="center" style="width:14%;">1</td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/02">2</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/03">3</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/04">4</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/05">5</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/06">6</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/07">7</a></td></tr><tr><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/08">8</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/09">9</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/10">10</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/11">11</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/12">12</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/13">13</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/14">14</a></td></tr><tr><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/15">15</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/16">16</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/17">17</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/18">18</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/19">19</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/20">20</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/21">21</a></td></tr><tr><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/22">22</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/23">23</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/24">24</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/25">25</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/26">26</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/27">27</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/28">28</a></td></tr><tr><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/29">29</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/30">30</a></td><td class="hasEvent" align="center" style="width:14%;"><a href="Calendar.aspx?m=d&d=2015/03/31">31</a></td><td class="otherMonthDay" align="center" style="width:14%;">1</td><td class="otherMonthDay" align="center" style="width:14%;">2</td><td class="otherMonthDay" align="center" style="width:14%;">3</td><td class="otherMonthDay" align="center" style="width:14%;">4</td></tr>
+	</table>
+                            
+</div>
+				        <p class="fineprint"><a href="Calendar.aspx" class="underline">View all dates &gt;</a></p>
+                    </div>
+				</div>
+				<div class="half half2">
+					<h3>Highlights</h3>
+					<div class="eventList">
+						
+						N/A
+					</div>
+					<br />
+					<br />
+					<h3>Announcements &amp; News</h3>
+					<div class="eventList">
+						
+								<div class="event">
+									<div class="date">Tue 3 Feb</div>
+									
+											<div class="title">
+												<a id="ctl00_ContentPlaceHolder1_repNews_ctl00_repDailyNews_ctl00_hlNews" href="news/2015-02-03.aspx">Book Week 2015 - From Small Print to the Big Screen</a>
+											</div>
+										
+								</div>
+							
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--<div class="slogan">L e a d e r s h i p &nbsp;f o r &nbsp;a &nbsp;b e t t e r &nbsp;w o r l d</div>-->
+		<div class="slogan"><img src="img/logo/slogan_small.jpg" /></div>
+	</div>
+
+				    </div>
+			    </div>
+                    
+                
+<div id="footer">
+	<div id="ctl00_footer1_divFooterLogo" class="footer-logos">
+		<div id="footer-logo-canvas" class="thumbs-canvas">
+			<div class="mask-left"></div>
+			<div class="mask-right"></div>
+		</div>
+		<script language="javascript" type="text/javascript">
+			<!--
+			thumbSlider.thumbs=['Thumb.aspx?img=/upload/Edexcel-01-copy.png&w=150&h=40','Thumb.aspx?img=/upload/banners/footer/CIS-copy.jpg&w=150&h=40','Thumb.aspx?img=/upload/banners/footer/NEASC-copy.jpg&w=150&h=40','Thumb.aspx?img=/upload/banners/footer/DOEA_INT_PROUD-TO-DELIVER_-copy.jpg&w=150&h=40','Thumb.aspx?img=/upload/banners/footer/fobisia_RGB_big-copy.jpg&w=150&h=40'];
+thumbSlider.links=['http://www.edexcel.com','http://www.cois.org/','http://www.neasc.org/','http://www.intaward.org/','http://www.fobissea.org/'];
+thumbSlider.titles=['1','CIS','NEASC','International Award','FOBISIA'];
+thumbSlider.linksNewWindows=[true,true,true,true,true];
+
+			thumbSlider.boolSlide = true;
+			thumbSlider.speed = 20;
+			thumbSlider.boolLoop = true;
+			thumbSlider.itemWidth = 189;
+			thumbSlider.boolHoverPause = true;
+			thumbSlider.boolRandomize = true;
+			thumbSlider.delaySlide = 2;
+			thumbSlider.init();
+			//-->
+		</script>
+	</div>
+	<div class="footerInner">
+		<div class="links">
+			
+					<a id="ctl00_footer1_repFooter_ctl00_hlFooter" href="http://www.harrowbeijing.cn/sitemap.aspx"><span id="ctl00_footer1_repFooter_ctl00_lblFooter">Sitemap</span></a>
+					&nbsp;|&nbsp
+				
+					<a id="ctl00_footer1_repFooter_ctl01_hlFooter" href="http://www.harrowbeijing.cn/rss.aspx"><span id="ctl00_footer1_repFooter_ctl01_lblFooter">RSS</span></a>
+					
+				
+		</div>
+		<div class="copyright">&copy; 2015 Harrow International School Beijing. All rights reserved.</div>
+		<div class="javacatz">Produced by <a href="http://www.javacatz.com/" target="_blank">Javacatz</a></div>
+	</div>
+</div>
+
+		    </div>
+	    </div>
+    </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+        <div id="overlayer-login" class="overlayer" style="display:none;">
+        <div class="overlayer-inner">
+            <div class="title-bar"><span class="title">Login to Harrow International School Beijing</span></div>
+            <div class="overlayer-content">
+                <a href="https://mail.harrowbeijing.cn/" target="_blank" class="bigbutton"><span>Harrow Beijing Webmail</span></a>
+                <a href="http://vle2.harrowbeijing.cn/" target="_blank" class="bigbutton"><span>Virtual Learning Environment</span></a>
+                <a href="http://portal.harrowbeijing.cn/" target="_blank" class="bigbutton"><span>Parent Portal</span></a>
+                <a href="javascript:void(0);" onclick="overlayer.close(this);" class="button button-close"><span>Close</span></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-773571-80']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!--
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'zh-CN,zh-TW'
+            }, 'page');
+        }
+    </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
+</body>
+</html>
