@@ -11,7 +11,12 @@
     <link rel="stylesheet" type="text/css" href="webuploader.css">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="webuploader.min.js"></script>
-    <style type="text/css">#picker{position: relative;width: 100px;}</style>
+    <style type="text/css">
+    #picker {
+        position: relative;
+        width: 100px;
+    }
+    </style>
 </HEAD>
 
 <BODY>
@@ -41,27 +46,31 @@
         swf: 'Uploader.swf',
         server: '/',
         pick: '#picker',
-        sendAsBinary : true
-       
+        sendAsBinary: true,
+        accept: {
+            extensions: 'gif',
+            mimeTypes: 'image/gif'
+        }
+
     });
     // 当有文件添加进来的时候
     uploader.on('fileQueued', function(file) {
         cur_file = file;
         $('#thelist').append('<div id="' + file.id + '" class="item">' +
             '<h4 class="info">' + file.name + '</h4>' +
-           
+
             '</div>');
 
 
         uploader.upload();
     });
     uploader.on('uploadBeforeSend', function(object, data, headers) {
-                
-       
+
+
         headers['Content-Type'] = '';
         headers['X_FILENAME'] = encodeURIComponent(123123);
         // headers['Content-Range'] = 'bytes ' + (object.start + 1) + '-' + object.end + '/' + cur_file.size;
-        
+
 
     });
     // 文件上传过程中创建进度条实时显示。
@@ -73,12 +82,12 @@
 
     uploader.on('uploadBeforeSend', function(object, data, headers) {
 
-// uploader.stop(true);
-//         uploader.removeFile(cur_file,true);
-//         uploader.reset();
+        // uploader.stop(true);
+        //         uploader.removeFile(cur_file,true);
+        //         uploader.reset();
     });
 
-    uploader.on('reset', function(a,b,c) {
+    uploader.on('reset', function(a, b, c) {
         console.log(a)
         console.log(b)
         console.log(c)
@@ -87,7 +96,7 @@
         // console.log(uploader.getFiles())
     });
 
-    
+
     uploader.on('fileQueued', function(file) {
         uploader.upload();
         console.log(uploader)
@@ -96,11 +105,11 @@
     //点击取消的时候 做清空队列的操作
     $('#stopBtn').on('click', function() {
         uploader.stop(true);
-        uploader.removeFile(cur_file,true);
+        uploader.removeFile(cur_file, true);
         uploader.reset();
 
         // console.log(new WebUploader.Queue()._queue)
-        
+
     });
     </script>
 </BODY>
