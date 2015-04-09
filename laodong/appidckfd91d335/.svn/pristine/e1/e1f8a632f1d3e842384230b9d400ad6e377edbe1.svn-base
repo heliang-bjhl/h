@@ -11,19 +11,8 @@
     <div class="bodywrap">
         <div class="topBanner">
             <div id="pageBanner" class="pageBanner">
-                <div class="banner">
-                    <div class="bannerInner"><img src="s/img/banner/1.jpg"></div>
-                </div>
-                <div class="banner">
-                    <div class="bannerInner"><img src="http://www.harrowbeijing.cn/upload/banners/HomePageBanner3Sep2012.jpg"></div>
-                </div>
-                <div class="banner">
-                    <div class="bannerInner"><img src="http://www.harrowbeijing.cn/upload/banners/2014/659/Science_prep2.jpg"></div>
-                </div>
-                <div class="banner">
-                    <div class="bannerInner"><img src="http://www.harrowbeijing.cn/upload/banners/2014/659/Harrowthon2014.jpg"></div>
-                </div>
-
+            <div class="banner">
+                <div class="bannerInner"><img src="s/img/banner/1.jpg"></div></div>
             </div>
             
         </div>
@@ -260,7 +249,5 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="s/js/jq_sea.js"></script>
-    <script type="text/javascript" src="s/js/index.js"></script>
 </body>
 </html>
