@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hello World | Jcrop Demo</title>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.Jcrop.js"></script>
+
+<link rel="stylesheet" href="demo_files/main.css" type="text/css" />
+<link rel="stylesheet" href="demo_files/demos.css" type="text/css" />
+<link rel="stylesheet" href="../css/jquery.Jcrop.css" type="text/css" />
+
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="jc-demo-box">
+
+<div class="page-header">
+<ul class="breadcrumb first">
+  <li><a href="../index.html">Jcrop</a> <span class="divider">/</span></li>
+  <li><a href="../index.html">Demos</a> <span class="divider">/</span></li>
+  <li class="active">Hello World</li>
+</ul>
+<h1>Hello World</h1>
+</div>
+
+  <img src="demo_files/sago.jpg" id="target" alt="[Jcrop Example]" />
+
+  <div class="description">
+  <p>
+    <b>This example demonstrates the default behavior of Jcrop.</b><br />
+    Since no event handlers have been attached it only performs
+    the cropping behavior.
+  </p>
+  </div>
+
+<div class="tapmodo-footer">
+  <a href="http://tapmodo.com" class="tapmodo-logo segment">tapmodo.com</a>
+  <div class="segment"><b>&copy; 2008-2013 Tapmodo Interactive LLC</b><br />
+    Jcrop is free software released under <a href="../MIT-LICENSE.txt">MIT License</a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+  jQuery(function($){
+
+    var jcrop_api, boundx, boundy;
+
+    $('#target').Jcrop({
+        // onChange: updatePreview,
+        // onSelect: updatePreview,
+        
+        
+    },function(){
+        // Use the API to get the real image size
+        // var bounds = this.getBounds();
+        // boundx = bounds[0];
+        // boundy = bounds[0.75];
+        // //trueSize: [ancho,alto],
+        // // Store the API in the jcrop_api variable
+        // jcrop_api = this;
+    });
+
+    function updatePreview(c){
+        if (parseInt(c.w) > 0){
+            var rx = 200 / c.w;
+            var ry = 200 / c.h;
+
+            $('#preview').css({
+                width: Math.round(rx * boundx) + 'px',
+                height: Math.round(ry * boundy) + 'px',
+                marginLeft: '-' + Math.round(rx * c.x) + 'px',
+                marginTop: '-' + Math.round(ry * c.y) + 'px'
+            });
+        }
+
+        // $('#x').val(c.x);
+        // $('#y').val(c.y);
+        // $('#w').val(c.w);
+        // $('#h').val(c.h);
+
+    };
+  })
+</script>
+</body>
+</html>
+

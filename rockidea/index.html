@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="keywords" content="成人钢琴,成人吉他,周末摇滚,钢琴教学,吉他教学" />
+    <meta name="description" content="RockIdea 专注白领音乐培训交流" />
+
+    <title>RockIdea-白领摇滚课堂</title>
+    <style type="text/css">
+    .m_loading {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin: -32px 0 0 -31px;
+        width: 62px;
+        height: 64px;
+        z-index: 1000;
+    }
+    body {
+        background: #1bbc9b
+    }
+    #lebox {
+        opacity: 0;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="s/js/f.css">
+
+</head>
+
+<body>
+    <div id="j_loading" class="m_loading">
+    </div>
+    <ul id="menu">
+		<li data-menuanchor="1p"><a href="#1p">RockIdea</a></li>
+		<li data-menuanchor="2p"><a href="#2p">白领电钢琴</a></li>
+		<li data-menuanchor="3p"><a href="#3p">白领吉他课</a></li>
+		<li data-menuanchor="4p"><a href="#4p">免费公开课</a></li>
+		<li data-menuanchor="5p"><a href="#5p">选购乐器</a></li>
+	</ul>
+    <div id="fullpage">
+        <div class="section s1">
+        	<div>
+                <img src="s/images/logo.png">
+                <h1 class="big1" style="display:inline-block">RockIdea</h1>
+            </div>
+        	
+        </div>
+        <div class="section s2">
+            <h1 class="big1">白领电钢琴</h1>
+            <div class="content">
+                <dl>
+                    <dt>弹唱班</dt>
+                    <dd>内容 : 和声理论 伴奏基础 伴奏技巧 视唱练耳 歌曲弹唱</dd>
+                    <dd>目标 : 通过了解和声学,以及伴奏技巧,由浅入深掌握边弹边唱,成为乐队键盘手</dd>
+                </dl>
+                <dl>
+                    <dt>演奏班</dt>
+                    <dd>内容 : 手指强化 曲谱分析 视谱技巧 演奏技巧</dd>
+                    <dd>目标 : 锻炼手指灵活度,提升视谱能力,根据曲谱演奏曲目，成为钢琴演奏者</dd>
+                </dl>
+            </div>
+            
+        </div>
+        <div class="section s3">
+            <h1 class="big1">白领吉他课</h1>
+            <div class="content">
+                <dl>
+                    <dt>弹唱班</dt>
+                    <dd>内容 : 吉他基础 和弦理论 分解和弦 节奏扫弦  歌曲弹唱 视唱</dd>
+                    <dd>目标 : 掌握常见扫弦节奏型，常见分解技巧，弹唱流行歌曲</dd>
+                </dl>
+                <dl>
+                    <dt>电吉他</dt>
+                    <dd>内容 : 金属和弦 效果器调试 电吉他演奏技巧 学习solo </dd>
+                    <dd>目标 : 成为节奏电吉他手，主音吉他手</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="section s4">
+            <h1 class="big1">免费公开课</h1>
+            <div class="content">
+                <dl>
+                    
+                    <dd>内容 : 乐理 节奏 视唱 乐器体验 音乐欣赏....</dd>
+                    
+                </dl>
+            </div>
+        </div>
+        <div class="section s5">
+            <h1 class="big1">选购乐器</h1>
+            <div>
+                <p>手机扫描微店二维码</p>
+                 <p><a href="http://weidian.com/?userid=166762042"><img src="s/images/buy.png" /></a></p>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="s/js/jquery.js"></script>
+    <script type="text/javascript" src="s/js/f.js"></script>
+    <script type="text/javascript">
+    $('#fullpage').fullpage({
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'rgb(198, 61, 15)', '#ccddff'],
+        anchors: ['1p', '2p', '3p', '4p', '5p'],
+        menu: '#menu',
+     'navigation': true,
+        //equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
+        easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+    });
+     $('#menu li:eq(0)').addClass('active');
+    $('#fp-nav').find('span').css({'border':'none','background':'none'});
+
+    </script>
+
+</body>
+
+</html>
