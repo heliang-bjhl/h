@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    
+</head>
+
+<body>
+    <div id="j_upload2"></div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="up.js"></script>
+
+    <script type="text/javascript">
+        var up =  new Upload({
+            url : 'http://internal.static.scloud.letv.com/upload',
+            fileBox: $('#j_upload2'),
+            label: '上传',
+            progress: function(loaded, total, upkey) {
+
+            },
+
+            fileQueued: function(o) {
+                console.log(o)
+                console.log(o[0].name)
+                console.log(o[0].size)
+                //文件上传
+                up.send();
+            },
+            successItem: function(json, upkey) {
+                // alert(json.data.url)
+            },
+            multiple : true
+        });
+    </script>
+</body>
+</html>

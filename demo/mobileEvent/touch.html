@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+    <title></title>
+    <style type="text/css">
+    .touch{
+        width: 100%;
+        height: 300px;
+        background: #69c
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="touch" id="touch"></div>
+    <script type="text/javascript" src="../zepto.js"></script>
+    <script type="text/javascript" src="../../plugin/zepto/src/touch.js"></script>
+    <script type="text/javascript" src="../e.js"></script>
+    <script type="text/javascript">
+        $('#touch').on('singleTap',function(){
+            // console.log(123)
+        })
+        // new Swipe ({
+        //     dom : $('#touch')
+        // })
+    </script>
+</body>
+
+</html>
