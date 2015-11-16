@@ -3,20 +3,77 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>中文版 </title>
+    <title>svg </title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    svg {
+        background: #6699cc;
+        height: 160px;
+        width: 160px;
+    }
+    </style>
 </head>
 
 <body>
-    <div class="key" data-key="bt">按钮1 </div>
-    <div class="key" data-key="text">
-        <p>如果您通过发声也无法找到设备，请立即将它锁定，并公开您的联系方式。</p>
-        <p>【锁定密码】为了更好的保护您的设备，无论您的设备是否已经设置了锁屏密码，您都需要在此重新设定它。</p>
-        <p>【持续时间】设备一旦锁定成功，将持续处于锁定状态，只有在设备上输入正确密码后才能解除锁定。</p>
-        <p>【重新锁定】设备锁定成功后，您在2分钟内是不可以再次向设备发送锁定命令的。但考虑到您可能会忘记密码、更换联系方式等需要，您可以在设备已锁定的2分钟后重新锁定它。</p>
-    </div>
+    <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle id="fff" cx="40" cy="40" r="40px" stroke="#000" stroke-width="2px" fill="#ffff00" />
+    </svg>
+    <script type="text/javascript">
+    var c = document.getElementById('fff');
+    var getAttr = function(dom, attr) {
+        return dom.getAttribute(attr)
+    }
+    var x = 40;
+    var y = 40;
+    var xx = 'z';
+    var yy = 'z';
+    var setX = function() {
+        
+        if (xx == 'z') {
+            console.log(1)
+            x++
+        } else {
+            x--
+        }
+        c.setAttribute('cx', x);
+    }
+    var setY = function() {
+
+        if (yy == 'z') {
+            
+            y++
+        } else {
+            y--
+        }
+        c.setAttribute('cy', y);
+    }
+    var init = function() {
+        if (x == 40) {
+            xx = 'z';
+
+        }
+        if (x == 120) {
+            xx = 'f';
+
+        }
+        setX();
+        if (y == 40) {
+            yy = 'z';
+
+        }
+        if (y == 120) {
+            yy = 'f';
+
+        }
+        setX();
+        setY();
+    }
+    setInterval(function() {
+        // init();
+    }, 50)
+    </script>
 </body>
 
 </html>
